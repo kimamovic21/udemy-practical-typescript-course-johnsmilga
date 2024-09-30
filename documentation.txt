@@ -9,3 +9,5 @@ Section 01: Introduction
 Section 02: Setup
 
 02. Useful Info
+
+03. Github Repository
