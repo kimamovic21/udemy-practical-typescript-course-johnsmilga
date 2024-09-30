@@ -1,13 +1,13 @@
-let awesomeName: string = 'shakeAndBake';
+let awesomeName = 'shakeAndBake';
 awesomeName = 'something';
 // awesomeName = 20;
 awesomeName = awesomeName.toUpperCase();
 console.log(awesomeName);
 
-let amount: number = 12;
+let amount = 12;
 amount = 12 - 1;
 // amount = 'pants';
 
-let isAwesome: boolean = true;
+let isAwesome = true;
 isAwesome = false;
 // isAwesome = 'shakeAndBake';

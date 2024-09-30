@@ -40,3 +40,6 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablu let amount dodajemo tip amount
 -kreiramo varijablu let isAwesome
 -varijabli let isAwesome dodajemo tip boolean
+
+08. Type Interface
+-u tutorial.ts fajlu varijablama brisemo tipove

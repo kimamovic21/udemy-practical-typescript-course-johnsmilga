@@ -56,7 +56,8 @@ isAwesome = false;
 
 ## Type Inference
 
-The typescript compiler can infer the type of the variable based on the literal value that is assigned when it is defined. Just make sure you are working in the typescript file 😄
+The typescript compiler can infer the type of the variable based on the literal value that is assigned when it is defined. 
+Just make sure you are working in the typescript file 😄
 
 ```ts
 let awesomeName = 'shakeAndBake';
