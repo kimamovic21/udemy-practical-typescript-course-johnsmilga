@@ -50,3 +50,9 @@ Section 03: Typescript Fundamentals
 10. Setup Info
 -u tutorial.ts fajlu redeklarisemo varijable sa drugim tipom
 -u terminalu ukucamo komandu npm run build
+
+11. Union Type
+-kreiramo varijablu let tax
+-varijabli tax dodajemo tipove sa znakom | : number | string
+-kreiramo varijablu let requestStatus
+-varijabli let requestStatus dodajemo mogucu vrijednost, tip varijable sa znakom |
