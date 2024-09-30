@@ -16,3 +16,12 @@ Section 02: Setup
 -otvorimo web stranicu https://vitejs.dev/
 -otvorimo web stranicu https://www.typescriptlang.org/
 -u terminalu ukucamo komandu npm create vite@latest 01-typescript-tutorial -- --template vanilla-ts
+
+05. Files and Folders
+-u demo u folder cd 01-typesript-tutorial folder
+-u terminalu ukucamo komandu npm install
+-kada instaliramo folder node_modules u terminalu ukucamo komandu npm run dev
+-u folderu 01-typesript-tutorial kreiramo folder README.md za opis izrade projekta
+-kreiramo tutorial.ts fajl
+-u tutorial.ts fajl dodajemo komandu console.log()
+-u main.ts fajl importujemo tutorial.ts fajl
