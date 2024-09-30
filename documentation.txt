@@ -61,3 +61,10 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo varijablu let notSure
 -varijabli notSure dodajemo tip any
 -redeklarisemo varijablu notSure sa drugim tipovima
+
+13. Practical Example
+-kreiramo varijablu niz const books
+-kreiramo varijablu let foundBook sa tipovima string | undefined
+-kreiramo petlju for (let book of books)
+-u petlji for() dodajemo uslov if 
+-redeklarisemo varijablu foundBook
