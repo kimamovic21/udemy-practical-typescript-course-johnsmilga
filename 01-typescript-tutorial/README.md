@@ -211,7 +211,8 @@ let mixedArray: (number | string)[] = [1, 'two', 3];
 
 ## Objects - Fundamentals
 
-In TypeScript, an object is a collection of key-value pairs with specified types for each key, providing static type checking for properties.
+In TypeScript, an object is a collection of key-value pairs with specified types for each key, 
+providing static type checking for properties.
 
 ```ts
 let car: { brand: string; year: number } = { brand: 'toyota', year: 2020 };

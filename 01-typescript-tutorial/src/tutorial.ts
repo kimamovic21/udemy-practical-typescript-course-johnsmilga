@@ -1,11 +1,18 @@
-let temperatures: number[] = [20, 25, 30];
-// temperatures.push('hot');
-console.log(temperatures);
+let car: { brand: string; year: number } = { brand: 'toyota', year: 2020 };
+car.brand = 'ford';
+// car.color = 'blue';
+console.log(car);
 
-let colors: string[] = ['red', 'green', 'blue'];
-// colors.push(true); 
-console.log(colors);
+let car1: { brand: string; year: number } = { brand: 'audi', year: 2021 };
+console.log(car1);
 
-let mixedArray: (number | string)[] = [1, 'two', 3];
-// mixedArray.push(true); // This will result in a TypeScript error
-console.log(mixedArray);
+// let car2: { brand: string; year: number } = { brand: 'audi' };
+// console.log(car2);
+
+let book = { title: 'book', cost: 20 };
+let pen = { title: 'pen', cost: 5 };
+let notebook = { title: 'notebook' };
+
+let items: { readonly title: string; cost?: number }[] = [book, pen, notebook];
+// items[0].title = 'new book';
+console.log(items);

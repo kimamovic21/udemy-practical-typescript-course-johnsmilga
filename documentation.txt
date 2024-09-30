@@ -78,3 +78,11 @@ Section 03: Typescript Fundamentals
 
 16. Challenge - Arrays
 -u tutorial.js fajlu kreiramo tri niz varijable let temperatures, let colors i let mixedArray sa tipovima
+
+17. Object Fundamentals
+-u tutorial.ts fajlu kreiramo objekt varijablu let car
+-varijabli car dodajemo kljuc vrijednost brand i year
+-varijabli let car dodajemo objekt tip
+-kreiramo varijable let car1 i let car2
+-kreiramo varijablu let items
+-varijabli items dodajemo tip objekt i prazan niz []
