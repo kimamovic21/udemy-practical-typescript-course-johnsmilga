@@ -4,3 +4,8 @@ Udemy Practical Typescript Course - John Smilga
 Section 01: Introduction
 
 01. Typescript Info
+
+
+Section 02: Setup
+
+02. Useful Info
