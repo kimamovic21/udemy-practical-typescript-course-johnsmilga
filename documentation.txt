@@ -46,3 +46,7 @@ Section 03: Typescript Fundamentals
 
 09. First Challenge
 -u tutorial.ts fajlu kreiramo tri varijable let greeting, let age i let isAdult
+
+10. Setup Info
+-u tutorial.ts fajlu redeklarisemo varijable sa drugim tipom
+-u terminalu ukucamo komandu npm run build
