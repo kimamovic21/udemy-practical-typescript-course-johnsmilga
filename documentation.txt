@@ -29,3 +29,14 @@ Section 02: Setup
 06. Build Step
 -u tutorial.ts fajlu kreiramo interface someValue i varijablu objekt let someObj
 -u terminalu ukucamo komandu npm run build
+
+
+Section 03: Typescript Fundamentals
+
+07. Type Annotations
+-u tutorial.ts fajlu kreiramo varijablu let awesomeName
+-varijabli awesomeName dodajemo tip string
+-deklarisemo varijablu awesomeName
+-kreiramo varijablu let amount dodajemo tip amount
+-kreiramo varijablu let isAwesome
+-varijabli let isAwesome dodajemo tip boolean
