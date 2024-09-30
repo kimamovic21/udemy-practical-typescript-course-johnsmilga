@@ -72,3 +72,6 @@ Section 03: Typescript Fundamentals
 14. Challenge - Union Type
 -kreiramo varijablu let discount sa tipovima number | string
 -kreiramo varijablu let orderStatus sa vise tipova Union |
+
+15. Arrays
+-u tutorial.ts fajlu kreiramo varijable nizove sa tipovima

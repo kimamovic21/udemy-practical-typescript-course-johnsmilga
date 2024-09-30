@@ -170,7 +170,8 @@ discount = '20%';
 
 ## Arrays - Fundamentals
 
-In TypeScript, arrays are used to store multiple values in a single variable. You can define the type of elements that an array can hold using type annotations.
+In TypeScript, arrays are used to store multiple values in a single variable. 
+You can define the type of elements that an array can hold using type annotations.
 
 ```ts
 let prices: number[] = [100, 75, 42];
