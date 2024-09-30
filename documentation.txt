@@ -56,3 +56,8 @@ Section 03: Typescript Fundamentals
 -varijabli tax dodajemo tipove sa znakom | : number | string
 -kreiramo varijablu let requestStatus
 -varijabli let requestStatus dodajemo mogucu vrijednost, tip varijable sa znakom |
+
+12. Type: Any
+-u tutorial.ts fajlu kreiramo varijablu let notSure
+-varijabli notSure dodajemo tip any
+-redeklarisemo varijablu notSure sa drugim tipovima
