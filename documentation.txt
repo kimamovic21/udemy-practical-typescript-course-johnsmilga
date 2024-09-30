@@ -11,3 +11,8 @@ Section 02: Setup
 02. Useful Info
 
 03. Github Repository
+
+04. Template
+-otvorimo web stranicu https://vitejs.dev/
+-otvorimo web stranicu https://www.typescriptlang.org/
+-u terminalu ukucamo komandu npm create vite@latest 01-typescript-tutorial -- --template vanilla-ts
