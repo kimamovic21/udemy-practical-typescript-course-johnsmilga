@@ -68,3 +68,7 @@ Section 03: Typescript Fundamentals
 -kreiramo petlju for (let book of books)
 -u petlji for() dodajemo uslov if 
 -redeklarisemo varijablu foundBook
+
+14. Challenge - Union Type
+-kreiramo varijablu let discount sa tipovima number | string
+-kreiramo varijablu let orderStatus sa vise tipova Union |
