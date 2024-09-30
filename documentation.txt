@@ -43,3 +43,6 @@ Section 03: Typescript Fundamentals
 
 08. Type Interface
 -u tutorial.ts fajlu varijablama brisemo tipove
+
+09. First Challenge
+-u tutorial.ts fajlu kreiramo tri varijable let greeting, let age i let isAdult
