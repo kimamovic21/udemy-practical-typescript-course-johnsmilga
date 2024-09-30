@@ -25,3 +25,7 @@ Section 02: Setup
 -kreiramo tutorial.ts fajl
 -u tutorial.ts fajl dodajemo komandu console.log()
 -u main.ts fajl importujemo tutorial.ts fajl
+
+06. Build Step
+-u tutorial.ts fajlu kreiramo interface someValue i varijablu objekt let someObj
+-u terminalu ukucamo komandu npm run build
