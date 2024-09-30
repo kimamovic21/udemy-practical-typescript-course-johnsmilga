@@ -1,18 +1,11 @@
-let prices: number[] = [100, 75, 42];
-// prices.push('hello');
-console.log(prices);
+let temperatures: number[] = [20, 25, 30];
+// temperatures.push('hot');
+console.log(temperatures);
 
-let fruit: string[] = ['apple', 'orange'];
-console.log(fruit);
+let colors: string[] = ['red', 'green', 'blue'];
+// colors.push(true); 
+console.log(colors);
 
-// let randomValues: [] = ['hello'];
-// console.log(randomValues);
-
-let emptyValues: number[] = [];
-console.log(emptyValues);
-
-let names = ['peter', 'susan'];
-console.log(names);
-
-let array: (string | boolean)[] = ['apple', true, 'orange', false];
-console.log(array);
+let mixedArray: (number | string)[] = [1, 'two', 3];
+// mixedArray.push(true); // This will result in a TypeScript error
+console.log(mixedArray);

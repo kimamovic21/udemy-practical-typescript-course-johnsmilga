@@ -75,3 +75,6 @@ Section 03: Typescript Fundamentals
 
 15. Arrays
 -u tutorial.ts fajlu kreiramo varijable nizove sa tipovima
+
+16. Challenge - Arrays
+-u tutorial.js fajlu kreiramo tri niz varijable let temperatures, let colors i let mixedArray sa tipovima
