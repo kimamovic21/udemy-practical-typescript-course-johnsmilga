@@ -153,3 +153,10 @@ Section 03: Typescript Fundamentals
 -u funkciju logMessage() dodajemo komandu console.log()
 -pozivamo funkciju logMessage()
 -funkciji logMessage() dodajemo tip void
+
+27. Functions - Type Guards
+-u tutorial.ts fajlu kreiramo funkciju processInput() sa parametrom input
+-parametru input dodajemo tipove string | number
+-otvorimo link: https://stackoverflow.com/questions/36560806/the-left-hand-side-of-an-arithmetic-operation-must-be-of-type-any-number-or
+-u funkciju processInput() dodajemo uslove if (typeof input === 'number') - else
+-pozivamo funkciju processInput() sa brojem i znakovnom vrijednosti

@@ -1,5 +1,10 @@
-function logMessage(message: string): void {
-  console.log(message);
+function processInput(input: string | number) {
+  if (typeof input === 'number') {
+    console.log(input * 2);
+  } else {
+    console.log(input.toUpperCase());
+  };
 };
 
-logMessage('Hello, TypeScript!'); 
+processInput(10);
+processInput('Hello')
