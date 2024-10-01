@@ -1,12 +1,16 @@
-function createStudent(student: { id: number; name: string }) {
-  console.log(`Welcome to the course ${student.name.toUpperCase()}!!!`);
+function processData(
+  input: string | number,
+  config: { reverse: boolean } = { reverse: false }
+): string | number {
+  if (typeof input === 'number') {
+    return input * input;
+  } else {
+    return config.reverse
+      ? input.toUpperCase().split('').reverse().join('')
+      : input.toUpperCase();
+  };
 };
 
-const newStudent = {
-  id: 5,
-  name: 'anna',
-  email: 'anna@gmail.com',
-};
-
-createStudent(newStudent);
-createStudent({ id: 1, name: 'bob', email: 'bob@gmail.com' });
+console.log(processData(10));
+console.log(processData('Hello')); 
+console.log(processData('Hello', { reverse: true })); 

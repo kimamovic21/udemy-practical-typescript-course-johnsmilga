@@ -178,3 +178,11 @@ Section 03: Typescript Fundamentals
 29. Excess Property Check
 -u tutorial.ts fajlu pozivamo fukciju createStudent() sa objektom koji ima jednu vise opciju nego sto je predvideno u parametru funkcije
 -objektu newStudent dodajemo opciju email
+
+30. Challenge - Functions II
+-u tutorial.ts fajlu kreiramo funkciju processData sa dva parametrima
+-prvom parametru input dodajemo tip string | number
+-drugom parametru objektu config dodajemo tip boolean i default vrijednost
+-dodajemo uslove if (typeof input === 'number') - else
+-u uslov if dodajemo return izjavu u kojoj se mnozi parametar ako je broj
+-u uslov else dodajemo return izjavu ako je parametar string i sadrzi opciju reverse true
