@@ -1,13 +1,13 @@
-function addThree(number: number) {
-  let anotherNumber: number = 3;
-  return number + anotherNumber;
+const names: string[] = ['John', 'Jane', 'Jim', 'Jill'];
+
+function isNameInList(name: string): boolean {
+  return names.includes(name);
 };
 
-const result = addThree(2);
-console.log(result);
+let nameToCheck: string = 'Jane';
 
-const someValue = result;
-console.log(someValue);
-
-// run time error
-// someValue.myMethod();
+if (isNameInList(nameToCheck)) {
+  console.log(`${nameToCheck} is in the list.`);
+} else {
+  console.log(`${nameToCheck} is not in the list.`);
+};

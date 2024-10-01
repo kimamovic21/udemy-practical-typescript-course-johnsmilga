@@ -111,3 +111,12 @@ Section 03: Typescript Fundamentals
 -u funkciji addThree() kreiramo varijablu let anotherNumber sa tipom number
 -dodajemo return izjavu 
 -kreiramo varijable const result i const someValue
+
+22. Challenge - Functions 1
+-u tutorial.ts fajlu kreiramo varijablu niz const names sa tipom string[]
+-kreiramo funkciju isNameInList() sa parametrom name kao tipom string
+-funkciji isNameInList() dodajemo tip boolean
+-u funkciju isNameInList() dodajemo return izjavu 
+-kreiramo varijablama let nameToCheck
+-dodajemo uslov if (isNameInList(nameToCheck)) - else
+-u uslove if - else dodajemo komande console.log()
