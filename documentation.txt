@@ -128,3 +128,12 @@ Section 03: Typescript Fundamentals
 -funkciji calculatePrice() dodajemo tip number
 -u funkciju calculatePrice() dodajemo return izjavu
 -kreiramo varijablu let priceAfterDiscount
+
+24. Functions - Default Parameters
+-u tutorial.ts fajlu kreiramo varijablu let priceWithoutDiscount
+-kreiramo funkciju calculateScore() sa parametar initialScore i penaltyPoints
+-parametrima dodajemo tipove number
+-tipu number dodajemo vrijednost 0
+-funkciji calculateScore() dodajemo tip number
+-u funkciju calculateScore() dodajemo return izjavu
+-kreiramo varijable let scoreAfterPenalty i scoreWithoutPenalty
