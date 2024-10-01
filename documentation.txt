@@ -160,3 +160,17 @@ Section 03: Typescript Fundamentals
 -otvorimo link: https://stackoverflow.com/questions/36560806/the-left-hand-side-of-an-arithmetic-operation-must-be-of-type-any-number-or
 -u funkciju processInput() dodajemo uslove if (typeof input === 'number') - else
 -pozivamo funkciju processInput() sa brojem i znakovnom vrijednosti
+
+28. Functions - Objects As Parameters
+-u tutorial.ts fajlu kreiramo funkciju createEmployee()
+-funkciji createEmployee() dodajemo tip objekt sa vrijednostima id i isActive
+-funkciji createEmployee() dodajemo parametar objekt id
+-parametru objekt id dodajemo tip objekt id:number
+-u funkciju createEmployee() dodajemo return izjavu u koju dodajemo objekt
+-kreiramo varijable const first i const second
+-kreiramo funkciju createStudent() sa parametrom student
+-parametru student dodajemo tipove za objekt parametre id i name
+-funkciji createStudent() dodajemo tip void
+-u funkciju createStudent() dodajemo komandu console.log()
+-kreiramo varijablu const newStudent
+-pozivamo funkciju createStudent sa argumentom newStudent
