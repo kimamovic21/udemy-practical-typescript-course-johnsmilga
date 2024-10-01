@@ -90,3 +90,8 @@ Section 03: Typescript Fundamentals
 18. Challenge - Objects
 -u tutorial.ts fajlu kreiramo varijable objekte let bike, let laptop
 -kreiramo varijable let product1, let product2 i niz let products koja sadrzi informacije o objektima
+
+19. Functions - Parameters
+-u tutorial.ts fajlu kreiramo funkciju sayHi()
+-funkciji sayHi() dodajemo parametar name kao tip string
+-u funkciju sayHi() dodajemo komandu console.log()
