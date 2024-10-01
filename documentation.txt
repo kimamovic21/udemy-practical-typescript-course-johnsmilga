@@ -95,3 +95,12 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo funkciju sayHi()
 -funkciji sayHi() dodajemo parametar name kao tip string
 -u funkciju sayHi() dodajemo komandu console.log()
+
+20. Functions - Returns
+-kreiramo funkciju calculateDiscount()
+-funkciji calculateDiscount() dodajemo parametar kao tip number
+-funkciji calculateDiscount() dodajemo tip number
+-dodajemo return izjavu 
+-kreiramo varijablu const finalPrice
+-kreiramo varijablu hasDiscount
+-dodajemo uslov if (hasDiscount)

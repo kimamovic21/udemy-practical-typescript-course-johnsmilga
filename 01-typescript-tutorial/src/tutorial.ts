@@ -1,7 +1,12 @@
-function sayHi(name: string) {
-  console.log(`Hello there ${name.toUpperCase()}!!!`);
+function calculateDiscount(price: number): number {
+//   price.toUpperCase();
+  const hasDiscount = true;
+  if (hasDiscount) {
+    return price;
+    // return 'Discount Applied';
+  };
+  return price * 0.9;
 };
 
-sayHi('kerim');
-// sayHi(3);
-// sayHi('peter', 'random');
+const finalPrice = calculateDiscount(200);
+console.log(finalPrice);
