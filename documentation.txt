@@ -186,3 +186,13 @@ Section 03: Typescript Fundamentals
 -dodajemo uslove if (typeof input === 'number') - else
 -u uslov if dodajemo return izjavu u kojoj se mnozi parametar ako je broj
 -u uslov else dodajemo return izjavu ako je parametar string i sadrzi opciju reverse true
+
+31. Type Alias
+-u tutorial.ts fajlu kreiramo tip type User
+-kreiramo objekt varijable const john i const susan
+-varijablama john i susan dodajemo tipove User
+-kreiramo funkciju createUser() dodajemo parametar user
+-parametru user dodajemo tip User
+-funkciji createUser() dodajemo tip User
+-u funkciju createUser() dodajemo komandu console.log()
+-pozivamo funkcije createUser() sa argumentima john i susan

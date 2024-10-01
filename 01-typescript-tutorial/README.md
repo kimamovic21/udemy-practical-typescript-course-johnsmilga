@@ -511,7 +511,9 @@ console.log(processData('Hello', { reverse: true })); // Output: OLLEH
 
 ## Type Alias
 
-A type alias in TypeScript is a new name or shorthand for an existing type, making it easier to reuse complex types. However, it's important to note that it doesn't create a new unique type - it's just an alias.All the same rules apply to the aliased type, including the ability to mark properties as optional or readonly.
+A type alias in TypeScript is a new name or shorthand for an existing type, making it easier to reuse complex types. 
+However, it's important to note that it doesn't create a new unique type - it's just an alias.All the same rules apply 
+to the aliased type, including the ability to mark properties as optional or readonly.
 
 ```ts
 const john: { id: number; name: string; isActive: boolean } = {
