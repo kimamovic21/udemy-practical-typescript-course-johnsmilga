@@ -137,3 +137,12 @@ Section 03: Typescript Fundamentals
 -funkciji calculateScore() dodajemo tip number
 -u funkciju calculateScore() dodajemo return izjavu
 -kreiramo varijable let scoreAfterPenalty i scoreWithoutPenalty
+
+25. Functions - Rest Parameter
+-u tutorial.ts fajlu kreiramo funkciju sum()
+-kreiramo varijablu let result
+-funkciji sum() dodajemo parametre message i ...numbers
+-parametru message dodajemo tip string, parametru ...numbers dodajemo tip number[]
+-funkciji sum() dodajemo tip string
+-u funkciji sum() kreiramo varijablu const doubled 
+-kreiramo varijablu let total
