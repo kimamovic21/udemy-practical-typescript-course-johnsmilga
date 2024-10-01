@@ -196,3 +196,17 @@ Section 03: Typescript Fundamentals
 -funkciji createUser() dodajemo tip User
 -u funkciju createUser() dodajemo komandu console.log()
 -pozivamo funkcije createUser() sa argumentima john i susan
+
+32. Type Alias - Additional Info
+-u tutorial.ts fajlu kreiramo tip type StringOrNumber
+-kreiramo varijablama let value
+-varijabli let value dodajemo tip StringOrNumber
+-deklarisemo varijablu value
+-kreiramo tip type Theme
+-kreiramo varijablu let theme
+-varijabli let theme dodajemo tip Theme
+-deklarisemo varijablu theme
+-kreiramo funkciju setTheme() 
+-funkciji setTheme() dodajemo parametar t
+-parametru t dodajemo tip Theme
+-pozivamo funkciju setTheme() sa argumentom
