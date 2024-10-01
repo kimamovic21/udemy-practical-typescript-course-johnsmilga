@@ -725,7 +725,10 @@ console.log(result);
 
 ## Interface - Methods (more options)
 
-It's generally a good practice to match the structure of the interface and the implementing object or class as closely as possible. This makes the code easier to understand and maintain. So, if printAuthor is defined as a method in the Book interface, it would be more consistent to implement it as a method in the deepWork object.
+It's generally a good practice to match the structure of the interface and the implementing object or 
+class as closely as possible. This makes the code easier to understand and maintain. So, if printAuthor 
+is defined as a method in the Book interface, it would be more consistent to implement it as a method 
+in the deepWork object.
 
 ```ts
 interface Book {

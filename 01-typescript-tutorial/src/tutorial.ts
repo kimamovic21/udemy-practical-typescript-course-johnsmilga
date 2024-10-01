@@ -3,6 +3,9 @@ interface Book {
   title: string;
   author: string;
   genre?: string;
+   // method
+   printAuthor(): void;
+   printTitle(message: string): string;
 };
 
 const deepWork: Book = {
@@ -10,9 +13,15 @@ const deepWork: Book = {
   title: 'Deep Work',
   author: 'Cal Newport',
   genre: 'Self-help',
+  printAuthor() {
+    console.log(this.author);
+  },
+  printTitle(message) {
+    return `${this.title} ${message}`;
+  },
 };
 
-// deepWork.title = 'New Title'; // allowed
-// deepWork.isbn = 654321; // not allowed
-
 console.log(deepWork);
+deepWork.printAuthor();
+const result = deepWork.printTitle('is an awesome book');
+console.log(result);
