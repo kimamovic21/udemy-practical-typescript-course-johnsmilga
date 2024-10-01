@@ -235,3 +235,8 @@ Section 03: Typescript Fundamentals
 -kreiramo tip type Animal
 -varijabli tiger dodajemo tip Animal
 -u tip Animal dodana varijabla [propName] sa tipom number
+
+36. Interface - Fundamentals
+-u tutorial.ts fajlu kreiramo interfejs interface Book
+-u interfejs Book dodajemo opcije readonly isbn, title, author i genre?
+-kreiramo varijablu const deepWork sa tipom Book
