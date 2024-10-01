@@ -146,3 +146,10 @@ Section 03: Typescript Fundamentals
 -funkciji sum() dodajemo tip string
 -u funkciji sum() kreiramo varijablu const doubled 
 -kreiramo varijablu let total
+
+26. Functions - Void Keyword
+-u tutorial.ts fajlu kreiramo funkciju logMessage() sa parametrom message
+-parametru message dodajemo tip string
+-u funkciju logMessage() dodajemo komandu console.log()
+-pozivamo funkciju logMessage()
+-funkciji logMessage() dodajemo tip void

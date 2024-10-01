@@ -374,7 +374,8 @@ let result = sum('The total is:', 1, 2, 3, 4, 5); // result will be "The total i
 
 ## Functions - "void" return type
 
-In TypeScript, void is a special type that represents the absence of a value. When used as a function return type, void indicates that the function does not return a value.
+In TypeScript, void is a special type that represents the absence of a value. When used as a function 
+return type, void indicates that the function does not return a value.
 
 ```ts
 function logMessage(message: string): void {
@@ -384,7 +385,8 @@ function logMessage(message: string): void {
 logMessage('Hello, TypeScript!'); // Output: Hello, TypeScript!
 ```
 
-It's important to note that in TypeScript, a function that is declared with a void return type can still return a value, but the value will be ignored.For example, the following code is valid TypeScript:
+It's important to note that in TypeScript, a function that is declared with a void return type can still 
+return a value, but the value will be ignored.For example, the following code is valid TypeScript:
 
 ```ts
 function logMessage(message: string): void {
