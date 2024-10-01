@@ -174,3 +174,7 @@ Section 03: Typescript Fundamentals
 -u funkciju createStudent() dodajemo komandu console.log()
 -kreiramo varijablu const newStudent
 -pozivamo funkciju createStudent sa argumentom newStudent
+
+29. Excess Property Check
+-u tutorial.ts fajlu pozivamo fukciju createStudent() sa objektom koji ima jednu vise opciju nego sto je predvideno u parametru funkcije
+-objektu newStudent dodajemo opciju email
