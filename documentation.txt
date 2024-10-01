@@ -120,3 +120,11 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablama let nameToCheck
 -dodajemo uslov if (isNameInList(nameToCheck)) - else
 -u uslove if - else dodajemo komande console.log()
+
+23. Functions - Optional Parameters
+-kreiramo funkciju calculatePrice() sa parametrima price i discount 
+-parametrima dodajemo tipove number
+-parametru discount dodajemo ? discount? u kojoj je parametar discount neobavezan
+-funkciji calculatePrice() dodajemo tip number
+-u funkciju calculatePrice() dodajemo return izjavu
+-kreiramo varijablu let priceAfterDiscount
