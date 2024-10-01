@@ -221,3 +221,10 @@ Section 03: Typescript Fundamentals
 -u funkciju printStaffDetails() dodajemo uslove if ('employees' in staff) - else
 -u uslove if i else dodajemo komande console.log()
 -pozivamo funkcije printStaffDetails() sa argumentima alice, steve i bob
+
+34. Intersection Type
+-u tutorial.ts fajlu kreiramo tip type Book
+-kreiramo objekt varijablama const book1 i const book2
+-kreiranim varijablama dodajemo tip Book
+-kreiramo tip type DiscountedBook koji sadrzi tip Book i opciju discount kombinovan sa znakom &
+-kreiramo varijablu const discountedBook koja ima tip DiscountedBook

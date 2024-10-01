@@ -627,7 +627,9 @@ printStaffDetails(bob);
 
 ## Intersection Types
 
-In TypeScript, an intersection type (TypeA & TypeB) is a way of combining multiple types into one. This means that an object of an intersection type will have all the properties of TypeA and all the properties of TypeB. It's a way of creating a new type that merges the properties of existing types.
+In TypeScript, an intersection type (TypeA & TypeB) is a way of combining multiple types into one. 
+This means that an object of an intersection type will have all the properties of TypeA and all the 
+properties of TypeB. It's a way of creating a new type that merges the properties of existing types.
 
 ```ts
 type Book = { id: number; name: string; price: number };
