@@ -86,3 +86,7 @@ Section 03: Typescript Fundamentals
 -kreiramo varijable let car1 i let car2
 -kreiramo varijablu let items
 -varijabli items dodajemo tip objekt i prazan niz []
+
+18. Challenge - Objects
+-u tutorial.ts fajlu kreiramo varijable objekte let bike, let laptop
+-kreiramo varijable let product1, let product2 i niz let products koja sadrzi informacije o objektima

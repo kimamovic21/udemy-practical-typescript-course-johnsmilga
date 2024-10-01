@@ -233,9 +233,11 @@ items[0].title = 'new book'; // Error: Cannot assign to 'title' because it is a 
 
 ## Challenge
 
-- Create an object bike of type { brand: string, year: number } and assign it some values. Then, try to assign a string to the year property.
+- Create an object bike of type { brand: string, year: number } and assign it some values. 
+Then, try to assign a string to the year property.
 - Create an object laptop of type { brand: string, year: number } and try to assign an object with missing year property to it.
-- Create an array products of type { title: string, price?: number }[] and assign it some values. Then, try to add an object with a price property of type string to it.
+- Create an array products of type { title: string, price?: number }[] and assign it some values. 
+Then, try to add an object with a price property of type string to it.
 
 ```ts
 // 1. Bike
