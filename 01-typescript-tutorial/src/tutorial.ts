@@ -1,12 +1,13 @@
-function calculateDiscount(price: number): number {
-//   price.toUpperCase();
-  const hasDiscount = true;
-  if (hasDiscount) {
-    return price;
-    // return 'Discount Applied';
-  };
-  return price * 0.9;
+function addThree(number: number) {
+  let anotherNumber: number = 3;
+  return number + anotherNumber;
 };
 
-const finalPrice = calculateDiscount(200);
-console.log(finalPrice);
+const result = addThree(2);
+console.log(result);
+
+const someValue = result;
+console.log(someValue);
+
+// run time error
+// someValue.myMethod();

@@ -104,3 +104,10 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablu const finalPrice
 -kreiramo varijablu hasDiscount
 -dodajemo uslov if (hasDiscount)
+
+21. Type: Any Example
+-u tutorial.ts fajlu kreiramo funkciju addThree()
+-funkciji addThree() dodajemo parametar number sa tipom any
+-u funkciji addThree() kreiramo varijablu let anotherNumber sa tipom number
+-dodajemo return izjavu 
+-kreiramo varijable const result i const someValue
