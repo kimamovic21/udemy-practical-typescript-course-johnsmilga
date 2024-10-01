@@ -656,7 +656,9 @@ const discountedBook: DiscountedBook = {
 
 ## Type Alias - Computed Properties
 
-Computed properties in JavaScript are a feature that allows you to dynamically create property keys on objects. This is done by wrapping an expression in square brackets [] that computes the property name when creating an object.
+Computed properties in JavaScript are a feature that allows you to dynamically create 
+property keys on objects. This is done by wrapping an expression in square brackets [] 
+that computes the property name when creating an object.
 
 ```ts
 const propName = 'age';

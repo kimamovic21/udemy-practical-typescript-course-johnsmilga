@@ -228,3 +228,10 @@ Section 03: Typescript Fundamentals
 -kreiranim varijablama dodajemo tip Book
 -kreiramo tip type DiscountedBook koji sadrzi tip Book i opciju discount kombinovan sa znakom &
 -kreiramo varijablu const discountedBook koja ima tip DiscountedBook
+
+35. Computed Properties
+-u tutorial.ts fajlu kreiramo varijablu let tiger
+-kreiramo varijablu const propName
+-kreiramo tip type Animal
+-varijabli tiger dodajemo tip Animal
+-u tip Animal dodana varijabla [propName] sa tipom number
