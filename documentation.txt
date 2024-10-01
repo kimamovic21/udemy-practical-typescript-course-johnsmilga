@@ -210,3 +210,14 @@ Section 03: Typescript Fundamentals
 -funkciji setTheme() dodajemo parametar t
 -parametru t dodajemo tip Theme
 -pozivamo funkciju setTheme() sa argumentom
+
+33. Challenge - Type Alias
+-u tutorial.ts fajlu kreiramo tipove type Employee i type Manager
+-kreiramo varijable const alice, const steve i const bob
+-varijablama dodajemo tipove Employee i Manager
+-kreiramo tip type Staff koji sadrzi tipove Employee i Manager
+-kreiramo funkciju printStaffDetails() sa parametrom staff koji ima tip Staff
+-funkciji printStaffDetails() dodajemo tip void
+-u funkciju printStaffDetails() dodajemo uslove if ('employees' in staff) - else
+-u uslove if i else dodajemo komande console.log()
+-pozivamo funkcije printStaffDetails() sa argumentima alice, steve i bob
