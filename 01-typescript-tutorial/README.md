@@ -971,7 +971,8 @@ if (isManager(employee)) {
 
 ## Interface vs Type Alias
 
-A type alias is a way to give a name to a type. It can represent primitive types, union types, intersection types, tuples, and any other types. Once defined, the alias can be used anywhere in place of the actual type.
+A type alias is a way to give a name to a type. It can represent primitive types, union types, intersection types, 
+tuples, and any other types. Once defined, the alias can be used anywhere in place of the actual type.
 
 ```ts
 type Person = {
@@ -997,7 +998,8 @@ let john: Person = { name: 'John', age: 30 };
 
 Key Differences
 
-- Type aliases can represent primitive types, union types, intersection types, tuples, etc., while interfaces are primarily used to represent the shape of an object.
+- Type aliases can represent primitive types, union types, intersection types, tuples, etc., while interfaces are 
+primarily used to represent the shape of an object.
 
 ```ts
 // Type alias for a primitive type
@@ -1011,7 +1013,8 @@ let gameScore: Score = 100;
 let move: Direction = 'up';
 ```
 
-- Interfaces can be merged using declaration merging. If you define an interface with the same name more than once, TypeScript will merge their definitions. Type aliases can't be merged in this way.
+- Interfaces can be merged using declaration merging. If you define an interface with the same name more than once, 
+TypeScript will merge their definitions. Type aliases can't be merged in this way.
 
 - Interfaces can be implemented by classes, while type aliases cannot.
 - Type aliases can use computed properties, while interfaces cannot.

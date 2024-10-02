@@ -293,3 +293,5 @@ Section 03: Typescript Fundamentals
 -funkciji isManager() dodajemo tip obj is Manager
 -dodajemo uslov if (isManager(employee))
 -u uslov if dodajemo metodu employee.delegateTasks()
+
+43. Interface vs Type Alias
