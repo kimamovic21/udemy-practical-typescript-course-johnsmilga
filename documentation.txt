@@ -277,3 +277,12 @@ Section 03: Typescript Fundamentals
 -u interfejs Manager dodajemo metodu managePeople() sa tipom
 -u varijablu manager dodajemo metodu managePeople()
 -dodajemo metode manager.getDetails(), manager.getDogDetails() i managePeople.managePeople()
+
+41. Challenge - Interface II
+-u tutorial.ts fajlu kreiramo interfejse Person i DogOwner
+-kreiramo interfejs Manager koji sadrzi interfejs Person
+-kreiramo funkciju getEmployee() sa tipovima Person, DogOwner i Manager
+-kreiramo varijablu const random
+-dodajemo uslove if, else if i else
+-kreiramo varijablu const employee sa tipovima Person, DogOwner i Manager
+-dodajemo uslov if ('managePeople' in employee)
