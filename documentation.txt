@@ -295,3 +295,10 @@ Section 03: Typescript Fundamentals
 -u uslov if dodajemo metodu employee.delegateTasks()
 
 43. Interface vs Type Alias
+
+44. Tuple
+-u tutorial.ts fajlu kreiramo varijablu let person sa tipovima [string, number]
+-kreiramo varijablu let date sa tipovima readonly [number, number, number]
+-kreiramo funkciju getPerson() sa tipovima [string, number]
+-kreiramo varijablu let randomPerson
+-kreiramo varijablu let susan koja ima tip readonly [string, number]
