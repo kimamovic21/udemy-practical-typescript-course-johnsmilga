@@ -39,3 +39,11 @@ if ('managePeople' in employee) {
   employee.managePeople();
   employee.delegateTasks();
 };
+
+function isManager(obj: Person | DogOwner | Manager): obj is Manager {
+  return 'managePeople' in obj;
+};
+
+if (isManager(employee)) {
+  employee.delegateTasks();
+};

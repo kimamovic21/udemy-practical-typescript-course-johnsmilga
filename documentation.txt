@@ -286,3 +286,10 @@ Section 03: Typescript Fundamentals
 -dodajemo uslove if, else if i else
 -kreiramo varijablu const employee sa tipovima Person, DogOwner i Manager
 -dodajemo uslov if ('managePeople' in employee)
+
+42. Interface - Type Predicate
+-u tutorial.ts fajlu kreiramo funkciju isManager()
+-funkciji isManager() dodajemo parametar obj sa tipovima Person, DogOwner i Manager
+-funkciji isManager() dodajemo tip obj is Manager
+-dodajemo uslov if (isManager(employee))
+-u uslov if dodajemo metodu employee.delegateTasks()
