@@ -250,3 +250,6 @@ Section 03: Typescript Fundamentals
 -pozivamo metodu deepWork.printAuthor()
 -pozivamo metodu deepWork.printTitle()
 -metodu deepWork.printTitle() pohranjujemo u varijablu const result
+
+38. Interface Methods - More Options
+-u tutorial.ts fajlu, u interfejs Book dodajemo metodu printSomething()
