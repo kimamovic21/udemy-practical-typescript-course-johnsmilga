@@ -260,3 +260,20 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablu const laptop koja ima tip Computer
 -dodajemo metodu laptop.storage
 -dodajemo metodu laptop.upgradeRam()
+
+40. Interface - Merge and Extend
+-kreiramo interfejs Person
+-u interfejsu Person dodajemo tipove za varijable name, age i metodu getDetails()
+-kreiramo interfejs DogOwner
+-u interfejsu DogOwner dodajemo tipove za varijablu dogName i metodu getDogDetails()
+-kreiramo varijablu const person sa tipom Person
+-dodajemo metodu person.getDetails()
+-kreiramo interfejs Employee
+-interfejsu Employee dodajemo metodu extends Person
+-u interfejs Employee dodajemo tip za varijablu employeeId
+-kreiramo varijablu const employee sa tipom Employee
+-kreiramo interfejs Manager extends Person, DogOwner
+-kreiramo varijablu const manager sa tipom Manager
+-u interfejs Manager dodajemo metodu managePeople() sa tipom
+-u varijablu manager dodajemo metodu managePeople()
+-dodajemo metode manager.getDetails(), manager.getDogDetails() i managePeople.managePeople()

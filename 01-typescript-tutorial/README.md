@@ -833,7 +833,8 @@ interface DogOwner {
   getDogDetails(): string;
 }
 
-// Merging (reopening) an interface in TypeScript is a process where you declare an interface with the same name more than once, and TypeScript will merge their members.
+// Merging (reopening) an interface in TypeScript is a process where you declare an interface with the same 
+// name more than once, and TypeScript will merge their members.
 
 // Merging the interface
 interface Person {
@@ -849,7 +850,9 @@ const person: Person = {
   },
 };
 
-// Extending an interface in TypeScript is a way to create a new interface that inherits the properties and methods of an existing interface. You use the extends keyword to do this. When you extend an interface, the new interface will have all the members of the base interface, plus any new members that you add.
+// Extending an interface in TypeScript is a way to create a new interface that inherits the properties and methods 
+// of an existing interface. You use the extends keyword to do this. When you extend an interface, the new interface 
+// will have all the members of the base interface, plus any new members that you add.
 
 // Extending the interface
 interface Employee extends Person {
