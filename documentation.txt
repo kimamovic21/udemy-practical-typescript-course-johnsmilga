@@ -308,3 +308,10 @@ Section 03: Typescript Fundamentals
 -kreiramo interfejs ServerResponse
 -kreiramo funkciju getServerResponse() sa tipom ServerResponse
 -kreiramo varijablu const response sa tipom ServerResponse
+
+46. Enum - Reverse Mapping
+-u tutorial.ts fajl dodajemo metodu Object.values()
+-u metodu Object.values() dodajemo uslov if
+-u tutorial.ts fajlu kreiramo enumi NumericEnum i StringEnum
+-kreiramo varijablu let numericEnumValue sa tipom NumericEnum
+-kreiramo varijablu let stringEnumValue sa tipom StringEnum

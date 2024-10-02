@@ -1116,9 +1116,13 @@ console.log(response);
 
 ## Enums - Gotcha : Reverse Mapping
 
-In a numeric enum, TypeScript creates a reverse mapping from the numeric values to the enum member names. This means that if you assign a numeric value to an enum member, you can use that numeric value anywhere the enum type is expected.
+In a numeric enum, TypeScript creates a reverse mapping from the numeric values to the enum member names. 
+This means that if you assign a numeric value to an enum member, you can use that numeric value anywhere 
+the enum type is expected.
 
-In a string enum, TypeScript does not create a reverse mapping. This means that if you assign a string value to an enum member, you cannot use that string value anywhere the enum type is expected. You must use the enum member itself.
+In a string enum, TypeScript does not create a reverse mapping. This means that if you assign a string value 
+to an enum member, you cannot use that string value anywhere the enum type is expected. You must use the 
+enum member itself.
 
 ```ts
 enum ServerResponseStatus {
