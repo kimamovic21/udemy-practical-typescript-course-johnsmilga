@@ -302,3 +302,9 @@ Section 03: Typescript Fundamentals
 -kreiramo funkciju getPerson() sa tipovima [string, number]
 -kreiramo varijablu let randomPerson
 -kreiramo varijablu let susan koja ima tip readonly [string, number]
+
+45. Enum - Fundamentals
+-u tutorial.ts fajlu kreiramo enum ServerResponseStatus
+-kreiramo interfejs ServerResponse
+-kreiramo funkciju getServerResponse() sa tipom ServerResponse
+-kreiramo varijablu const response sa tipom ServerResponse
