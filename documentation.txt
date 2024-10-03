@@ -409,3 +409,10 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo funkciju printLength() sa parametrom str koji ima tipove string, null i undefined
 -u funkciju printLength() dodajemo uslovi if (str) - else da provjerimo da li je vrijednost truthy ili falsy
 -pozivamo funkciju printLength() sa razlicitim vrijednostima
+
+57. Type Guards - Instanceof
+-u tutorial.ts fajlu kreiramo blokove koda try - catch za Error poruku
+-kreiramo funkciju checkInput() sa parametrom input koji ima tipove Date i string
+-funkciji checkInput() dodajemo tip string
+-u funkciju checkInput() dodajemo uslov if (input instanceof Date)
+-kreiramo varijable const year i const random
