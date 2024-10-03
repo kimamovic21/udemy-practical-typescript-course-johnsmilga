@@ -333,3 +333,14 @@ Section 03: Typescript Fundamentals
 -kreiramo enum Status i tip User
 -kreiramo varijablu const statusValue
 -kreiramo varijablu const user sa tipom User
+
+49. Type - Unknown
+-kreiramo varijablu let unknownValue sa tipom unknown
+-redeklarisemo varijablu let unknownValue vise puta
+-dodajemo uslov if da provjerimo tip varijable
+-kreiramo funkciju function runSomeCode()
+-u funkciji runSomeCode() kreiramo varijablu const random
+-dodajemo uslov if (random < 0.5) - else
+-kreiramo blokove koda try - catch
+-u blok koda try dodajemo funkciju runSomeCode()
+-u blok koda catch dodajemo uslov if (error instanceof Error) - else

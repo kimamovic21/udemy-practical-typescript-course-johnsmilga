@@ -1,40 +1,32 @@
-let someValue: any = 'This is a string';
+let unknownValue: unknown;
 
-let strLength: number = (someValue as string).length;
-console.log(strLength);
+unknownValue = 'Hello World'; 
+unknownValue = [1, 2, 3]; 
+unknownValue = 42.3344556; 
 
+// unknownValue.toFixed( );
 
-type Bird = {
-  name: string;
+if (typeof unknownValue === 'number') {
+  console.log(unknownValue.toFixed(2)); 
 };
 
-let birdString = '{"name": "Eagle"}';
-let dogString = '{"breed": "Poodle"}';
-
-let birdObject = JSON.parse(birdString);
-let dogObject = JSON.parse(dogString);
-
-let bird = birdObject as Bird;
-let dog = dogObject as Bird;
-
-console.log(bird.name);
-console.log(dog.name);
-
-
-enum Status {
-  Pending = 'pending',
-  Declined = 'declined',
-}
-
-type User = {
-  name: string;
-  status: Status;
+function runSomeCode() {
+  const random = Math.random();
+  console.log(random);
+  if (random < 0.5) {
+    throw new Error('Something went wrong');
+  } else {
+    throw 'some error';
+  };
 };
 
-const statusValue = 'pending';
-
-const user: User = { 
-  name: 'john', 
-  status: statusValue as Status
+try {
+  runSomeCode();
+} catch (error) {
+  if (error instanceof Error) {
+    console.log(error.message);
+  } else {
+    console.log(error);
+    console.log('there was an error....');
+  };
 };
-console.log(user);
