@@ -359,3 +359,10 @@ Section 03: Typescript Fundamentals
 -u slucaju default kreiramo varijablu let unexprectedColor sa tipom never
 -dodajemo throw new Error()
 -pozivamo funkcije sa tri razlicite boje
+
+51. Modules - Intro
+-u tutorial.ts fajlu kreiramo varijable let name i let susan
+-kreiramo i eksportujemo varijablu let something
+-kreiramo actions.ts fajl
+-u actions.ts fajlu kreiramo varijablu const susan
+-kreiramo i eksportujemo varijablu const something
