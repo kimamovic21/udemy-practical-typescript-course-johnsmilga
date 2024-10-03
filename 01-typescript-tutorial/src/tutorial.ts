@@ -1,33 +1,12 @@
-type Dog = { type: 'dog'; name: string; bark: () => void };
-type Cat = { type: 'cat'; name: string; meow: () => void };
-type Animal = Dog | Cat;
-
-const dog: Dog = {
-  type: 'dog',
-  name: 'Rover',
-  bark: () => console.log('Woof!'),
-};
-
-const cat: Cat = {
-  type: 'cat',
-  name: 'Whiskers',
-  meow: () => console.log('Meow!'),
-};
-
-function makeSound(animal: Animal) {
-  if (animal.type === 'dog') {
-    animal.bark();
+function printLength(str: string | null | undefined) {
+  if (str) {
+    console.log(str.length);
   } else {
-    animal.meow();
-  };  
-};
-makeSound(dog);
-
-function makeSound2(animal: Animal) {
-  if ('bark' in animal) {
-    animal.bark();
-  } else {
-    animal.meow();
+    console.log('No string provided');
   };
 };
-makeSound2(cat);
+
+printLength('Hello'); 
+printLength(''); 
+printLength(null);
+printLength(undefined);

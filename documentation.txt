@@ -404,3 +404,8 @@ Section 03: Typescript Fundamentals
 -u uslov if dodajemo da li se string bark nalazi u varijabli animal
 -kreiramo varijable const dog i const cat
 -pozivamo funkcije makeSound() i makeSound2()
+
+56. Type Guards - Truthy and Falsy
+-u tutorial.ts fajlu kreiramo funkciju printLength() sa parametrom str koji ima tipove string, null i undefined
+-u funkciju printLength() dodajemo uslovi if (str) - else da provjerimo da li je vrijednost truthy ili falsy
+-pozivamo funkciju printLength() sa razlicitim vrijednostima
