@@ -427,3 +427,6 @@ Section 03: Typescript Fundamentals
 -fukciji isStudent() dodajemo metodu person is Student
 -u return izjavu dodajemo metodu (person as Student)
 -dodajemo uslov if (isStudent(person)) - else
+
+59. Type "never" Gotcha
+-u tutorial.ts fajlu kreiramo varijablu const person sa tipom Person
