@@ -443,3 +443,8 @@ Section 03: Typescript Fundamentals
 -dodajemo slucaj default
 -u slucaju default kreiramo varijablu const unexpectedAction sa tipom never
 -dodajemo metodu throw new Error()
+
+61. Generics - Intro
+-u tutorial.ts fajlu kreiramo varijable nizove let array1, let array2 i let array3
+-nizovima dodajemo tip Array<>
+-u <> dodajemo tip niza: string, number boolean

@@ -1810,9 +1810,11 @@ const newState = reducer(15, {
 
 ## Generics - Fundamentals
 
-Generics in TypeScript are a way to create reusable code components that work with a variety of types as opposed to a single one.
+Generics in TypeScript are a way to create reusable code components that work with a variety of 
+types as opposed to a single one.
 
-In other words, generics allow you to write a function or a class that can work with any data type. You can think of generics as a kind of variable for types.
+In other words, generics allow you to write a function or a class that can work with any data type. 
+You can think of generics as a kind of variable for types.
 
 ```ts
 // In TypeScript, you can declare an array using two syntaxes:
