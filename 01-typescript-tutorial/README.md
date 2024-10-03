@@ -1645,7 +1645,8 @@ console.log(random);
 
 ## Challenge - Type Predicate
 
-A type predicate is a function whose return type is a special kind of type that can be used to narrow down types within conditional blocks.
+A type predicate is a function whose return type is a special kind of type that can be used to narrow 
+down types within conditional blocks.
 
 - starter code
 
@@ -1674,10 +1675,13 @@ const person = randomPerson();
 - Define the Person and Student types. Student should have a study method and Person should have a login method.
 - Create a function named isStudent that takes a parameter person of type Person.
 - In the function signature, specify a return type that is a type predicate: person is Student.
-- In the function body, use a type assertion to treat person as a Student, and check if the study - method is not undefined. This will return true if person is a Student, and false otherwise.
+- In the function body, use a type assertion to treat person as a Student, and check if the study - method is not 
+undefined. This will return true if person is a Student, and false otherwise.
 - Use the isStudent function in an if statement with person as the argument.
-- In the if block (where isStudent(person) is true), call the study method on person. TypeScript knows that person is a Student in this block, so this is safe.
-- In the else block (where isStudent(person) is false), call the login method on person. This is safe because if person is not a Student, it must be a Person, and all Person objects have a login method.
+- In the if block (where isStudent(person) is true), call the study method on person. TypeScript knows that person 
+is a Student in this block, so this is safe.
+- In the else block (where isStudent(person) is false), call the login method on person. This is safe because if 
+person is not a Student, it must be a Person, and all Person objects have a login method.
 
 ```ts
 function isStudent(person: Person): person is Student {

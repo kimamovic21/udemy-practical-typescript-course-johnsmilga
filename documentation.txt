@@ -416,3 +416,14 @@ Section 03: Typescript Fundamentals
 -funkciji checkInput() dodajemo tip string
 -u funkciju checkInput() dodajemo uslov if (input instanceof Date)
 -kreiramo varijable const year i const random
+
+58. Type Guards - Type Predicate
+-kreiramo tip Student sa varijablom name kao string i metodom study kao void
+-kreiramo tip User sa varijablom name kao string i metodom login kao void
+-kreiramo tip Person koji sadrzi tipove Student i User
+-kreiramo funkciju randomPerson() koja ima tip Person
+-kreiramo varijablu const person
+-kreiramo funkciju function isStudent() sa parametrom person koji ima tip Person
+-fukciji isStudent() dodajemo metodu person is Student
+-u return izjavu dodajemo metodu (person as Student)
+-dodajemo uslov if (isStudent(person)) - else
