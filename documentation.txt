@@ -430,3 +430,16 @@ Section 03: Typescript Fundamentals
 
 59. Type "never" Gotcha
 -u tutorial.ts fajlu kreiramo varijablu const person sa tipom Person
+
+60. Type Guards - Discriminated Unions
+-u tutorial.ts fajlu kreiramo tipove IncrementAction i DecrementAction
+-kreiramo tip Action koji sadrzi tipove IncrementAction i DecrementAction
+-kreiramo funkciju reducer() sa parametrima state i action
+-prvi parametar state ima tip number
+-drugi parametar action ima tip Action
+-kreiramo varijablu const newState
+-u funkciju reducer() dodajemo uslov switch (action.type)
+-u uslov switch() dodajemo slucajeve increment i decrement
+-dodajemo slucaj default
+-u slucaju default kreiramo varijablu const unexpectedAction sa tipom never
+-dodajemo metodu throw new Error()
