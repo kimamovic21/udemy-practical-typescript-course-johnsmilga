@@ -366,3 +366,15 @@ Section 03: Typescript Fundamentals
 -kreiramo actions.ts fajl
 -u actions.ts fajlu kreiramo varijablu const susan
 -kreiramo i eksportujemo varijablu const something
+
+52. Modules - ES6
+-u actions.ts fajlu kreiramo i eksportujemo funkciju sayHello() sa parametrom name koji ima tip string
+-funkciji sayHello() dodajemo tip void
+-u funkciju sayHello() dodajemo komandu console.log()
+-kreiramo i eksportujemo varijablu let person
+-kreiramo i eksportujemo tip Student
+-kreiramo varijablu const newStudent koja ima tip Student
+-varijablu newStudent eksportujemo kao default
+-u tutorial.ts fajl importujemo varijable newStudent, person, funkciju sayHello i tip Student iz actions.ts fajla
+-pozivamo funkciju sayHello() sa stringom
+-kreiramo varijablu const anotherStudent koja ima tip Student

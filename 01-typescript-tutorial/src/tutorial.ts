@@ -1,5 +1,12 @@
-let name = 'shakeAdnBake';
+import newStudent, { sayHello, person, type Student } from './actions';
 
-const susan = 'susan';
+sayHello('TypeScript');
+console.log(person);
+console.log(newStudent);
 
-export let something = 'something';
+const anotherStudent: Student = {
+  name: 'bob',
+  age: 23,
+};
+
+console.log(anotherStudent);
