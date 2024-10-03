@@ -1,41 +1,24 @@
-enum ServerResponseStatus {
-  Success = 200,
-  Error = 'Error',
+enum UserRole {
+  Admin,
+  Manager,
+  Employee,
+}
+
+type User = {
+  id: number;
+  name: string;
+  role: UserRole;
+  contact: [string, string]; // Tuple
 };
 
-Object.values(ServerResponseStatus).forEach((value) => {
-  if (typeof value === 'number') {
-    console.log(value);
-  };
+function createUser(user: User): User {
+  return user;
+};
+
+const user: User = createUser({
+  id: 1,
+  name: 'John Doe',
+  role: UserRole.Admin,
+  contact: ['john.doe@example.com', '123-456-7890'],
 });
-
-enum NumericEnum {
-  Member = 1,
-}
-
-enum StringEnum {
-  Member = 'Value',
-}
-
-let numericEnumValue: NumericEnum = 1;
-console.log(numericEnumValue); 
-
-// let stringEnumValue: StringEnum = 'Value'; 
-// console.log(stringEnumValue);
-
-interface ServerResponse {
-  result: ServerResponseStatus;
-  data: string[];
-};
-
-function getServerResponse(): ServerResponse {
-  return {
-    // result: 200,
-    // result: 'Success',
-    result: ServerResponseStatus.Success,
-    data: ['first item', 'second item'],
-  };
-};
-
-const response: ServerResponse = getServerResponse();
-console.log(response);
+console.log(user);

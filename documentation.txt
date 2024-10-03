@@ -315,3 +315,9 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo enumi NumericEnum i StringEnum
 -kreiramo varijablu let numericEnumValue sa tipom NumericEnum
 -kreiramo varijablu let stringEnumValue sa tipom StringEnum
+
+47. Challenge - Tuple and Enum
+-u tutorial.ts fajlu kreiramo enum UserRole i tip User
+-kreiramo funkciju createUser() sa parametrom user koji ima tip User
+-funkciji User dodajemo tip User
+-kreiramo varijablu const user sa tipom User
