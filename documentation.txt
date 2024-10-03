@@ -393,3 +393,14 @@ Section 03: Typescript Fundamentals
 -funkciji checkValue() dodajemo tip void
 -u funkciju checkValue() dodajemo uslove if u kojima provjeravamo tipove varijabli
 -pozivamo funkciju checkValue()
+
+55. Type Guards - Equality and "in"
+-u tutorial.ts fajlu kreiramo tipove Dog, Cat i Animal
+-kreiramo funkciju makeSound() sa parametrom animal koji ima tip Animal
+-u funkciju makeSound() dodajemo uslov if - else da provjerimo tip zivotinje
+-u uslov if dodajemo ===
+-kreiramo funkciju makeSound2() sa parametrom animal koji ima tip Animal
+-u funkciju makeSound2() dodajemo uslov if - else da provjerimo tip zivotinje
+-u uslov if dodajemo da li se string bark nalazi u varijabli animal
+-kreiramo varijable const dog i const cat
+-pozivamo funkcije makeSound() i makeSound2()

@@ -1,20 +1,33 @@
-type ValueType = string | number | boolean;
+type Dog = { type: 'dog'; name: string; bark: () => void };
+type Cat = { type: 'cat'; name: string; meow: () => void };
+type Animal = Dog | Cat;
 
-let value: ValueType;
-const random = Math.random();
-value = random < 0.33 ? 'Hello' : random < 0.66 ? 123.456 : true;
-console.log(value);
-
-function checkValue(value: ValueType) {
-  if (typeof value === 'string') {
-    console.log(value.toLowerCase());
-    return;
-  }
-  if (typeof value === 'number') {
-    console.log(value.toFixed(2));
-    return;
-  };
-  console.log(`boolean: ${value}`);
+const dog: Dog = {
+  type: 'dog',
+  name: 'Rover',
+  bark: () => console.log('Woof!'),
 };
 
-checkValue(value);
+const cat: Cat = {
+  type: 'cat',
+  name: 'Whiskers',
+  meow: () => console.log('Meow!'),
+};
+
+function makeSound(animal: Animal) {
+  if (animal.type === 'dog') {
+    animal.bark();
+  } else {
+    animal.meow();
+  };  
+};
+makeSound(dog);
+
+function makeSound2(animal: Animal) {
+  if ('bark' in animal) {
+    animal.bark();
+  } else {
+    animal.meow();
+  };
+};
+makeSound2(cat);

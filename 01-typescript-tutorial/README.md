@@ -1512,9 +1512,12 @@ type Animal = Dog | Cat;
 
 - Define a function named makeSound that takes one parameter animal of type Animal.
 - Inside the function, use an if statement to check if animal.type is 'dog'.
-- If animal.type is 'dog', TypeScript knows that animal is a Dog in this block. In this case, call the bark method of animal.
-- If animal.type is not 'dog', TypeScript knows that animal is a Cat in the else block. In this case, call the meow method of animal.
-- Now you can call the makeSound function with an Animal as the argument. The function will call the appropriate method (bark or meow) depending on the type of the animal.
+- If animal.type is 'dog', TypeScript knows that animal is a Dog in this block. In this case, 
+call the bark method of animal.
+- If animal.type is not 'dog', TypeScript knows that animal is a Cat in the else block. In this 
+case, call the meow method of animal.
+- Now you can call the makeSound function with an Animal as the argument. The function will 
+call the appropriate method (bark or meow) depending on the type of the animal.
 
 ```ts
 function makeSound(animal: Animal) {
@@ -1530,7 +1533,9 @@ function makeSound(animal: Animal) {
 
 ## Challenge - check for property
 
-The "in" operator in TypeScript is used to narrow down the type of a variable when used in a conditional statement.It checks if a property or method exists on an object. If it exists, TypeScript will narrow the type to the one that has this property.
+The "in" operator in TypeScript is used to narrow down the type of a variable when used in a conditional 
+statement. It checks if a property or method exists on an object. If it exists, TypeScript will narrow the 
+type to the one that has this property.
 
 - starter code
 
@@ -1541,13 +1546,17 @@ type Animal = Dog | Cat;
 ```
 
 - Define a function named makeSound that takes one parameter animal of type Animal.
-- Inside the function, use an if statement with the in operator to check if the bark method exists on the animal object.
-- If the bark method exists on animal, TypeScript knows that animal is a Dog in this block. In this case, call the bark method of animal.
-- If the bark method does not exist on animal, TypeScript knows that animal is a Cat in the else block. In this case, call the meow method of animal.
-- Now you can call the makeSound function with an Animal as the argument. The function will call the appropriate method (bark or meow) depending on the type of the animal.
+- Inside the function, use an if statement with the in operator to check if the bark method exists on 
+the animal object.
+- If the bark method exists on animal, TypeScript knows that animal is a Dog in this block. In this 
+case, call the bark method of animal.
+- If the bark method does not exist on animal, TypeScript knows that animal is a Cat in the else block. 
+In this case, call the meow method of animal.
+- Now you can call the makeSound function with an Animal as the argument. The function will call the 
+appropriate method (bark or meow) depending on the type of the animal.
 
 ```ts
-function makeSound(animal: Animal) {
+function makeSound2(animal: Animal) {
   if ('bark' in animal) {
     // TypeScript knows that `animal` is a Dog in this block
     animal.bark();
