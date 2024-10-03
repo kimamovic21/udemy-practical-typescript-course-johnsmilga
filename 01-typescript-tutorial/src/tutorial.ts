@@ -1,32 +1,43 @@
-let unknownValue: unknown;
+// let someValue: never = 0;
+// console.log(someValue);
 
-unknownValue = 'Hello World'; 
-unknownValue = [1, 2, 3]; 
-unknownValue = 42.3344556; 
+type Theme = 'light' | 'dark';
 
-// unknownValue.toFixed( );
+function checkTheme(theme: Theme) {
+  if (theme === 'light') {
+    console.log('light theme');
+    return;
+  };
+  if (theme === 'dark') {
+    console.log('dark theme');
+    return;
+  };
+  theme;
+};
+checkTheme('dark');
+checkTheme('light');
 
-if (typeof unknownValue === 'number') {
-  console.log(unknownValue.toFixed(2)); 
+
+enum Color {
+  Red,
+  Blue,
+  Green,
 };
 
-function runSomeCode() {
-  const random = Math.random();
-  console.log(random);
-  if (random < 0.5) {
-    throw new Error('Something went wrong');
-  } else {
-    throw 'some error';
+function getColorName(color: Color) {
+  switch (color) {
+    case Color.Red:
+      return 'Red';
+    case Color.Blue:
+      return 'Blue';
+    case Color.Green:
+      return 'Green';
+    default:
+      let unexpectedColor: never = color;
+      throw new Error(`Unexpected color value: ${unexpectedColor}`);
   };
 };
 
-try {
-  runSomeCode();
-} catch (error) {
-  if (error instanceof Error) {
-    console.log(error.message);
-  } else {
-    console.log(error);
-    console.log('there was an error....');
-  };
-};
+console.log(getColorName(Color.Red));
+console.log(getColorName(Color.Blue)); 
+console.log(getColorName(Color.Green)); 

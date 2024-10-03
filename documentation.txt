@@ -344,3 +344,18 @@ Section 03: Typescript Fundamentals
 -kreiramo blokove koda try - catch
 -u blok koda try dodajemo funkciju runSomeCode()
 -u blok koda catch dodajemo uslov if (error instanceof Error) - else
+
+50. Type - never
+-kreiramo varijablu let someValue
+-kreiramo tip Theme
+-kreiramo funkciju checkTheme() sa parametrom theme koji ima tip Theme
+-funkciji checkTheme() dodajemo tip void
+-u fukciju checkTheme() dodajemo uslove if u kojima provjeravamo da li je varijabla jednaka vrijednosti dark ili theme
+-kreiramo enum Color
+-kreiramo funkciju getColorName() sa parametrom color koji ima tip Color
+-u funkciju getColorName() dodajemo uslov switch (color)
+-u uslov switch (color) dodajemo slucajeve za Color.Red i Color.Blue
+-dodajemo slucaj default
+-u slucaju default kreiramo varijablu let unexprectedColor sa tipom never
+-dodajemo throw new Error()
+-pozivamo funkcije sa tri razlicite boje

@@ -1314,8 +1314,9 @@ try {
 
 ## Type - "never"
 
-In TypeScript, never is a type that represents the type of values that never occur.you can't assign any value to a variable of type never.
-TypeScript will give a compile error if there are any unhandled cases, helping ensure that all cases are handled.
+In TypeScript, never is a type that represents the type of values that never occur. You can't assign 
+any value to a variable of type never. TypeScript will give a compile error if there are any unhandled 
+cases, helping ensure that all cases are handled.
 
 ```ts
 // let someValue: never = 0;
