@@ -1,14 +1,20 @@
-import newStudent, { sayHello, person, type Student } from './actions';
-import { someValue } from './example';
+type ValueType = string | number | boolean;
 
-sayHello('TypeScript');
-console.log(person);
-console.log(newStudent);
-console.log(someValue);
+let value: ValueType;
+const random = Math.random();
+value = random < 0.33 ? 'Hello' : random < 0.66 ? 123.456 : true;
+console.log(value);
 
-const anotherStudent: Student = {
-  name: 'bob',
-  age: 23,
+function checkValue(value: ValueType) {
+  if (typeof value === 'string') {
+    console.log(value.toLowerCase());
+    return;
+  }
+  if (typeof value === 'number') {
+    console.log(value.toFixed(2));
+    return;
+  };
+  console.log(`boolean: ${value}`);
 };
 
-console.log(anotherStudent);
+checkValue(value);

@@ -383,3 +383,13 @@ Section 03: Typescript Fundamentals
 -kreiramo example.ts fajl 
 -u example.ts fajlu kreiramo i eksportujemo varijablu let someValue
 -u tutorial.ts fajl importujemo varijablu someValue
+
+54. Type Guards - Typeof
+-u tutorial.ts fajlu kreiramo tip ValueType
+-kreiramo varijablu let value sa tipom ValueType
+-kreiramo varijablu const random
+-redeklarisemo varijablu value
+-kreiramo funkciju checkValue() sa parametrom value koji ima tip ValueType
+-funkciji checkValue() dodajemo tip void
+-u funkciju checkValue() dodajemo uslove if u kojima provjeravamo tipove varijabli
+-pozivamo funkciju checkValue()
