@@ -378,3 +378,8 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajl importujemo varijable newStudent, person, funkciju sayHello i tip Student iz actions.ts fajla
 -pozivamo funkciju sayHello() sa stringom
 -kreiramo varijablu const anotherStudent koja ima tip Student
+
+53. Modules - JS File
+-kreiramo example.ts fajl 
+-u example.ts fajlu kreiramo i eksportujemo varijablu let someValue
+-u tutorial.ts fajl importujemo varijablu someValue
