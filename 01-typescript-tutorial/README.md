@@ -1222,7 +1222,8 @@ console.log(user);
 
 ## Type Assertion
 
-Type assertion in TypeScript is a way to tell the compiler what the type of an existing variable is. This is especially useful when you know more about the type of a variable than TypeScript does.
+Type assertion in TypeScript is a way to tell the compiler what the type of an existing variable is. 
+This is especially useful when you know more about the type of a variable than TypeScript does.
 
 ```ts
 let someValue: any = 'This is a string';

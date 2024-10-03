@@ -1,24 +1,40 @@
-enum UserRole {
-  Admin,
-  Manager,
-  Employee,
+let someValue: any = 'This is a string';
+
+let strLength: number = (someValue as string).length;
+console.log(strLength);
+
+
+type Bird = {
+  name: string;
+};
+
+let birdString = '{"name": "Eagle"}';
+let dogString = '{"breed": "Poodle"}';
+
+let birdObject = JSON.parse(birdString);
+let dogObject = JSON.parse(dogString);
+
+let bird = birdObject as Bird;
+let dog = dogObject as Bird;
+
+console.log(bird.name);
+console.log(dog.name);
+
+
+enum Status {
+  Pending = 'pending',
+  Declined = 'declined',
 }
 
 type User = {
-  id: number;
   name: string;
-  role: UserRole;
-  contact: [string, string]; // Tuple
+  status: Status;
 };
 
-function createUser(user: User): User {
-  return user;
-};
+const statusValue = 'pending';
 
-const user: User = createUser({
-  id: 1,
-  name: 'John Doe',
-  role: UserRole.Admin,
-  contact: ['john.doe@example.com', '123-456-7890'],
-});
+const user: User = { 
+  name: 'john', 
+  status: statusValue as Status
+};
 console.log(user);

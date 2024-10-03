@@ -321,3 +321,15 @@ Section 03: Typescript Fundamentals
 -kreiramo funkciju createUser() sa parametrom user koji ima tip User
 -funkciji User dodajemo tip User
 -kreiramo varijablu const user sa tipom User
+
+48. Type Assertion
+-kreiramo varijablu let someValue sa tipom any
+-dodajemo metodu (someValue as string).length
+-vrijednost metode (someValue as string).length pohranjujemo u varijablu let strLength koja ima tip number
+-kreiramo tip Bird
+-kreiramo varijable let birdString i dogString
+-kreiramo varijable let birdObject i let let dogObject
+-kreiramo varijable let bird i let dog
+-kreiramo enum Status i tip User
+-kreiramo varijablu const statusValue
+-kreiramo varijablu const user sa tipom User
