@@ -510,3 +510,10 @@ Section 03: Typescript Fundamentals
 -vrijednost funkcije await fetchData() pohranjujemo u varijablu const tours
 -dodajemo metodu tours.map() sa parametrom tour
 -parametru tour dodajemo tip any
+
+70. Fetch Data - Setup Type
+-u tutorial.ts fajlu kreiramo tip Tour sa vrijednostima id, name, info, image i price
+-vrijednostima dodajemo tipove
+-funkciji fetchData() dodajemo tip Promise<Tour[]>
+-varijabli const data dodajemo tip Tour[]
+-parametru tour u metodi map() brisemo tip any
