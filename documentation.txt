@@ -472,3 +472,10 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablu let result sa tipom T[]
 -redeklarisemo varijablu result
 -kreiramo varijable let arrayStrings i let arrayNumbers
+
+65. Generics - Multiple Types
+-u tutorial.ts fajlu kreiramo funkciju pair<T, U>() sa prametrima param1 i param2
+-prvom parametru param1 dodajemo tip T
+-drugom parametru param2 dodajemo tip U
+-funkciji pair() dodajemo tip [T, U]
+-kreiramo varijablu let result
