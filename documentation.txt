@@ -495,3 +495,18 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo interfejs StoreData<T>
 -kreiramo varijablu const storeNumbers sa tipom StoreData<number>
 -kreiramo varijablu const randomStuff sa tipom StoreData
+
+69. Fetch Data - Basics
+-kreiramo varijablu const url
+-kreiramo asinhronu funkciju fetchData() sa parametrom url koji ima tip string
+-u funkciji fetchData() kreiramo blokove koda try - catch
+-u bloku koda try kreiramo varijablu const response
+-dodajemo uslov if(!response.ok)
+-u uslov if dodajemo throw new Error()
+-kreiramo varijablu const data
+-dodajemo izjavu return data
+-u bloku koda catch kreiramo varijablu const errorMsg
+-pozivamo funkciju fetchData() sa argumentom
+-vrijednost funkcije await fetchData() pohranjujemo u varijablu const tours
+-dodajemo metodu tours.map() sa parametrom tour
+-parametru tour dodajemo tip any
