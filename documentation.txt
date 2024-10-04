@@ -455,3 +455,7 @@ Section 03: Typescript Fundamentals
 -kreiramo varijable const someStringValue i someNumberValue
 -kreiramo interfejs GenericInterface<T>
 -kreiramo varijablu const genericString sa tipom GenericInterface<string>
+
+63. Generics - Promise Example
+-kreiramo funkciju someFunc() sa tipom Promise<string>
+-kreiramo varijablu const result

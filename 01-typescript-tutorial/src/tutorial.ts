@@ -20,3 +20,10 @@ const genericString: GenericInterface<string> = {
   },
 };
 console.log(genericString);
+
+async function someFunc(): Promise<string> {
+  return 'Hello World';
+};
+
+const result = someFunc();
+console.log(result);
