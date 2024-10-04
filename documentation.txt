@@ -479,3 +479,8 @@ Section 03: Typescript Fundamentals
 -drugom parametru param2 dodajemo tip U
 -funkciji pair() dodajemo tip [T, U]
 -kreiramo varijablu let result
+
+66. Generics - Type Constraints
+-u tutorial.ts fajlu kreiramo funkciju processValue<T extends string>() sa parametrom value
+-parametru value i funkciji processValue() dodajemo tipove T
+-pozivamo funkciju sa argumentima vise puta

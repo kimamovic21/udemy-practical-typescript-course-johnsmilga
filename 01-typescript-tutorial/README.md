@@ -1929,6 +1929,7 @@ let result = pair(123, 'Hello');
 
 function processValue<T extends number | string>(value: T): T {
   console.log(value);
+  return value;
 }
 
 processValue('hello');
