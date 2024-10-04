@@ -484,3 +484,9 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo funkciju processValue<T extends string>() sa parametrom value
 -parametru value i funkciji processValue() dodajemo tipove T
 -pozivamo funkciju sa argumentima vise puta
+
+67. Generics - Type Constraints Second Example
+-kreiramo vise tipova i varijabli kojima dodajemo tipove
+-kreiramo funkciju printName<T extends Student> sa parametrom input koji ima tip T
+-funkciji printName() dodajemo tip void
+-pozivamo funkciju printName() vise puta sa argumentima

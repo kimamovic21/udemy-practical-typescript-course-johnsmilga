@@ -1,16 +1,37 @@
-function pair<T, U>(param1: T, param2: U): [T, U] {
-  return [param1, param2];
+type Car = {
+  brand: string;
+  model: string;
 };
 
-let result = pair<number, string>(123, 'Hello');
-console.log(result);
-
-
-function processValue<T extends number | string>(value: T): T {
-  console.log(value);
-  return value;
+const car: Car = {
+  brand: 'ford',
+  model: 'mustang',
 };
 
-processValue('hello');
-processValue(12);
-// processValue(true);
+type Product = {
+  name: string;
+  price: number;
+};
+
+const product: Product = {
+  name: 'shoes',
+  price: 1.99,
+};
+
+type Student = {
+  name: string;
+  age: number;
+};
+
+const student: Student = {
+  name: 'peter',
+  age: 20,
+};
+
+function printName<T extends { name: string }>(input: T): void {
+  console.log(input.name);
+};
+
+printName(student);
+printName(product);
+printName(car);

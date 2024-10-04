@@ -1970,7 +1970,9 @@ const student: Student = {
   age: 20,
 };
 
-// T extends Student is a type constraint on the generic type T. It means that the type T can be any type, but it must be a subtype of Student or Student itself. In other words, T must have at least the same properties and methods that Student has.
+// T extends Student is a type constraint on the generic type T. It means that the type T can be any type, 
+// but it must be a subtype of Student or Student itself. In other words, T must have at least the same 
+// properties and methods that Student has.
 
 // function printName<T extends Student>(input: T): void {
 //   console.log(input.name);
@@ -1984,8 +1986,10 @@ const student: Student = {
 
 // printName(product);
 
-// The extends { name: string } part is a type constraint on T. It means that T can be any type, but it must be an object that has at least a name property of type string.
-// In other words, T must have at least the same properties and methods that { name: string } has.
+// The extends { name: string } part is a type constraint on T. It means that T can be any type, but it must be 
+// an object that has at least a name property of type string. In other words, T must have at least the same 
+//properties and methods that { name: string } has.
+
 function printName<T extends { name: string }>(input: T): void {
   console.log(input.name);
 }
