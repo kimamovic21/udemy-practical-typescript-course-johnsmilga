@@ -459,3 +459,16 @@ Section 03: Typescript Fundamentals
 63. Generics - Promise Example
 -kreiramo funkciju someFunc() sa tipom Promise<string>
 -kreiramo varijablu const result
+
+64. Generics - Create Array
+-u tutorial.ts fajlu kreiramo funkciju generateStringArray() sa dva parametra length i value
+-parametrima i funkciji generateStringArray() dodajemo tipove
+-u funkciji generateStringArray() kreiramo varijablu let result sa tipom string[]
+-redeklarisemo varijablu result
+-kreiramo funkciju createArray<T>() sa parametrime length i value
+-prvom parametru length dodajemo tip number
+-drugom parametru value dodajemo tip T
+-funkciji createArray<T>() dodajemo tip Array<T>
+-kreiramo varijablu let result sa tipom T[]
+-redeklarisemo varijablu result
+-kreiramo varijable let arrayStrings i let arrayNumbers
