@@ -448,3 +448,10 @@ Section 03: Typescript Fundamentals
 -u tutorial.ts fajlu kreiramo varijable nizove let array1, let array2 i let array3
 -nizovima dodajemo tip Array<>
 -u <> dodajemo tip niza: string, number boolean
+
+62. Generics - First Function and Interface
+-u tutorial.ts fajlu kreiramo funkciju genericFunction<T>() sa parametrom arg
+-funkciji genericFunction() i parametru dodajemo tip T
+-kreiramo varijable const someStringValue i someNumberValue
+-kreiramo interfejs GenericInterface<T>
+-kreiramo varijablu const genericString sa tipom GenericInterface<string>
