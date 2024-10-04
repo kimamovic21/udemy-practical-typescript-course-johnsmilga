@@ -490,3 +490,8 @@ Section 03: Typescript Fundamentals
 -kreiramo funkciju printName<T extends Student> sa parametrom input koji ima tip T
 -funkciji printName() dodajemo tip void
 -pozivamo funkciju printName() vise puta sa argumentima
+
+68. Generics - Default Type
+-u tutorial.ts fajlu kreiramo interfejs StoreData<T>
+-kreiramo varijablu const storeNumbers sa tipom StoreData<number>
+-kreiramo varijablu const randomStuff sa tipom StoreData

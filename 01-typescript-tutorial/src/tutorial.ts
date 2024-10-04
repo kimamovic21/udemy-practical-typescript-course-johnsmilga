@@ -1,37 +1,13 @@
-type Car = {
-  brand: string;
-  model: string;
+interface StoreData<T = any> {
+  data: T[];
 };
 
-const car: Car = {
-  brand: 'ford',
-  model: 'mustang',
+const storeNumbers: StoreData<number> = {
+  data: [1, 2, 3, 4],
 };
+console.log(storeNumbers);
 
-type Product = {
-  name: string;
-  price: number;
+const randomStuff: StoreData = {
+  data: ['random', 1],
 };
-
-const product: Product = {
-  name: 'shoes',
-  price: 1.99,
-};
-
-type Student = {
-  name: string;
-  age: number;
-};
-
-const student: Student = {
-  name: 'peter',
-  age: 20,
-};
-
-function printName<T extends { name: string }>(input: T): void {
-  console.log(input.name);
-};
-
-printName(student);
-printName(product);
-printName(car);
+console.log(randomStuff);
