@@ -517,3 +517,6 @@ Section 03: Typescript Fundamentals
 -funkciji fetchData() dodajemo tip Promise<Tour[]>
 -varijabli const data dodajemo tip Tour[]
 -parametru tour u metodi map() brisemo tip any
+
+71. Fetch Data - Gotcha
+-u tutorial.ts fajlu, u tip Tour dodajemo vrijednost something 
