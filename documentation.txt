@@ -537,3 +537,6 @@ Section 03: Typescript Fundamentals
 73. Declaration Files
 -kreiramo types.ts fajl 
 -u types.ts fajlu kreiramo i eksportujemo tip Random
+
+74. TS Config
+-u tutorial.ts fajlu kreiramo varijablu let something
