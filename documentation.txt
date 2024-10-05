@@ -649,3 +649,9 @@ Section 03: Typescript Fundamentals
 -drugi argument je anonimna funkcija
 -u anonimnu funkciju dodajemo metodu task.isCompleted
 -dodajemo funkciju updateStorage()
+
+
+Section 04: Typescript and React
+
+91. Setup
+-u terminalu instaliramo Vite React.js aplikaciju sa komandom npm create vite@latest
