@@ -608,3 +608,8 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablu const taskDescription
 -dodajemo uslov if (taskDescription)
 -u uslov if dodajemo formInput.value
+
+86. Tasks Project - Event Gotcha
+-kreiramo funkciju createTask() sa parametrom event
+-parametru event dodajemo tip SubmitEvent
+-u funkciju addEventListener() proslijedujemo funkciju createTask() kao drugi argument
