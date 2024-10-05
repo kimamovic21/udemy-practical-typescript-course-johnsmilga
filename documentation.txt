@@ -628,3 +628,13 @@ Section 03: Typescript Fundamentals
 -varijabli taskElement dodajemo metodu textContent
 -varijabli taskListElement dodajemo metodu appendChild(taskElement)
 -u funkciju addEventListener() dodajemo funkciju renderTask(task)
+
+89. Tasks Project - Local Storage
+-kreiramo funkciju updateStorage() koja ima tip void
+-u funkciju updateStorage() dodajemo metodu localStorage.setItem()
+-u funkciju addEventListener() dodajemo funkciju updateStorage()
+-kreiramo funkciju loadTasks() koja ima tip Task[]
+-u funkciji loadTasks() kreiramo varijablu const storedTasks
+-dodajemo return izjavu gdje provjeravamo da li imamo taskove
+-vrijednost funkcije loadTasks() pohranjujemo u varijablu const tasks
+-dodajemo metodu tasks.forEach(renderTask)
