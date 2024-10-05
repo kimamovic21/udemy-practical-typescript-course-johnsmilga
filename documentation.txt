@@ -599,3 +599,12 @@ Section 03: Typescript Fundamentals
 -u metodu querySelector() dodajemo opciju <HTMLFormElement>
 -kreiramo tip Task
 -kreiramo varijablu const tasks sa tipom Task[]
+
+85. Tasks Project - Submit Event
+-varijabli taskForm dodajemo funkciju addEventListener()
+-prvi argument funkcije addEventListener je dogadaj submit
+-drugi argument je anonimna funkcija sa parametrom event
+-u anonimnu funkciju dodajemo metodu event.preventDefault()
+-kreiramo varijablu const taskDescription
+-dodajemo uslov if (taskDescription)
+-u uslov if dodajemo formInput.value
