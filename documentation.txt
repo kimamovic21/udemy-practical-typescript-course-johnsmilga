@@ -655,3 +655,9 @@ Section 04: Typescript and React
 
 91. Setup
 -u terminalu instaliramo Vite React.js aplikaciju sa komandom npm create vite@latest
+
+92. Files and Folders
+-u README.md fajl dodajemo uputstvo za izradu projekta
+-u folderu src kreiramo folder starter
+-u index.css fajl dodajemo CSS stil
+-obrisemo App.css fajl
