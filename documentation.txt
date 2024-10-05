@@ -549,3 +549,7 @@ Section 03: Typescript Fundamentals
 -varijablama title i author dodajemo tipove string
 -pozivamo metodu new Book() sa dva argumenta
 -vrijednost metode new Book() pohranjujemo u varijablu const deepWork
+
+76. Classes - Default Property
+-u tutorial.ts fajlu dodajemo varijablu checkedOut sa tipom boolean
+-varijabli deepWork dodajemo metodu checkedOut

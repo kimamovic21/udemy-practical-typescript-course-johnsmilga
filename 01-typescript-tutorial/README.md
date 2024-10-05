@@ -2267,7 +2267,8 @@ const deepWork = new Book('deep work ', 'cal newport');
 
 ## Classes - Instance Property / Default Property
 
-The checkedOut property in Book class is an instance property (or member variable). It's not specifically set in the constructor, so it could also be referred to as a default property or a property with a default value.
+The checkedOut property in Book class is an instance property (or member variable). It's not specifically set 
+in the constructor, so it could also be referred to as a default property or a property with a default value.
 
 ```ts
 class Book {
