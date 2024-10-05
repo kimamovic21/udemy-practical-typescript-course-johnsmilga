@@ -2382,9 +2382,13 @@ console.log(deepWork.checkOut);
 
 ## Classes - Implement Interface
 
-In TypeScript, an interface is a way to define a contract for a certain structure of an object. This contract can then be used by a class to ensure it adheres to the structure defined by the interface.
+In TypeScript, an interface is a way to define a contract for a certain structure of an object. 
+This contract can then be used by a class to ensure it adheres to the structure defined by the 
+interface.
 
-When a class implements an interface, it is essentially promising that it will provide all the properties and methods defined in the interface. If it does not, TypeScript will throw an error at compile time.
+When a class implements an interface, it is essentially promising that it will provide all the 
+properties and methods defined in the interface. If it does not, TypeScript will throw an error 
+at compile time.
 
 ```ts
 interface IPerson {

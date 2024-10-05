@@ -572,3 +572,13 @@ Section 03: Typescript Fundamentals
 -kreiramo metodu set checkOut() sa parametrom checkedOut koji ima tip boolean
 -kreiramo metodu get checkOut()
 -kreiramo metodu public get someInfo()
+
+81. Classes - Implement Interface
+-u tutorial.ts fajlu kreiramo interfejs IPerson
+-kreiramo klasu Person implements IPerson
+-u klasi Person kreiramo funkciju constructor() sa parametrima name i age
+-parametrima dodajemo tipove string i number
+-kreiramo metodu greet() sa tipom void
+-pozivamo metodu new Person() sa dva argumenta
+-vrijednost metode new Person() pohranjujemo u varijablu const hipster
+-varijabli hipster dodajemo metodu greet()
