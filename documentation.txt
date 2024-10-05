@@ -533,3 +533,7 @@ Section 03: Typescript Fundamentals
 -kreiramo varijablu const result
 -dodajemo uslov if (!result.success)
 -dodajemo izjevu return result.data
+
+73. Declaration Files
+-kreiramo types.ts fajl 
+-u types.ts fajlu kreiramo i eksportujemo tip Random
