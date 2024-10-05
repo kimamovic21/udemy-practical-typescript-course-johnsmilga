@@ -1,5 +1,5 @@
 class Book {
-  title: string;
+  readonly title: string;
   author: string;
   checkedOut: boolean = false;
   constructor(title: string, author: string) {
@@ -11,4 +11,5 @@ class Book {
 const deepWork = new Book('deep work ', 'cal newport');
 deepWork.checkedOut = true;
 // deepWork.checkedOut = 'something else';
+deepWork.title = 'something else';
 console.log(deepWork);

@@ -553,3 +553,6 @@ Section 03: Typescript Fundamentals
 76. Classes - Default Property
 -u tutorial.ts fajlu dodajemo varijablu checkedOut sa tipom boolean
 -varijabli deepWork dodajemo metodu checkedOut
+
+77. Classes - Readonly Modifier
+-u tutorial.ts fajlu, u klasi Book dodajemo varijabli title opciju readonly
