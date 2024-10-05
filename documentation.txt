@@ -556,3 +556,9 @@ Section 03: Typescript Fundamentals
 
 77. Classes - Readonly Modifier
 -u tutorial.ts fajlu, u klasi Book dodajemo varijabli title opciju readonly
+
+78. Classes - Public and Private Modifiers
+-u tutorial.ts fajlu, u klasi Book varijablama title i author dodajemo opciju public
+-varijabli checkedOut dodajemo opciju private
+-kreiramo public metode checkOut() i isCheckedOut()
+-kreiramo private metodu toggleCheckedOutStatus()
