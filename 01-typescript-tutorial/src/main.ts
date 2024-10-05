@@ -13,6 +13,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
     <h1>Vite + TypeScript</h1>
+    <a href="/tasks" target="_blank">
+      Tasks App
+    </a>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>

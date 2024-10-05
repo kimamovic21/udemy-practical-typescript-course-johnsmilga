@@ -582,3 +582,9 @@ Section 03: Typescript Fundamentals
 -pozivamo metodu new Person() sa dva argumenta
 -vrijednost metode new Person() pohranjujemo u varijablu const hipster
 -varijabli hipster dodajemo metodu greet()
+
+82. Tasks Project - Setup
+-kreiramo tasks.html fajl i HTML struktura
+-u main.ts fajl dodajemo HTML element <a> za navigaciju na Tasks App
+-kreiramo fajlove tasks.ts i tasks.css 
+-u tasks.css fajl dodajemo CSS stil
