@@ -593,3 +593,9 @@ Section 03: Typescript Fundamentals
 -u tasks.ts fajlu kreiramo varijablu const btn
 -varijabli btn dodajemo metodu document.querySelector()
 -varijabla btn dodajemo metodu addEventListener()
+
+84. Tasks Project - Select Elements
+-u tasks.ts fajlu kreiramo tri varijable: const taskForm, const formInput i const taskListElement
+-u metodu querySelector() dodajemo opciju <HTMLFormElement>
+-kreiramo tip Task
+-kreiramo varijablu const tasks sa tipom Task[]

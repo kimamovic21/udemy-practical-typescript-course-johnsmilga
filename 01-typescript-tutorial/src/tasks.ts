@@ -1,8 +1,10 @@
-// const btn = document.querySelector<HTMLButtonElement>('.selector')!;
-// btn.disabled = true;
+const taskForm = document.querySelector<HTMLFormElement>('.form');
+const formInput = document.querySelector<HTMLInputElement>('.form-input');
+const taskListElement = document.querySelector<HTMLUListElement>('.list');
 
-const btn = document?.querySelector('.btn')! as HTMLButtonElement;
+type Task = {
+  description: string;
+  isCompleted: boolean;
+};
 
-btn.addEventListener('click', () => {
-    console.log('test btn');
-});
+const tasks: Task[] = [];
