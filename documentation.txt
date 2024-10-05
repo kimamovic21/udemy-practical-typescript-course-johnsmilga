@@ -520,3 +520,16 @@ Section 03: Typescript Fundamentals
 
 71. Fetch Data - Gotcha
 -u tutorial.ts fajlu, u tip Tour dodajemo vrijednost something 
+
+72. Zod Library
+-otvorimo web stranicu https://zod.dev/
+-u terminalu instaliramo paket Zod sa komandom npm i zod
+-u tutorial.ts fajl importujemo instancu z iz paketa zod
+-kreiramo metodu z.object({ ... })
+-u objektu dodajemo tipove za varijable
+-dodajemo metodu z.infer<>
+-vrijednost metode z.infer<> pohranjujemo u tip Tour
+-u funkciji fetchData() preimenujemo varijablu const data u rawData
+-kreiramo varijablu const result
+-dodajemo uslov if (!result.success)
+-dodajemo izjevu return result.data
