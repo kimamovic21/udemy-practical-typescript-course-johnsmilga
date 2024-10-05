@@ -18,7 +18,8 @@ taskForm?.addEventListener('submit', (event) => {
       isCompleted: false,
     };
     addTask(task);
-
+    renderTask(task);
+    
     formInput.value = '';
     return;
   };
@@ -28,4 +29,10 @@ taskForm?.addEventListener('submit', (event) => {
 function addTask(task: Task): void {
   tasks.push(task);
   console.log(tasks);
+};
+
+function renderTask(task: Task): void {
+  const taskElement = document.createElement('li');
+  taskElement.textContent = task.description;
+  taskListElement?.appendChild(taskElement);
 };

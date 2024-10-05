@@ -620,3 +620,11 @@ Section 03: Typescript Fundamentals
 -u funkciju addTask() dodajemo metodu tasks.push(task)
 -u uslovu if (taskDescription) kreiramo varijablu const task koja ima tip Task
 -pozivamo funkciju addTask(task)
+
+88. Tasks Project - Render Task
+-kreiramo funkciju renderTask() sa parametrom task koji ima tip Task
+-funkciji renderTask() dodajemo tip void
+-u funkciji renderTask() kreiramo varijablu const taskElement
+-varijabli taskElement dodajemo metodu textContent
+-varijabli taskListElement dodajemo metodu appendChild(taskElement)
+-u funkciju addEventListener() dodajemo funkciju renderTask(task)
