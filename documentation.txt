@@ -588,3 +588,8 @@ Section 03: Typescript Fundamentals
 -u main.ts fajl dodajemo HTML element <a> za navigaciju na Tasks App
 -kreiramo fajlove tasks.ts i tasks.css 
 -u tasks.css fajl dodajemo CSS stil
+
+83. Tasks Project - Useful Info
+-u tasks.ts fajlu kreiramo varijablu const btn
+-varijabli btn dodajemo metodu document.querySelector()
+-varijabla btn dodajemo metodu addEventListener()
