@@ -638,3 +638,14 @@ Section 03: Typescript Fundamentals
 -dodajemo return izjavu gdje provjeravamo da li imamo taskove
 -vrijednost funkcije loadTasks() pohranjujemo u varijablu const tasks
 -dodajemo metodu tasks.forEach(renderTask)
+
+90. Tasks Project - Checkbox
+-u funkciji renderTask() kreiramo varijabla const taskCheckbox
+-varijabli taskCheckbox dodajemo metode type i checked
+-varijabli taskElement dodajemo metodu appendChild(taskCheckbox)
+-varijabli taskCheckbox dodajemo funkciju addEventListener()
+-funkciji addEventListener() dodajemo dva argumenta
+-prvi argument je dogadaj change
+-drugi argument je anonimna funkcija
+-u anonimnu funkciju dodajemo metodu task.isCompleted
+-dodajemo funkciju updateStorage()
