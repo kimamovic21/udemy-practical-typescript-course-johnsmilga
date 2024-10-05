@@ -540,3 +540,12 @@ Section 03: Typescript Fundamentals
 
 74. TS Config
 -u tutorial.ts fajlu kreiramo varijablu let something
+
+75. Classes - Intro
+-u tutorial.ts fajlu kreiramo klasu class Book
+-u klasi Book kreiramo funkciju constructor() sa dva parametra title i author
+-parametrima dodajemo tipove string
+-dodajemo metode this.title i this.author
+-varijablama title i author dodajemo tipove string
+-pozivamo metodu new Book() sa dva argumenta
+-vrijednost metode new Book() pohranjujemo u varijablu const deepWork

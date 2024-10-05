@@ -2246,9 +2246,11 @@ This project's TypeScript configuration is defined in the `tsconfig.json` file. 
 
 ## Classes - Intro
 
-Classes in JavaScript are a blueprint for creating objects. They encapsulate data with code to manipulate that data. Classes in JavaScript support inheritance and can be used to create more complex data structures.
+Classes in JavaScript are a blueprint for creating objects. They encapsulate data with code to manipulate that data. 
+Classes in JavaScript support inheritance and can be used to create more complex data structures.
 
-A constructor in a class is a special method that gets called when you create a new instance of the class. It's often used to set the initial state of the object.
+A constructor in a class is a special method that gets called when you create a new instance of the class. 
+It's often used to set the initial state of the object.
 
 ```ts
 class Book {
