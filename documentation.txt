@@ -613,3 +613,10 @@ Section 03: Typescript Fundamentals
 -kreiramo funkciju createTask() sa parametrom event
 -parametru event dodajemo tip SubmitEvent
 -u funkciju addEventListener() proslijedujemo funkciju createTask() kao drugi argument
+
+87. Tasks Project - Add Task
+-kreiramo funkciju addTask() sa parametrom task koji ima tip Task
+-funkciji addTask() dodajemo tip void
+-u funkciju addTask() dodajemo metodu tasks.push(task)
+-u uslovu if (taskDescription) kreiramo varijablu const task koja ima tip Task
+-pozivamo funkciju addTask(task)
