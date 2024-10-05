@@ -566,3 +566,9 @@ Section 03: Typescript Fundamentals
 79. Classes - Constructor Shortcut
 -u tutorial.ts fajlu, u klasi Book, funkciji constructor() dodajemo parametrima tipove
 -kreiramo metodu getSomeValue()
+
+80. Classes - Getters and Setters
+-u tutorial.ts fajlu, u klasi Book kreiramo metodu get info()
+-kreiramo metodu set checkOut() sa parametrom checkedOut koji ima tip boolean
+-kreiramo metodu get checkOut()
+-kreiramo metodu public get someInfo()

@@ -2350,7 +2350,8 @@ class Book {
 
 ## Classes - Getters and Setters
 
-Getters and setters are special methods in a class that allow you to control how a property is accessed and modified.They are used like properties, not methods, so you don't use parentheses to call them.
+Getters and setters are special methods in a class that allow you to control how a property is accessed and modified.
+They are used like properties, not methods, so you don't use parentheses to call them.
 
 ```ts
 class Book {
