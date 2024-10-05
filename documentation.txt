@@ -562,3 +562,7 @@ Section 03: Typescript Fundamentals
 -varijabli checkedOut dodajemo opciju private
 -kreiramo public metode checkOut() i isCheckedOut()
 -kreiramo private metodu toggleCheckedOutStatus()
+
+79. Classes - Constructor Shortcut
+-u tutorial.ts fajlu, u klasi Book, funkciji constructor() dodajemo parametrima tipove
+-kreiramo metodu getSomeValue()

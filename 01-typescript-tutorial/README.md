@@ -2338,7 +2338,8 @@ console.log(deepWork.isCheckedOut()); // true
 
 ## Classes - Shorthand Syntax
 
-In TypeScript, if you want to use the shorthand for creating and initializing class properties in the constructor, you need to use public, private, or protected access modifiers.
+In TypeScript, if you want to use the shorthand for creating and initializing class properties in the constructor, 
+you need to use public, private, or protected access modifiers.
 
 ```ts
 class Book {
