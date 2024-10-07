@@ -673,3 +673,10 @@ Section 04: Typescript and React
 95. Props - Type Alias / Interface
 -u folderu 02-props, u index.tsx fajlu, kreiramo tip ComponentProps
 -u funkciji Component(), parametrima name i id dodajemo tip ComponentProps
+
+96. Children Prop
+-u folderu 02-props, u index.tsx fajlu, u tip ComponentProps dodajemo prop children? koji ima tip React.ReactNode
+-u App.tsx komponenti dodajemo komponentu Component sa otvorenim i zatvorenim tagom
+-importujemo prop tip PropsWithChildren
+-kreiramo prop PropsWithChildren<>
+-vrijednost prop PropsWithChildren pohranjujemo u tip ComponentProps
