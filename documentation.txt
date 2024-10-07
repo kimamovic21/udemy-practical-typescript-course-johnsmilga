@@ -705,3 +705,15 @@ Section 04: Typescript and React
 -kreiramo funkciju handleChange() sa parametrom e
 -u input elementu za email, u dogadaj onChange proslijedujemo funkciju handleChange
 -parametru e dodajemo tip React.ChangeEvent<HTMLInputElement>
+
+100. Events - Form Event
+-u folderu 04-events, u index.tsx fajlu, kreiramo funkciju handleSubmit() sa parametrom e
+-parametru e dodajemo tip React.FormEvent<HTMLFormElement>
+-form elementu dodajemo dogadaj onSubmit
+-u dogadaj onSubmit proslijedujemo funkciju handleSubmit
+-u funkciju handleSubmit() dodajemo e.preventDefault()
+-kreiramo varijablu const formData
+-kreiramo varijablu const data
+-kreiramo tip Person
+-kreiramo varijablu const person koja ima tip Person
+-kreiramo varijablu const text
