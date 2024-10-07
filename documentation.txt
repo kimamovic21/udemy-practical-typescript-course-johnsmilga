@@ -788,3 +788,11 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -varijabli initialState dodajemo tip CounterState
 -kreiramo i eksportujemo funkciju counterReducer() sa dva parametra state i action
 -u index.tsx fajl importujemo varijablu initialState i funkciju counterReducer
+
+108. useReducer - Counter
+-u reducer.ts fajlu kreiramo tipove UpdateCountAction i CounterAction
+-u funkciji counterReducer(), parametru action dodajemo tip CounterAction
+-u funkciju counterReducer() dodajemo uslov switch(action.type)
+-u uslov switch() dodajemo slucajeve increment, decrement i reset
+-u index.tsx fajlu, button elementima dodajemo dogadaje onClick
+-u dogadaje onClick proslijedujemo funkcije dispatch()
