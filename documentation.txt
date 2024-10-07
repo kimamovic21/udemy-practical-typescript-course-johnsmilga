@@ -733,3 +733,12 @@ Section 04: Typescript and React
 
 103. Challenge - Alternative Solution
 -u komponenti App.tsx, komponenti Component dodajemo prop email
+
+104. Challenge - Typescript Solution
+-u 05-challenge, index.tsx fajlu kreiramo tipove BasicProfileCardProps, AdvancedProfileCardProps i AdvancedProfileCardProps
+-destruktuiramo varijable const { type, name } iz parametra props
+-dodajemo uslov if (type === 'basic')
+-u uslov if dodajemo return izjavi
+-u return izjavi kreiramo HTML element article sa klasama alert i alert-success
+-u jsx-u kreiramo HTML element article sa klasama alert i alert-danger
+-u komponenti App.jsx uklonimo jednoj komponenti Component prop email
