@@ -1,4 +1,4 @@
-import Component from './starter/04-events'
+import Component from './starter/05-challenge'
 
 function App() {
   return (

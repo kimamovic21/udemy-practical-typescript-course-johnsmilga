@@ -717,3 +717,6 @@ Section 04: Typescript and React
 -kreiramo tip Person
 -kreiramo varijablu const person koja ima tip Person
 -kreiramo varijablu const text
+
+101. Challenge - Intro
+-u komponentu App.tsx importujemo komponentu Component iz foldera 05-challenge
