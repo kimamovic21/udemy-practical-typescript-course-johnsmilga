@@ -720,3 +720,13 @@ Section 04: Typescript and React
 
 101. Challenge - Intro
 -u komponentu App.tsx importujemo komponentu Component iz foldera 05-challenge
+
+102. Challenge - First Solution
+-u 05-challenge, index.tsx fajlu kreiramo tip ProfileCardProps
+-funkciji Component() dodajemo parametar props sa tipom ProfileCardProps
+-destruktuiramo varijable const { type, name, email } iz parametra props
+-kreiramo varijablu const alertType
+-kreiramo varijablu const className
+-u jsx-u kreiramo HTML element article sa prop className
+-u prop className proslijedujemo vrijednost varijable className
+-dodajemo uslov {email && ...}

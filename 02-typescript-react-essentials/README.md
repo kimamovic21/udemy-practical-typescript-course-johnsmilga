@@ -399,7 +399,11 @@ function Component() {
 export default Component;
 ```
 
-The FormData API is a web technology that allows developers to easily construct and manage sets of key/value pairs representing form fields and their values. It is commonly used to send form data, including files, from a client (such as a web browser) to a server in a format that can be easily processed. The FormData API provides a way to programmatically create and manipulate form data, making it useful for AJAX requests and handling file uploads in web applications.
+The FormData API is a web technology that allows developers to easily construct and manage sets of key/value 
+pairs representing form fields and their values. It is commonly used to send form data, including files, from 
+a client (such as a web browser) to a server in a format that can be easily processed. The FormData API provides
+a way to programmatically create and manipulate form data, making it useful for AJAX requests and handling file 
+uploads in web applications.
 
 ## 05 - Challenge - Profile Card
 
