@@ -730,3 +730,6 @@ Section 04: Typescript and React
 -u jsx-u kreiramo HTML element article sa prop className
 -u prop className proslijedujemo vrijednost varijable className
 -dodajemo uslov {email && ...}
+
+103. Challenge - Alternative Solution
+-u komponenti App.tsx, komponenti Component dodajemo prop email
