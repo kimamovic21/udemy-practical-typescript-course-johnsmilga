@@ -695,3 +695,13 @@ Section 04: Typescript and React
 -kreiramo state varijablu links i set funkciju setLinks
 -u dogadaj onClick proslijedujemo funkciju setLinks()
 -funkciji() useState dodajemo tip <Link[]>
+
+99. Events - Change Event
+-u folderu 04-events, u index.tsx fajl, importujemo funkciju useState
+-kreiramo state varijable text i email
+-kreiramo set funkcije setText i setEmail
+-u jsx-u kreiramo form i input HTML elemente
+-input elementima dodajemo prop type, className, value i onChange
+-kreiramo funkciju handleChange() sa parametrom e
+-u input elementu za email, u dogadaj onChange proslijedujemo funkciju handleChange
+-parametru e dodajemo tip React.ChangeEvent<HTMLInputElement>
