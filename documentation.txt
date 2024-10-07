@@ -796,3 +796,9 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u uslov switch() dodajemo slucajeve increment, decrement i reset
 -u index.tsx fajlu, button elementima dodajemo dogadaje onClick
 -u dogadaje onClick proslijedujemo funkcije dispatch()
+
+109. useReducer - Status
+-u reducer.ts fajlu kreiramo tip SetStatusAction
+-u uslov switch() dodajemo slucaj setStatus
+-u index.tsx fajlu, button elementima dodajemo dogadaj onClick
+-u dogadaj onClick proslijedujemo funkcije dispatch za status aktivnosti
