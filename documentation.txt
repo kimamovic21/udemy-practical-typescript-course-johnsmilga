@@ -762,3 +762,17 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -kreiramo funkciju ParentComponent()
 -u funkciju ParentComponent() dodajemo komponentu ThemeProvider sa otvorenim i zatvorenim tagom
 -u komponentu ThemeProvider dodajemo komponentu Component
+
+106. Context API - Theme Example
+-u context.tsx fajlu kreiramo tip Type
+-kreiramo state varijablu theme i set funkciju setTheme
+-u prop value proslijedujemo varijablu theme i funkciju setTheme
+-kreiramo tip ThemeProviderState
+-funkciji createContext() dodajemo tip ThemeProviderState
+-kreiramo tip ThemeProviderProps
+-u funkciji ThemeProvider(), parametrima children i defaultTheme dodajemo tip ThemeProviderProps
+-u index.tsx fajlu kreiramo button element
+-button elementu dodajemo dogadaj onClick
+-u dogadaj onClick proslijedujemo anonimnu funkciju
+-u anonimnu funkciju dodajemo uslov if kojim provjeravamo da li tamna tema
+-u uslov if dodajemo metodu context.setTheme()
