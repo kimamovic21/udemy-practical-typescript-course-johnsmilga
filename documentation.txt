@@ -661,3 +661,7 @@ Section 04: Typescript and React
 -u folderu src kreiramo folder starter
 -u index.css fajl dodajemo CSS stil
 -obrisemo App.css fajl
+
+93. Component Return
+-u folderu 01-return, u index.tsx fajlu, funkciji Component() dodajemo tip JSX.Element
+-u komponentu App.jsx importujemo komponentu Component
