@@ -669,3 +669,7 @@ Section 04: Typescript and React
 94. Props - Inline
 -u folderu 02-props, u index.tsx fajlu, funkciji Component() dodajemo parametre destruktuirane prop name i id
 -parametrima name i id dodajemo tipove
+
+95. Props - Type Alias / Interface
+-u folderu 02-props, u index.tsx fajlu, kreiramo tip ComponentProps
+-u funkciji Component(), parametrima name i id dodajemo tip ComponentProps
