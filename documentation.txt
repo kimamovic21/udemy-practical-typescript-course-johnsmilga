@@ -742,3 +742,23 @@ Section 04: Typescript and React
 -u return izjavi kreiramo HTML element article sa klasama alert i alert-success
 -u jsx-u kreiramo HTML element article sa klasama alert i alert-danger
 -u komponenti App.jsx uklonimo jednoj komponenti Component prop email
+
+105. Context API - Basic Example
+-u App.tsx komponentu importujemo komponentu Component iz foldera 06-context
+-u folderu 06-context kreiramo context.tsx fajl
+-u context.tsx fajl importujemo funkcije createContext, useContext u useState iz paketa react
+-kreiramo funkciju createContext<string | undefined>
+-vrijednost funkcije createContext() pohranjujemo u varijablu const ThemeProviderContext
+kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom children
+-parametru children dodajemo tip React.ReactNode
+-u return izjavi kreiramo komponentu ThemeProviderContext.Provider sa otvorenim i zatvorenim tagom
+-komponenti ThemeProviderContext.Provider dodajemo prop value
+-u komponentu ThemeProviderContext.Provider dodajemo prop children
+-kreiramo i eksportujemo funkciju useTheme
+-u funkciji useTheme() kreiramo varijablu const context
+-dodajemo uslov if (context === undefined)
+-u uslov if dodajemo throw new Error()
+-u index.tsx fajl importujemo funkciju useTheme i komponentu ThemeProvider
+-kreiramo funkciju ParentComponent()
+-u funkciju ParentComponent() dodajemo komponentu ThemeProvider sa otvorenim i zatvorenim tagom
+-u komponentu ThemeProvider dodajemo komponentu Component
