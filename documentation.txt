@@ -776,3 +776,15 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u dogadaj onClick proslijedujemo anonimnu funkciju
 -u anonimnu funkciju dodajemo uslov if kojim provjeravamo da li tamna tema
 -u uslov if dodajemo metodu context.setTheme()
+
+107. useReducer - Setup
+-u komponentu App.tsx importujemo komponentu Component iz foldera 07-reducers
+-u folderu 07-reducers, u index.tsx fajl importujemo i kreiramo funkciju useReducer()
+-vrijednost funkcije useReducer() pohranjujemo u varijablu state i funkciju dispatch 
+-u jsx-u kreiramo div i button elemente
+-kreiramo reducer.ts fajl
+-u reducer.ts fajlu kreiramo i eksportujemo tip CounterState
+-kreiramo i eksportujemo varijablu const initialState
+-varijabli initialState dodajemo tip CounterState
+-kreiramo i eksportujemo funkciju counterReducer() sa dva parametra state i action
+-u index.tsx fajl importujemo varijablu initialState i funkciju counterReducer
