@@ -665,3 +665,7 @@ Section 04: Typescript and React
 93. Component Return
 -u folderu 01-return, u index.tsx fajlu, funkciji Component() dodajemo tip JSX.Element
 -u komponentu App.jsx importujemo komponentu Component
+
+94. Props - Inline
+-u folderu 02-props, u index.tsx fajlu, funkciji Component() dodajemo parametre destruktuirane prop name i id
+-parametrima name i id dodajemo tipove
