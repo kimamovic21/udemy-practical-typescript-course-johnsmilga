@@ -687,3 +687,11 @@ Section 04: Typescript and React
 -kreiramo set funkcije setText, setNumber i setList
 -u jsx-u kreiramo button element sa prop className i dogadajem onClick
 -u dogadaj onClick proslijedujemo set funkcije
+
+98. State - Custom List
+-u folderu 03-state, u index.tsx fajl, kreiramo varijablu const navLinks
+-kreiramo tip Link
+-varijabli navLinks dodajemo tip Link[]
+-kreiramo state varijablu links i set funkciju setLinks
+-u dogadaj onClick proslijedujemo funkciju setLinks()
+-funkciji() useState dodajemo tip <Link[]>
