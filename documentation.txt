@@ -680,3 +680,10 @@ Section 04: Typescript and React
 -importujemo prop tip PropsWithChildren
 -kreiramo prop PropsWithChildren<>
 -vrijednost prop PropsWithChildren pohranjujemo u tip ComponentProps
+
+97. State
+-u folderu 03-state, u index.tsx fajl, importujemo i kreiramo fukciju useState()
+-kreiramo state varijable text, number i list
+-kreiramo set funkcije setText, setNumber i setList
+-u jsx-u kreiramo button element sa prop className i dogadajem onClick
+-u dogadaj onClick proslijedujemo set funkcije
