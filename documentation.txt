@@ -822,3 +822,17 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -dodajemo funkciju setIsError(message)
 -u blok koda finally dodajemo funkciju setIsLoading(false)
 -dodajemo uslove if (isLoading) i if (isError)
+
+111. Fetch Data - Type and Schema
+-u folderu 08-fetch-data kreiramo types.ts fajl
+-u types.ts fajl importujemo instancu z iz paketa zod
+-kreiramo i eksportujemo varijablu const tourSchema
+-kreiramo i eksportujemo tip Tour
+-u index.tsx fajl importujemo tip Tour i varijablu tourSchema iz types.ts fajla
+-funkciji useState za ture dodajemo tip <Tour[]>
+-varijablu rawData dodajemo tip Tour[]
+-kreiramo varijablu const result
+-dodajemo uslov if (!response.success)
+-u uslov if dodajemo throw new Error()
+-dodajemo funkciju setTours(result.data)
+-jsx dodajemo metodu tours.map()
