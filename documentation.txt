@@ -944,3 +944,23 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -fukciji Form() dodajemo parametar destruktuirani prop addTask
 -parametru addTask dodajemo tip FormProps
 -u funkciju handleSubmit() dodajemo funkciju addTask()
+
+119. Tasks Project - List
+-u index.tsx fajlu kreiramo funkciju toggleTask() sa parametrom destruktuiranim prop id
+-parametru id dodajemo tip string
+-u funkciju toggleTask() dodajemo funkciju setTasks()
+-u funkciju setTasks() dodajemo metodu tasks.map()
+-u metodu map() dodajemo uslov if (task.id === id)
+-u jsx-u komponenti List dodajemo prop tasks i toggleTask
+-u prop tasks proslijedujemo varijablu tasks
+-u prop toggleTask proslijedujemo funkciju toggleTask
+-u komponentu List.tsx importujemo tip Task iz types.ts fajla
+-kreiramo tip ListProps
+-funkciji List() dodajemo parametre destruktuirane prop tasks i toggleTask
+-parametrima dodajemo tip ListProps
+-u jsx-u kreiramo ul element sa klasom list
+-u ul element dodajemo metodu tasks.map()
+-u metodi map() kreiramo elemente li i p
+-kreiramo input element sa prop type, checked i dogadajem onChange
+-u dogadaj onChange proslijedujemo anonimnu funkciju
+-u anonimnu funkciju proslijedujemo funkciju toggleTask()
