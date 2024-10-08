@@ -836,3 +836,25 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u uslov if dodajemo throw new Error()
 -dodajemo funkciju setTours(result.data)
 -jsx dodajemo metodu tours.map()
+
+112. Fetch Data - React Query and Axios
+-u terminalu instaliramo pakete Axios i React Query
+-u types.ts fajl importujemo instancu axios
+-premjestamo varijablu const url iz index.tsx fajla u types.ts fajl
+-kreiramo i eksportujemo asinhronu funkciju fetchTours() 
+-funkciji fetchTours() dodajemo tip Promise<Tour[]>
+-kreiramo varijablu const response
+-u funkciji fetchTours() kreiramo varijable const response i const result
+-dodajemo uslov if (!result.success)
+-dodajemo return izjavu result.data
+-u main.tsx importujemo komponente QueryClient i QueryClientProvider iz paketa tanstack/react-query
+-kreiramo varijablu const queryClient
+-u funkciji render() kreiramo komponentu QueryClientProvider sa otvorenim i zatvorenim tagom
+-komponenti QueryClientProvider dodajemo prop client
+-u prop client proslijedujemo varijablu queryClient
+-u index.tsx fajl importujemo funkciju fetchTours
+-importujemo i kreiramo funkciju useQuery()
+-u funkciju useQuery() dodajemo konfiguracioni objekt
+-u konfiguracioni objekt dodajemo opcije queryKey i queryFn
+-vrijednost funkcije useQuery() pohranjujemo u destruktuirane varijable const { isPending, isError, error, data:tours }
+-dodajemo uslove if (isPending) i if (isError) 
