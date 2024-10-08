@@ -1001,3 +1001,11 @@ Section 05: Store App
 -u terminalu instaliramo Tailwind CSS paket
 
 127. Important Update !!!
+
+128. Shadcn/ui Install
+-otvorimo web stranicu https://ui.shadcn.com/
+-otvorimo link https://ui.shadcn.com/docs/installation/vite
+-u terminalu instaliramo paket types/node
+-u terminalu ukucamo komandu npx shadcn@latest init
+-u terminalu ukucamo komandu npx shadcn@latest add button
+-u komponentu App.tsx importujemo komponentu Button iz Shadcn
