@@ -802,3 +802,23 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u uslov switch() dodajemo slucaj setStatus
 -u index.tsx fajlu, button elementima dodajemo dogadaj onClick
 -u dogadaj onClick proslijedujemo funkcije dispatch za status aktivnosti
+
+110. Fetch Data - UseEffect and Fetch API
+-u komponentu App.tsx importujemo komponentu Component iz foldera 08-fetch-data
+-u 08-fetch-data folderu, u index.tsx fajl importujemo funkcije useState i useEffect
+-kreiramo varijablu const url
+-kreiramo funkcije useState sa tipovima <>
+-u funkciji Component() kreiramo state varijable isLoading i isError
+-kreiramo state varijable setIsLoading i setIsError
+-kreiramo funkciju useEffect() sa dva argumenta
+-prvi argument je anonimna funkcija, a drugi argument prazan niz []
+-u anonimnoj funkciji kreiramo asinhronu funkciju fetchData()
+-u funkciju fetchData() dodajemo funkciju setIsLoading(true)
+-u funkciji fetchData() kreiramo blokove koda try, catch i finally
+-u bloku koda try kreiramo varijablu const response
+-dodajemo uslov if (!response.ok)
+-u uslov if dodajemo throw new Error()
+-u bloku koda catch kreiramo varijablu const message
+-dodajemo funkciju setIsError(message)
+-u blok koda finally dodajemo funkciju setIsLoading(false)
+-dodajemo uslove if (isLoading) i if (isError)
