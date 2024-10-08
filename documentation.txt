@@ -879,3 +879,22 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -funkciji setStatus() dodajemo parametre status i action
 -parametru action dodajemo tip PayloadAction<CounterStatus>
 -eksportujemo funkcije kao counterSlice.actions
+
+114. RTK - Setup
+-kreiramo store.ts fajl
+-u store.ts fajl importujemo i kreiramo funkciju configureStore iz paketa Redux Toolkit
+-importujemo funkciju counterReducer iz counterSlice.ts fajla
+-vrijednost funkcije configureStore() pohranjujemo u varijablu const store
+-eksportujemo varijablu store
+-kreiramo i eksportujemo tipove RootState i AppDispatch
+-kreiramo hooks.ts fajl
+-u hooks.ts fajl importujemo funkcije useDispatch i useSelector
+-importujemo tip TypedUseSelectorHook iz paketa React Redux
+-importujemo tipove RootState i AppDispatch iz store.ts fajla
+-kreiramo i eksportujemo funkciju useAppDispatch 
+-kreiramo i eksportujemo varijablu const useAppSelector
+-u main.jsx fajl importujemo varijablu store iz store.ts fajla
+-importujemo komponentu Provider iz paketa React Redux
+-u funkciji render kreiramo komponentu Provider sa otvorenim i zatvorenim tagom
+-komponenti Provider dodajemo prop store
+-u prop store proslijedujemo varijablu store

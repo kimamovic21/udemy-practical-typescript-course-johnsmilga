@@ -1162,9 +1162,14 @@ export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 ```
 
-type RootState represents the type of the state stored in your Redux store. ReturnType is a utility type provided by TypeScript that can get the return type of a function. store.getState is a function that returns the current state stored in the Redux store. So ReturnType<typeof store.getState> is the type of the state returned by store.getState, which is the type of the state in your Redux store.
+type RootState represents the type of the state stored in your Redux store. ReturnType is a utility 
+type provided by TypeScript that can get the return type of a function. store.getState is a function 
+that returns the current state stored in the Redux store. So ReturnType<typeof store.getState> is the 
+type of the state returned by store.getState, which is the type of the state in your Redux store.
 
-type AppDispatch represents the type of the dispatch function in your Redux store. store.dispatch is the function you use to dispatch actions in Redux. typeof store.dispatch gets the type of this function. So AppDispatch is the type of the dispatch function in your Redux store.
+type AppDispatch represents the type of the dispatch function in your Redux store. store.dispatch is 
+the function you use to dispatch actions in Redux. typeof store.dispatch gets the type of this function. 
+So AppDispatch is the type of the dispatch function in your Redux store.
 
 hooks.ts
 
@@ -1180,11 +1185,17 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 export const useAppDispatch: () => AppDispatch = useDispatch;
 
-This line is creating a custom hook called useAppDispatch that wraps around the useDispatch hook from Redux. The useDispatch hook returns the dispatch function from the Redux store. By creating a custom hook useAppDispatch, you can ensure that the dispatch function is correctly typed with your application's specific dispatch type (AppDispatch).
+This line is creating a custom hook called useAppDispatch that wraps around the useDispatch hook from Redux. 
+The useDispatch hook returns the dispatch function from the Redux store. By creating a custom hook 
+useAppDispatch, you can ensure that the dispatch function is correctly typed with your application's 
+specific dispatch type (AppDispatch).
 
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
-This line is creating a custom hook called useAppSelector that wraps around the useSelector hook from Redux. The useSelector hook allows you to extract data from the Redux store state. By creating a custom hook useAppSelector, you can ensure that the selector functions passed to this hook are correctly typed with your application's specific state type (RootState).
+This line is creating a custom hook called useAppSelector that wraps around the useSelector hook from Redux. 
+The useSelector hook allows you to extract data from the Redux store state. By creating a custom hook 
+useAppSelector, you can ensure that the selector functions passed to this hook are correctly typed with 
+your application's specific state type (RootState).
 
 main.tsx
 
