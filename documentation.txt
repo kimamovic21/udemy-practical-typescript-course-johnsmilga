@@ -917,3 +917,19 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -importujemo komponente Form.tsx i List.tsx
 -kreiramo state varijablu const tasks i set funkciju setTasks()
 -funkciji useState() dodajemo tip <Task[]>
+
+117. Tasks Project - Form Setup
+-u komponentu Form.tsx importujemo funkciju useState
+-importujemo tip Task
+-kreiramo state varijablu const task i set funkciju setTask()
+-u jsx-kreiramo HTML elemente form, input i button
+-form elementu dodajemo klase form i task-form
+-input elementu dodajemo prop type, className, value i dogadaj onChange
+-u dogadaj onChange proslijedujemo anonimnu fukciju sa parametrom e
+-u anonimnu funkciju proslijedujemo funkciju setText()
+-button elementu dodajemo prop type i className
+-kreiramo funkciju handleSubmit() sa parametrom e
+-parametru e dodajemo tip React.FormEvent<HTMLFormElement>
+-u funkciju handleSubmit() dodajemo metodu e.preventDefault()
+-dodajemo uslov if (!test)
+-nakon uslova if dodajemo funkciju setText('')
