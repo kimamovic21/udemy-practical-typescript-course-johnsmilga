@@ -858,3 +858,24 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u konfiguracioni objekt dodajemo opcije queryKey i queryFn
 -vrijednost funkcije useQuery() pohranjujemo u destruktuirane varijable const { isPending, isError, error, data:tours }
 -dodajemo uslove if (isPending) i if (isError) 
+
+113. RTK - Slice
+-u komponentu App.tsx importujemo komponentu Component iz foldera 09-rtk
+-u terminalu instaliramo pakete React Redux i Redux Toolkit
+-u folderu 09-rtk kreiramo counterSlice.ts fajl
+-u counterSlice.ts fajl importujemo i kreiramo funkciju createSlice iz paketa Redux Toolkit 
+-importujemo tip PayloadAction iz paketa Redux Toolkit
+-vrijednost funkcije createSlice pohranjujemo u varijablu const counterSlice
+-eksportujemo varijablu const counterSlice
+-eksportujemo kao default varijablu counterSlice.reducer
+-kreiramo objekt varijablu const initialState
+-u funkciju createSlice dodajemo opcije name, initialState i reducers
+-kreiramo tip CounterState
+-u tipu CounterState dodajemo varijable count i status
+-kreiramo tip CounterStatus
+-varijabli initialState dodajemo tip CounterState
+-u objektu reducers kreiramo cetiri funkcije: increment(), decrement(), reset() i setStatus()
+-funkcijama increment, decrement i reset dodajemo parametar state
+-funkciji setStatus() dodajemo parametre status i action
+-parametru action dodajemo tip PayloadAction<CounterStatus>
+-eksportujemo funkcije kao counterSlice.actions
