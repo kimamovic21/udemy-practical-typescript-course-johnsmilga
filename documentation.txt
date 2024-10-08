@@ -996,3 +996,6 @@ Section 05: Store App
 124. Tailwind Intro
 
 125. Tailwind Info
+
+126. Tailwind Install
+-u terminalu instaliramo Tailwind CSS paket
