@@ -907,3 +907,13 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u jsx-u, button elementima dodajemo dodajemo dogadaje onClick
 -u dogadaje onClick proslijedujemo funkcije dispatch()
 -u funkcije dispatch() proslijedujemo importovane funkcije iz counterSlice.ts fajla
+
+116. Tasks Project - Setup
+-u komponentu App.tsx importujemo komponentu Component iz foldera 10-tasks
+-kreiramo types.ts fajl 
+-u types.ts fajlu kreiramo i eksportujemo tip Task
+-kreiramo komponente Form.tsx i List.tsx
+-u index.tsx fajl importujemo funkcije useState i useEffect
+-importujemo komponente Form.tsx i List.tsx
+-kreiramo state varijablu const tasks i set funkciju setTasks()
+-funkciji useState() dodajemo tip <Task[]>
