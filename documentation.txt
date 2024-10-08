@@ -982,3 +982,7 @@ Section 05: Store App
 
 121. Intro
 -u terminalu instaliramo Vite React.js aplikaciju
+
+122. Install/Setup
+-dodajemo opis izrade projekta u README.md fajl
+-u index.html fajl dodajemo ime projekta
