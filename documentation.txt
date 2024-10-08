@@ -933,3 +933,14 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u funkciju handleSubmit() dodajemo metodu e.preventDefault()
 -dodajemo uslov if (!test)
 -nakon uslova if dodajemo funkciju setText('')
+
+118. Tasks Project - Add Task
+-u index.tsx fajlu kreiramo funkciju addTask() sa parametrom task koji ima tip Task
+-fukciji addTask() dodajemo tip void
+-u funkciju addTask() dodajemo funkciju setTasks()
+-u jsx-u Form Elementu dodajemo prop addTask
+-u prop addTask proslijedujemo funkciju addTask
+-u komponenti Form.tsx kreiramo tip FormProps
+-fukciji Form() dodajemo parametar destruktuirani prop addTask
+-parametru addTask dodajemo tip FormProps
+-u funkciju handleSubmit() dodajemo funkciju addTask()
