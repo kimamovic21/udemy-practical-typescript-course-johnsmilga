@@ -898,3 +898,12 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u funkciji render kreiramo komponentu Provider sa otvorenim i zatvorenim tagom
 -komponenti Provider dodajemo prop store
 -u prop store proslijedujemo varijablu store
+
+115. RTK - Complete
+-u index.tsx fajl importujemo i kreiramofunkcije useAppSelector i useAppDispatch
+-importujemo funkcije iz counterSlice.ts fajla
+-vrijednost funkcije useAppSelector() pohranjujemo u destruktuirane varijable const { count, status }
+-vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
+-u jsx-u, button elementima dodajemo dodajemo dogadaje onClick
+-u dogadaje onClick proslijedujemo funkcije dispatch()
+-u funkcije dispatch() proslijedujemo importovane funkcije iz counterSlice.ts fajla
