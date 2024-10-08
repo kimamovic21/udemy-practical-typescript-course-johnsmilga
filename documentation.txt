@@ -976,3 +976,9 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -kreiramo funkciju useEffect() sa dva argumenta
 -prvi argument je anonimna funkcija, a drugi argument je niz [tasks]
 -u anonimnu funkciju dodajemo funkciju updateStorage()
+
+
+Section 05: Store App
+
+121. Intro
+-u terminalu instaliramo Vite React.js aplikaciju
