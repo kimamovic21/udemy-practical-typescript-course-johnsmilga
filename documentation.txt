@@ -986,3 +986,9 @@ Section 05: Store App
 122. Install/Setup
 -dodajemo opis izrade projekta u README.md fajl
 -u index.html fajl dodajemo ime projekta
+
+123. Boilerplate
+-obrisemo CSS stil u index.css fajlu
+-obrisemo App.css fajl
+-u komponenti App.tsx kreiramo funkciju App()
+-u terminalu instaliramo potrebne pakete za projekt
