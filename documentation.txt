@@ -964,3 +964,15 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -kreiramo input element sa prop type, checked i dogadajem onChange
 -u dogadaj onChange proslijedujemo anonimnu funkciju
 -u anonimnu funkciju proslijedujemo funkciju toggleTask()
+
+120. Tasks Project - Local Storage
+-u index.tsx fajlu kreiramo funkciju loadTasks() sa tipom Task[]
+-u funkciji loadTasks() kreiramo varijablu const storedTasks
+-u return izjavu dodajemo logiku za dohvacanje taskova
+-u funkciju useState() proslijedujemo funkciju loadTasks()
+-kreiramo funkciju updateStorage() sa parametrom tasks koji ima tip Task[]
+-funkciji updateStorage() dodajemo tip void
+-u funkciju updateStorage() dodajemo metodu localStorage.setItem()
+-kreiramo funkciju useEffect() sa dva argumenta
+-prvi argument je anonimna funkcija, a drugi argument je niz [tasks]
+-u anonimnu funkciju dodajemo funkciju updateStorage()
