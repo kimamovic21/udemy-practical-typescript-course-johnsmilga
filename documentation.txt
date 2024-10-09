@@ -1044,3 +1044,21 @@ Section 05: Store App
 -u objekt ruti '/' kreiramo opciju niz children koji sadrzi objekt rute
 -u komponentu HomeLayout.tsx importujemo komponentu Outlet iz paketa React Router Dom
 -u komponenti App.tsx kreiramo objekt rutu index za komponentu Landing
+
+135. Header Component
+-u folderu components kreiramo komponentu Header.tsx
+-kreiramo index.ts fajl u kojem eksportujemo komponentu Header.tsx kao default
+-u komponentu Header.tsx importujemo komponentu Link i funkciju useNavigate iz paketa React Router Dom
+-importujemo komponentu Button i funkciju useState
+-kreiramo funkciju handleLogout()
+-u jsx-u kreiramo HTML elemente kojima dodajemo Tailwind CSS klase
+-kreiramo state varijablu const user i set funkciju setUser
+-funkciji useState() dodajemo tipove string | null
+-u funkciju handleLogout() dodajemo funkciju setUser(null)
+-u jsx-u dodajemo ternarni uslov za varijablu user koji ce se elementi prikazivati na ekranu
+-u jsx-u prvoj komponenti Button dodajemo prop variant, size i dogadaj onClick
+-u dogadaj onClick proslijedujemo funkciju handleLogout
+-drugoj i trecoj komponenti Button dodajemo prop asChild, variant i size
+-kreiramo varijablu const navigate
+-u komponentu HomeLayout.tsx importujemo komponentu Header.tsx
+-u funkciju handleLogout() dodajemo funkciju navigate()
