@@ -1038,3 +1038,9 @@ Section 05: Store App
 -u jsx-u kreiramo komponente Link i Button
 -komponenti Link dodajemo prop to i className
 -komponenti Button dodajemo prop asChild i size
+
+134. Outlet Component - Shared Layout
+-u komponenti App.tsx, u funkciji createBrowserRouter() kreiramo objekt rute za komponente Login i Register
+-u objekt ruti '/' kreiramo opciju niz children koji sadrzi objekt rute
+-u komponentu HomeLayout.tsx importujemo komponentu Outlet iz paketa React Router Dom
+-u komponenti App.tsx kreiramo objekt rutu index za komponentu Landing
