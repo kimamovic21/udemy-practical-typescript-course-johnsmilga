@@ -1011,3 +1011,10 @@ Section 05: Store App
 -u komponentu App.tsx importujemo komponentu Button iz Shadcn
 
 129. Shadcn/ui Info
+
+130. Redux Toolkit - Setup
+-u terminalu instaliramo pakete React Redux i Redux Toolkit
+-u terminalu ukucamo komandu npm install @reduxjs/toolkit react-redux
+-kreiramo folder features
+-u folderu features kreiramo fajlove: cartSlite.ts, themeSlice.ts i userSlice.ts
+-konfiguracija Redux Toolkit paketa

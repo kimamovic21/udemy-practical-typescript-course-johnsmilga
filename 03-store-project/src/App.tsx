@@ -1,6 +1,10 @@
+import { useAppSelector } from './hooks';
 import { Button } from './components/ui/button'
 
 function App() {
+  const { name } = useAppSelector((state) => state.userState)
+  console.log(name)
+
   return (
     <div>
       <h1 className='text-7xl font-bold'>App</h1>
