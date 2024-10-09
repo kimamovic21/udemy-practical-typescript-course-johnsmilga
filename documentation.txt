@@ -1024,3 +1024,11 @@ Section 05: Store App
 -kreiramo folder pages i tsx komponente
 -kreiramo index.ts fajl u kojem eksportujemo komponente kao default
 -u komponentu App.tsx importujemo komponente iz index.ts fajl
+
+132. React Router - Setup
+-u terminalu instaliramo paket React Router Dom sa komandom npm i react-router-dom
+-u komponentu App.tsx importujemo komponentu RouterProvider 
+-importujemo i kreiramo funkciju createBrowserRouter()
+-vrijednost funkcije createBrowserRouter() pohranjujemo u varijablu const router
+-u jsx-u kreiramo komponentu RouterProvider sa prop router
+-u prop router proslijedujemo vrijednost varijable router
