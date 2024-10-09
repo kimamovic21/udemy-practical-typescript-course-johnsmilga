@@ -1085,3 +1085,11 @@ Section 05: Store App
 -u komponentu Logo.tsx importujemo ikonicu Armchair iz paketa Lucide React
 -importujemo i kreiramo komponentu Link u jsx-u
 -komponenti Link dodajemo prop to i className
+
+139. Links List
+-kreiramo folder utils 
+-u folderu utils kreiramo fajlove links.ts i index.ts
+-u links.ts fajlu kreiramo tip Link
+-eksportujemo i kreiramo niz varijablu const links sa tipom Link[]
+-u nizu links kreiramo objekt rute
+-u index.ts fajl dodajemo eksport *
