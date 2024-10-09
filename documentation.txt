@@ -1079,3 +1079,9 @@ Section 05: Store App
 -kreiramo jos jedan div element
 -u div element dodajemo komponente ModeToggle i CartButton
 -u komponentu HomeLayout.tsx importujemo komponentu Navbar.tsx
+
+138. Logo Component
+-otvorimo web stranicu https://lucide.dev/
+-u komponentu Logo.tsx importujemo ikonicu Armchair iz paketa Lucide React
+-importujemo i kreiramo komponentu Link u jsx-u
+-komponenti Link dodajemo prop to i className
