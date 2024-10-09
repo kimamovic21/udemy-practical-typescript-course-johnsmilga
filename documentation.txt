@@ -1068,3 +1068,14 @@ Section 05: Store App
 -u objektu components kreiramo klasu align-element
 -u komponenti HomeLayout.tsx kreiramo div element sa klasom align-element
 -u div sa klasom align-element dodajemo komponentu Outlet
+
+137. Navbar Component - Setup
+-u folderu components kreiramo vise tsx komponenti 
+-u index.ts fajlu eksportujemo kreiramo komponente kao default
+-u komponentu Navbar.tsx importujemo vise tsx komponenti
+-u komponenti Navbar.tsx, u jsx-u kreiramo nav element sa Tailwind CSS klasama
+-u nav elementu kreiramo div element
+-u div element dodajemo komponente Logo, LinksDropdown i NavLinks
+-kreiramo jos jedan div element
+-u div element dodajemo komponente ModeToggle i CartButton
+-u komponentu HomeLayout.tsx importujemo komponentu Navbar.tsx
