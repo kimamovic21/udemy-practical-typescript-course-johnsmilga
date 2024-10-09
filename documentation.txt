@@ -1032,3 +1032,9 @@ Section 05: Store App
 -vrijednost funkcije createBrowserRouter() pohranjujemo u varijablu const router
 -u jsx-u kreiramo komponentu RouterProvider sa prop router
 -u prop router proslijedujemo vrijednost varijable router
+
+133. Link Component
+-u komponentu Link.tsx importujemo komponente Link i Button
+-u jsx-u kreiramo komponente Link i Button
+-komponenti Link dodajemo prop to i className
+-komponenti Button dodajemo prop asChild i size
