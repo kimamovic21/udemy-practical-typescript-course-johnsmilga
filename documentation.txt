@@ -1018,3 +1018,9 @@ Section 05: Store App
 -kreiramo folder features
 -u folderu features kreiramo fajlove: cartSlite.ts, themeSlice.ts i userSlice.ts
 -konfiguracija Redux Toolkit paketa
+
+131. Create Pages
+-u eslint.config.js fajl dodajemo opciju upozorenja za nekoristene varijable
+-kreiramo folder pages i tsx komponente
+-kreiramo index.ts fajl u kojem eksportujemo komponente kao default
+-u komponentu App.tsx importujemo komponente iz index.ts fajl

@@ -1,5 +1,18 @@
-import { useAppSelector } from './hooks';
+import { useAppSelector } from './hooks'
 import { Button } from './components/ui/button'
+import {
+  HomeLayout,
+  Landing,
+  Error,
+  Products,
+  SingleProduct,
+  Cart,
+  About,
+  Register,
+  Login,
+  Checkout,
+  Orders,
+} from './pages';
 
 function App() {
   const { name } = useAppSelector((state) => state.userState)
