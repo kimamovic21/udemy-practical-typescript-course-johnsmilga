@@ -1062,3 +1062,9 @@ Section 05: Store App
 -kreiramo varijablu const navigate
 -u komponentu HomeLayout.tsx importujemo komponentu Header.tsx
 -u funkciju handleLogout() dodajemo funkciju navigate()
+
+136. Tailwind Custom Class
+-u index.css dodajemo opciju @layer components {}
+-u objektu components kreiramo klasu align-element
+-u komponenti HomeLayout.tsx kreiramo div element sa klasom align-element
+-u div sa klasom align-element dodajemo komponentu Outlet
