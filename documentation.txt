@@ -1123,3 +1123,8 @@ Section 05: Store App
 -u funkciji map() kreiramo komponentu NavLink sa otvorenim i zatvorenim tagom
 -komponenti NavLink dodajemo prop to, key i className
 -u prop className dodajemo anonimnu funkciju sa destruktuiranim parametrom isActive
+
+142. Change Theme
+-otvorimo link https://ui.shadcn.com/docs/theming
+-otvorimo link https://ui.shadcn.com/themes
+-manje izmjene u bojama u index.css fajlu
