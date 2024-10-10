@@ -1192,3 +1192,12 @@ Section 05: Store App
 
 148. About Page Component
 -u komponenti About.tsx kreiramo HTML elemente sa Tailwind CSS klasama
+
+149. Error Element Component
+-u folderu components kreiramo komponentu ErrorElement.tsx
+-u komponentu ErrorElement.tsx importujemo i kreiramo funkciju useRouteError iz paketa React Router Dom
+-vrijednost funkcije useRouteError() pohranjujemo u varijablu const error
+-u jsx-u kreiramo h4 element
+-u index.ts fajlu eksportujemo komponentu ErrorElement.tsx kao default
+-u komponentu App.tsx importujemo komponentu ErrorElement.tsx
+-u nizu children, u objekt rute dodajemo key - value parove errorElement i komponentu ErrorElement
