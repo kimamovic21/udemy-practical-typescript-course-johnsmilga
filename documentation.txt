@@ -1168,3 +1168,12 @@ Section 05: Store App
 -komponentama DropdownMenuItem dodajemo dogadaje onClick
 -u dogadaje onClick proslijedujemo anonimne funkcije 
 -u anonimne funkcije proslijedujemo funkcije dispatch()
+
+146. CartButton Component
+-u komponenti CartButton.tsx kreiramo varijablu const numItemsInCart = 5
+-u komponentu CartButton.tsx importujemo komponentu Button
+-u jsx-u kreiramo komponentu Button sa otvorenim i zatvorenim tagom
+-komponenti Button dodajemo prop asChild, variant, size i className
+-importujemo komponentu Link i ikonicu ShoppingCart
+-u komponenti Button kreiramo komponentu Link sa otvorenim i zatvorenim tagom
+-u komponentu Link dodajemo ikonicu ShoppingCart i span element
