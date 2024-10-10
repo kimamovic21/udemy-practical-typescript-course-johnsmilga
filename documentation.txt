@@ -1093,3 +1093,25 @@ Section 05: Store App
 -eksportujemo i kreiramo niz varijablu const links sa tipom Link[]
 -u nizu links kreiramo objekt rute
 -u index.ts fajl dodajemo eksport *
+
+140. Links Dropdown Component
+-u terminalu ukucamo komandu npx shadcn@latest add dropdown-menu
+-u komponentu LinksDropdown.tsx importujemo komponente DropdownMenu, DropdownMenuContent, DropdownMenuItem i DropdownMenuTrigger iz foldera components/ui
+-u funkciji LinksDropdown() kreiramo komponentu DropdownMenu sa otvorenim i zatvorenim tagom
+-u komponenti DropdownMenu kreiramo komponentu DropdownMenuTrigger sa otvorenim i zatvorenim tagom
+-komponenti DropdownMenuTrigger dodajemo prop asChild i className
+-u className dodajemo klasu lg:hidden
+-u komponenti DropdownMenuTrigger kreiramo komponentu Button sa otvorenim i zatvorenim tagom
+-komponenti Button dodajemo prop variant i size
+-importujemo ikonicu AlignLeft iz paketa Lucide React
+-u komponenti Button dodajemo ikonicu AlignLeft i span element
+-kreiramo komponentu DropdownMenuContent sa otvorenim i zatvorenim tagom
+-komponenti DropdownMenuContent dodajemo prop className, align i  sideOffset
+-importujemo varijablu niz links iz foldera utils
+-u komponentu DropdownMenuContent dodajemo metodu links.map()
+-importujemo komponentu NavLink iz paketa React Router Dom
+-u metodi map() kreiramo komponentu DropdownMenuItem sa otvorenim i zatvorenim tagom
+-komponenti DropdownMenuItem dodajemo prop key
+-u komponenti DropdownMenuItem kreiramo komponentu NavLink
+-komponenti NavLink dodajemo prop to i className
+-u prop className dodajemo anonimnu funkciju sa parametrom destruktuiranim prop isActive
