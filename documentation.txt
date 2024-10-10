@@ -1159,3 +1159,12 @@ Section 05: Store App
 -u funkciju setTheme() dodajemo state.theme
 -dodajemo funkciju applyTheme(action.payload)
 -dodajemo metodu localStorage.setItem()
+
+145. ModeToggle Component
+-u ModeToggle.tsx fajl importujemo i kreiramo funkciju useAppDispatch()
+-vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
+-u komponentu ModeToggle.tsx importujemo komponente iz paketa dropdown-menu.tsx
+-importujemo komponentu Button iz button.tsx fajla
+-komponentama DropdownMenuItem dodajemo dogadaje onClick
+-u dogadaje onClick proslijedujemo anonimne funkcije 
+-u anonimne funkcije proslijedujemo funkcije dispatch()
