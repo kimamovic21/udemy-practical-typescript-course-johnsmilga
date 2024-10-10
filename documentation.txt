@@ -1201,3 +1201,8 @@ Section 05: Store App
 -u index.ts fajlu eksportujemo komponentu ErrorElement.tsx kao default
 -u komponentu App.tsx importujemo komponentu ErrorElement.tsx
 -u nizu children, u objekt rute dodajemo key - value parove errorElement i komponentu ErrorElement
+
+150. Landing Page - Setup
+-u folderu components kreiramo pet tsx komponenti
+-kreirane tsx komponente eksportujemo kao default u index.ts fajlu
+-u komponentu Landing.tsx importujemo komponente Hero.tsx i FeaturedProducts.tsx

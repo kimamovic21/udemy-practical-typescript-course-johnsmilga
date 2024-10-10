@@ -1,6 +1,11 @@
+import { Hero, FeaturedProducts } from '@/components'
+
 function Landing() {
   return (
-    <div>Landing</div>
+    <>
+      <Hero />
+      <FeaturedProducts />
+    </>
   )
 }
 
