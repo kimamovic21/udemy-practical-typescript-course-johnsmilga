@@ -1143,3 +1143,19 @@ Section 05: Store App
 -varijabli root dodajemo metode classList i add()
 -dodajemo return izjavu
 -nakon uslova if dodajemo metodu root.classList.add(theme)
+
+144. Theme Slice
+-u themeSlice.ts fajlu importujemo tip PayloadAction iz paketa Redux Toolkit
+-importujemo funkciju applyTheme iz foldera utils
+-kreiramo tip ThemeState
+-kreiramo funkciju initializeTheme() koja ima tip Theme
+-u funkciji initializeTheme() kreiramo varijablu const theme
+-dodajemo funkciju applyTheme(theme)
+-dodajemo izjavu return theme
+-kreiramo varijablu const initialState sa tipom ThemeState
+-u objekt dodajemo key - value par theme: initializeTheme()
+-u objektu reducers kreiramo funkciju setTheme() sa parametrim state i action
+-parametru action dodajemo tip PayloadAction<Theme>
+-u funkciju setTheme() dodajemo state.theme
+-dodajemo funkciju applyTheme(action.payload)
+-dodajemo metodu localStorage.setItem()
