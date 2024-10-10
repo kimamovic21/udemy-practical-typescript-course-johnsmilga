@@ -1128,3 +1128,18 @@ Section 05: Store App
 -otvorimo link https://ui.shadcn.com/docs/theming
 -otvorimo link https://ui.shadcn.com/themes
 -manje izmjene u bojama u index.css fajlu
+
+143. ApplyTheme Function
+-otvorimo link https://ui.shadcn.com/docs/dark-mode/vite
+-u themeSlice.ts fajlu kreiramo i eksportujemo tip Theme
+-u index.ts fajlu dodajemo eksport * za fajl applyTheme.ts
+-kreiramo applyTheme.ts fajl
+-u applyTheme.ts fajl importujemo tip Theme
+-kreiramo i eksportujemo funkciju applyTheme() sa parametrom theme koji ima tip Theme
+-u funkciji applyTheme() kreiramo varijablu const root
+-varijabli root dodajemo metode classList i remove()
+-dodajemo uslove if (theme === 'system')
+-u uslovu if kreiramo varijablu const systemTheme
+-varijabli root dodajemo metode classList i add()
+-dodajemo return izjavu
+-nakon uslova if dodajemo metodu root.classList.add(theme)
