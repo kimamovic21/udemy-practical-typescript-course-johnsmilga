@@ -1115,3 +1115,11 @@ Section 05: Store App
 -u komponenti DropdownMenuItem kreiramo komponentu NavLink
 -komponenti NavLink dodajemo prop to i className
 -u prop className dodajemo anonimnu funkciju sa parametrom destruktuiranim prop isActive
+
+141. NavLinks Component
+-u komponentu NavLinks.tsx importujemo niz links i komponentu NavLink
+-roditelj div elementu dodajemo Tailwind CSS klase
+-u div element dodajemo metodu links.map()
+-u funkciji map() kreiramo komponentu NavLink sa otvorenim i zatvorenim tagom
+-komponenti NavLink dodajemo prop to, key i className
+-u prop className dodajemo anonimnu funkciju sa destruktuiranim parametrom isActive
