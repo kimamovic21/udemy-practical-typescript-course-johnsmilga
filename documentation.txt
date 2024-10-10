@@ -1189,3 +1189,6 @@ Section 05: Store App
 -u jsx-u kreiramo main element
 -u komponenti App.tsx, u objekt rutu za komponentu HomeLayout dodajemo key - value opciju errorElement i komponentu Error
 -u objekt rute za komponente Login i Register dodajemo isto key - value opciju errorElement i komponentu Error
+
+148. About Page Component
+-u komponenti About.tsx kreiramo HTML elemente sa Tailwind CSS klasama
