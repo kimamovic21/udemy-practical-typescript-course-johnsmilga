@@ -1177,3 +1177,15 @@ Section 05: Store App
 -importujemo komponentu Link i ikonicu ShoppingCart
 -u komponenti Button kreiramo komponentu Link sa otvorenim i zatvorenim tagom
 -u komponentu Link dodajemo ikonicu ShoppingCart i span element
+
+147. ErrorPage Component
+-u komponentu Error.tsx importujemo i kreiramo funkciju useRouteError()
+-vrijednost funkcije useRouteError() pohranjujemo u varijablu const error
+-importujemo funkciju isRouteErrorResponse
+-dodajemo uslov if da provjerimo da li error postoji
+-u uslov if dodajemo return izjavu 
+-u return izjavi kreiramo HTML elemente sa Tailwind CSS klasama
+-importujemo komponente Button i Link
+-u jsx-u kreiramo main element
+-u komponenti App.tsx, u objekt rutu za komponentu HomeLayout dodajemo key - value opciju errorElement i komponentu Error
+-u objekt rute za komponente Login i Register dodajemo isto key - value opciju errorElement i komponentu Error
