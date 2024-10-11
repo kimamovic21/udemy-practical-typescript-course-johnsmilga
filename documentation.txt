@@ -1221,3 +1221,20 @@ Section 05: Store App
 
 153. Loader Function
 -u komponenti App.tsx, u objekt rutu za komponentu Landing dodan key - value par loader i asinhrona funkcija
+
+154. Landing Page - Loader
+-u komponentu Landing.tsx importujemo funkciju useLoaderData i tip LoaderFunction
+-kreiramo anonimna asinhronu funkciju 
+-vrijednost anonimne asinhrone funkcije pohranjujemo u varijablu const loader
+-varijabli loader dodajemo tip LoaderFunction
+-eksportujemo varijablu loader
+-u komponentu App.tsx importujemo funkciju loader kao landingLoader
+-u key - value par dodajemo loader: landingLoader
+-u komponentu Landing.tsx importujemo funkciju customFetch i tip ProductsResponse iz foldera utils
+-kreiramo varijablu const url
+-u anonimnu funkciju dodajemo metodu await customFetch(url)
+-funkciji customFetch dodajemo tip <ProductsResponse>
+-vrijednost funkcije customFetch() pohranjujemo u varijablu const response
+-anonimnoj funkciji dodajemo tip Promise<ProductsResponse>
+-u funkciju Landing() dodajemo pozivamo funkciju useLoaderData() as ProductsResponse
+-vrijednost funkcije useLoaderData() pohranjujemo u varijablu const result
