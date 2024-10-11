@@ -1206,3 +1206,10 @@ Section 05: Store App
 -u folderu components kreiramo pet tsx komponenti
 -kreirane tsx komponente eksportujemo kao default u index.ts fajlu
 -u komponentu Landing.tsx importujemo komponente Hero.tsx i FeaturedProducts.tsx
+
+151. Custom Fetch Function
+-otvorimo link: https://documenter.getpostman.com/view/18152321/2s9Xy5KpTi
+-u folderu utils kreiramo customFetch.ts fajl
+-u customFetch.ts fajl importujemo instancu axios
+-kreiramo varijablu const productionUrl
+-kreiramo i eksportujemo varijablu customFetch
