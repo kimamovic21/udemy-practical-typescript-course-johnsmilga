@@ -1248,3 +1248,12 @@ Section 05: Store App
 -u komponentu FeaturedProducts.tsx importujemo komponente SectionTitle.tsx i ProductsGrid.tsx
 -u funkcije FeaturedProducts() kreiramo section element 
 -u jsx-u komponenti SectionTitle dodajemo prop text
+
+156. FormatAsDollars Function
+-u folderu utils kreiramo formatAsDollars.ts fajl
+-u formatAsDollars.ts fajlu kreiramo i eksportujemo funkciju formatAsDollars()
+-funkciji formatAsDollars() dodajemo parametar price koji moze imati tip string ili number
+-funkcije formatAsDollars() dodajemo tip string
+-u funkciji formatAsDollars() kreiramo varijablu const dollarsAmount
+-dodajemo izjavu return dollarsAmount
+-u index.ts fajl dodajemo eksport * za fajl formatAsDollars.ts
