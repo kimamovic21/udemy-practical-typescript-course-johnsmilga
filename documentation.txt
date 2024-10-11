@@ -1257,3 +1257,21 @@ Section 05: Store App
 -u funkciji formatAsDollars() kreiramo varijablu const dollarsAmount
 -dodajemo izjavu return dollarsAmount
 -u index.ts fajl dodajemo eksport * za fajl formatAsDollars.ts
+
+157. Products Grid Component
+-otvorimo link https://ui.shadcn.com/docs/components/card
+-u terminalu instaliramo komponentu Card sa komandom 
+-u komponentu ProductsGrid.tsx importujemo i kreiramo funkciju useLoaderData
+-vrijednost funkcije useLoaderData() pohranjujemo u varijablu const { data: products }
+-roditelj div elementu dodajemo Tailwind CSS klase
+-u div element dodajemo metodu products.map()
+-destruktuiramo varijable const { title, price, image }
+-importujemo i kreiramo funkciju formatAsDollars(price)
+-vrijednost funkcije formatAsDollars(price) pohranjujemo u varijablu const dollarsAmount
+-u funkciji map() kreiramo komponentu Link
+-komponenti Link dodajemo prop to i key
+-importujemo komponente Card i CardContent iz ui/card.tsx fajla
+-u komponenti Link kreiramo komponentu Card sa otvorenim i zatvorenim tagom
+-u komponenti Card kreiramo komponentu CardContent sa otvorenim i zatvorenim tagom
+-u komponenti CardContent kreiramo HTML elemente img, div, h2 i p
+-HTML elementima dodajemo Tailwind CSS klase
