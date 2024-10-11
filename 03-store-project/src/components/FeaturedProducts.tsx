@@ -1,6 +1,11 @@
+import { ProductsGrid, SectionTitle } from '.'
+
 function FeaturedProducts() {
   return (
-    <div>FeaturedProducts</div>
+    <section className='pt-24 '>
+      <SectionTitle text='featured products' />
+      <ProductsGrid />
+    </section>
   )
 }
 

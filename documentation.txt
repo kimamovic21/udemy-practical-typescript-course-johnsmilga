@@ -1238,3 +1238,13 @@ Section 05: Store App
 -anonimnoj funkciji dodajemo tip Promise<ProductsResponse>
 -u funkciju Landing() dodajemo pozivamo funkciju useLoaderData() as ProductsResponse
 -vrijednost funkcije useLoaderData() pohranjujemo u varijablu const result
+
+155. Section Title
+-otvorimo link: https://ui.shadcn.com/docs/components/separator
+-u terminalu instaliramo komponentu Separator sa komandom npx shadcn@latest add separator
+-u komponentu SectionTitle.tsx importujemo komponentu Separator
+-funkciji SectionTitle() dodajemo parametar destruktuirani prop text
+-parametru text dodajemo tip string
+-u komponentu FeaturedProducts.tsx importujemo komponente SectionTitle.tsx i ProductsGrid.tsx
+-u funkcije FeaturedProducts() kreiramo section element 
+-u jsx-u komponenti SectionTitle dodajemo prop text
