@@ -1260,7 +1260,7 @@ Section 05: Store App
 
 157. Products Grid Component
 -otvorimo link https://ui.shadcn.com/docs/components/card
--u terminalu instaliramo komponentu Card sa komandom 
+-u terminalu instaliramo komponentu Card sa komandom npx shadcn@latest add card
 -u komponentu ProductsGrid.tsx importujemo i kreiramo funkciju useLoaderData
 -vrijednost funkcije useLoaderData() pohranjujemo u varijablu const { data: products }
 -roditelj div elementu dodajemo Tailwind CSS klase
@@ -1275,3 +1275,12 @@ Section 05: Store App
 -u komponenti Card kreiramo komponentu CardContent sa otvorenim i zatvorenim tagom
 -u komponenti CardContent kreiramo HTML elemente img, div, h2 i p
 -HTML elementima dodajemo Tailwind CSS klase
+
+158. Hero Component
+-u komponentu Hero.tsx importujemo komponente Link i Button iz paketa React Router Dom
+-importujemo komponentu HeroCarousel.tsx
+-u jsx-u kreiramo HTML elemente section, div, h1 i p
+-HTML elementima dodajemo Tailwind CSS klase
+-u div elementu kreiramo komponentu Button 
+-komponenti Button dodajemo prop asChild, site i className
+-u komponenti Button kreiramo komponentu Link
