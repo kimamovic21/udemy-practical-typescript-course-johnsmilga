@@ -1284,3 +1284,19 @@ Section 05: Store App
 -u div elementu kreiramo komponentu Button 
 -komponenti Button dodajemo prop asChild, site i className
 -u komponenti Button kreiramo komponentu Link
+
+159. Hero Carousel
+-otvorimo link: https://ui.shadcn.com/docs/components/carousel
+-u terminalu instaliramo komponentu Carousel sa komandom npx shadcn@latest add carousel
+-u folder assets dodajemo cetiri slike
+-u komponentu HeroCarousel.tsx importujemo komponente iz fajlova carousel.tsx i card.tsx
+-kreiramo varijablu niz const carouselImages koji se sastoji od importovanih slika
+-u funkcije HeroCarousel() roditelj div elementu dodajemo Tailwind CSS klase
+-u div elementu kreiramo komponentu Carousel sa otvorenim i zatvorenim tagom
+-u komponenti Carousel kreiramo komponentu CarouselContent sa otvorenim i zatvorenim tagom
+-u komponentu CarouselContent dodajemo metodu carouselImages.map()
+-u map() funkciji kreiramo komponentu CarouselItem sa otvorenim i zatvorenim tagom
+-u komponenti Carousel kreiramo komponentu Card sa otvorenim i zatvorenim tagom
+-u komponenti Card kreiramo komponentu CardContent sa otvorenim i zatvorenim tagom
+-u komponentu CardContent kreiramo img element
+-u komponenti Carousel kreiramo komponente CarouselPrevious i CarouselNext
