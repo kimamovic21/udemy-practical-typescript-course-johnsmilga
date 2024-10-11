@@ -24,7 +24,11 @@ function App() {
         {
           index: true,
           element: <Landing />,
-          errorElement: <ErrorElement />
+          errorElement: <ErrorElement />,
+          loader: async () => {
+            console.log('landing page');
+            return null;
+          }
         },
         {
           path: 'products',

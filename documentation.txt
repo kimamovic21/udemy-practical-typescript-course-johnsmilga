@@ -1218,3 +1218,6 @@ Section 05: Store App
 -u folderu utils kreiramo types.ts fajl
 -u types.ts fajlu kreiramo i eksportujemo tipove ProductsResponse, Product, ProductsMeta i Pagination
 -otvorimo link: https://strapi-store-server.onrender.com/api/products
+
+153. Loader Function
+-u komponenti App.tsx, u objekt rutu za komponentu Landing dodan key - value par loader i asinhrona funkcija
