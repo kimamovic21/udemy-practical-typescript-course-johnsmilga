@@ -1357,3 +1357,12 @@ Section 05: Store App
 -importujemo komponente LayoutGrid.tsx i ProductsList.tsx
 -kreiramo div element za proizvode
 -u div element dodajemo ternarni uslov za varijablu totalProducts
+
+163. Global Loading - Setup
+-u folderu components kreiramo komponentu Loading.tsx
+-u index.ts fajlu eksportujemo komponentu Loading.tsx kao default
+-u komponentu HomeLayout.tsx importujemo i kreiramo funkciju useNavigation iz paketa React Router Dom
+-vrijednost funkcije useNavigation() pohranjujemo u varijablu const navigation
+-kreiramo varijablu const isPageLoading
+-importujemo komponentu Loading.tsx
+-u div element dodajemo ternarni operator za varijablu isPageLoading 
