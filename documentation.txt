@@ -1375,3 +1375,15 @@ Section 05: Store App
 -u div element dodajemo metodu Array.from({ ... }).map()
 -u funkciji map(), u return izjavi kreiramo roditelj div element
 -u div element kreiramo tri komponente Skeleton
+
+165. Filters Component - Setup
+-otvorimo link: https://ui.shadcn.com/docs/components/form
+-u terminalu instaliramo vise Shadcn komponenti sa komandom npx shadcn@latest add label input select slider checkbox
+-u komponentu Filters.tsx importujemo komponente Form i Link iz paketa React Router Dom
+-importujemo komponente Input, Label i Button iz foldera ui
+-u jsx-u kreiramo roditelj komponentu Form sa Tailwind CSS klasama
+-u komponenti Form kreiramo div element 
+-u div elementu kreiramo komponente Label i Input
+-komponenti Input dodajemo prop id, name, type i defaultValue
+-kreiramo dvije komponente Button
+-komponentama Button dodajemo vise prop
