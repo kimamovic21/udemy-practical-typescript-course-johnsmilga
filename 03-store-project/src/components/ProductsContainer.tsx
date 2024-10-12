@@ -1,6 +1,10 @@
+import ProductsList from './ProductsList'
+
 function ProductsContainer() {
   return (
-    <div>ProductsContainer</div>
+    <div>
+      <ProductsList />
+    </div>
   )
 }
 

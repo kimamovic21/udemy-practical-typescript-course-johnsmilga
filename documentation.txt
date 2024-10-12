@@ -1315,3 +1315,23 @@ Section 05: Store App
 -importujemo komponentama Filters, ProductsContainer i PaginationContainer
 -u komponentu App.tsx importujemo funkciju loader kao productsLoader iz komponente Products.tsx
 -u objekt rutu za komponentu Products dodajemo key - value par loader i funkciju productsLoader
+
+161. Products List Component
+-u komponentu ProductsList.tsx import funkciju useLoaderData i komponentu Link iz paketa React Router Dom
+-importujemo funkciju formatAsDollars i tip ProductsResponse iz foldera utils
+-kreiramo funkciju useLoaderData() as ProductsResponse
+-vrijednost funkcije useLoaderData() pohranjujemo u varijablu const { data: products }
+-u jsx-u, roditelj div elementu dodajemo Tailwind CSS klase
+-u div element dodajemo metodu products.map()
+-u funkciji map() kreiramo komponentu Link
+-komponenti Link dodajemo prop key i to
+-destruktuiramo varijable const { title, price, image, company }
+-importujemo komponente Card i CardContent iz komponente ui/card.tsx
+-kreiramo komponentu Card sa otvorenim i zatvorenim tagom
+-u komponenti Card kreiramo komponentu CardContent sa otvorenim i zatvorenim tagom
+-komponenti CardContent dodajemo Tailwind CSS klase
+-u komponenti CardContent kreiramo HTML img element
+-kreiramo HTML elemente div, h2, h4 i p
+-HTML elementima dodajemo Tailwind CSS klase
+-kreiramo varijablu const dollarsAmount 
+-u komponentu ProductsContainer.tsx importujemo komponentu ProductsList.tsx
