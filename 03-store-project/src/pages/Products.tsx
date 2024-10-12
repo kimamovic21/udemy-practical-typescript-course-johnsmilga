@@ -1,6 +1,23 @@
-function Products() {
+import { type LoaderFunction } from 'react-router-dom'
+import { customFetch, type ProductsResponse } from '../utils'
+import { Filters, ProductsContainer, PaginationContainer } from '@/components'
+
+const url = '/products'
+
+export const loader: LoaderFunction = async (): Promise<ProductsResponse> => {
+  const response = await customFetch<ProductsResponse>(url)
+  console.log(response)
+
+  return { ...response.data }
+}
+
+const Products = () => {
   return (
-    <div>Products</div>
+    <>
+      <Filters />
+      <ProductsContainer />
+      <PaginationContainer />
+    </>
   )
 }
 

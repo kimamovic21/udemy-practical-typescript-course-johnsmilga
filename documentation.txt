@@ -1300,3 +1300,18 @@ Section 05: Store App
 -u komponenti Card kreiramo komponentu CardContent sa otvorenim i zatvorenim tagom
 -u komponentu CardContent kreiramo img element
 -u komponenti Carousel kreiramo komponente CarouselPrevious i CarouselNext
+
+160. Products Page - Setup
+-u folderu components kreiramo cetiri komponente
+-u index.ts fajlu eksportujemo komponente kao default
+-kreiramo varijablu const url
+-importujemo funkciju customFetch i tip ProductsResponse iz foldera utils
+-kreiramo asinhronu funkciju sa tipom Promise<ProductsResponse>
+-importujemo tip loader iz paketa React Router Dom
+-vrijednost anonimne funkcije pohranjujemo u varijablu const loader sa tipom LoaderFunction
+-u anonimnu funkciju dodajemo funkciju await customFetch()
+-vrijednost funkcije await customFetch() pohranjujemo u varijablu const response
+-eksportujemo varijablu loader
+-importujemo komponentama Filters, ProductsContainer i PaginationContainer
+-u komponentu App.tsx importujemo funkciju loader kao productsLoader iz komponente Products.tsx
+-u objekt rutu za komponentu Products dodajemo key - value par loader i funkciju productsLoader
