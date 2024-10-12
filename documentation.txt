@@ -1335,3 +1335,25 @@ Section 05: Store App
 -HTML elementima dodajemo Tailwind CSS klase
 -kreiramo varijablu const dollarsAmount 
 -u komponentu ProductsContainer.tsx importujemo komponentu ProductsList.tsx
+
+162. Products Container Component
+-u komponentu ProductsContainer.tsx importujemo i kreiramo funkciju useLoaderData() as ProductsResponse
+-importujemo tip ProductsResponse iz foldera utils
+-vrijednost funkcije useLoaderData() pohranjujemo u destruktuiranu varijablu const { meta }
+-kreiramo varijablu const totalProducts
+-importujemo funkciju useState
+-kreiramo state varijablu const layout i set funkciju setLayout
+-funkciji useState('grid') dodajemo tip <'grid' | 'list'>
+-u jsx-u kreiramo section element
+-u section elementu kreiramo dva elemente div
+-u prvom div elementu kreiramo h4 element za prikazivanje ukupnog broja proizvoda
+-importujemo komponentu Button iz komponente ui/button.tsx 
+-importujemo ikonice LayoutGrid i List iz paketa Lucide React
+-importujemo komponentu Separator iz komponente ui/separator.tsx
+-u drugom div elementu kreiramo dvije komponente Button sa otvorenim i zatvorenim tagom
+-komponentama Button dodajemo prop variant, size i dogadaj onClick
+-u dogadaj onClick proslijedujemo funkciju setLayout()
+-u prop variant dodajemo ternarni operator za varijablu layout
+-importujemo komponente LayoutGrid.tsx i ProductsList.tsx
+-kreiramo div element za proizvode
+-u div element dodajemo ternarni uslov za varijablu totalProducts
