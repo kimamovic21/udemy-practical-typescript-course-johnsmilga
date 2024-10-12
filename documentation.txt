@@ -1366,3 +1366,12 @@ Section 05: Store App
 -kreiramo varijablu const isPageLoading
 -importujemo komponentu Loading.tsx
 -u div element dodajemo ternarni operator za varijablu isPageLoading 
+
+164. Loading Component
+-otvorimo link: https://ui.shadcn.com/docs/components/skeleton
+-u terminalu instaliramo komponentu Skeleton sa komandom npx shadcn@latest add skeleton
+-u komponentu Loading.tsx importujemo komponentu Skeleton iz komponente ui/skeleton.tsx
+-u jsx-u, roditelj div elementu dodajemo Tailwind CSS klase
+-u div element dodajemo metodu Array.from({ ... }).map()
+-u funkciji map(), u return izjavi kreiramo roditelj div element
+-u div element kreiramo tri komponente Skeleton
