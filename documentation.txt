@@ -1464,3 +1464,23 @@ Section 05: Store App
 -komponenti Slider dodajemo prop id, name, step, max, value, onValueChange i className
 -u prop onValueChange proslijedujemo anonimnu funkciju sa parametrom value
 -u anonimnu funkciju sa parametrom value proslijedujemo funkciju setSelectedPrice()
+
+171. Form Checkbox
+-otvorimo link: https://ui.shadcn.com/docs/components/checkbox
+-u terminalu instaliramo Shadcn komponentu Checkbox sa komandom npx shadcn@latest add checkbox
+-u folderu components kreiramo komponentu FormCheckbox.tsx
+-u index.ts eksportujemo komponentu FormCheckbox.tsx kao default
+-u komponentu Filters.tsx importujemo komponentu FormCheckbox.tsx
+-u jsx-u kreiramo komponentu FormCheckbox
+-komponenti FormCheckbox dodajemo prop label, name i defaultValue
+-u prop defaultValue proslijedujemo vrijednost varijable shipping
+-u komponentu FormCheckbox.tsx importujemo komponente Label i Checkbox iz foldera ui
+-kreiramo tip FormCheckboxProps
+-funkciji FormCheckbox() dodajemo parametre destruktuirane prop name, label i defaultValue
+-destruktuiranim parametrima dodajemo tip FormCheckboxProps
+-u funkciji FormCheckbox() kreiramo varijablu const defaultChecked
+-u jsx-u kreiramo komponentu Label sa otvorenim i zatvorenim tagom
+-komponenti Label dodajemo prop htmlFor i className
+-kreiramo komponentu Checkbox sa samozatvarajucim tagom
+-komponenti Checkbox dodajemo prop id, name i defaultChecked
+-u prop defaultChecked proslijedujemo vrijednost varijable defaultChecked
