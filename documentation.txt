@@ -1390,3 +1390,13 @@ Section 05: Store App
 
 166. Query Params
 -u Products.tsx fajlu kreiramo varijablu const params
+
+167. Default Value
+-u types.ts fajlu kreiramo i eksportujemo tip Params
+-kreiramo i eksportujemo tip ProductsResponseWithParams
+-u komponentu Products.tsx importujemo tip ProductsResponseWithParams
+-u funkciju loader dodajemo tip ProductsResponseWithParams
+-u komponenti Filters.tsx importujemo i kreiramo funkciju useLoaderData()
+-importujemo tip ProductsResponseWithParams
+-vrijednost funkcije useLoaderData() pohranjujemo u destruktuirane varijable const { meta, params }
+-iz varijable params destruktuiramo varijablu const { search }

@@ -1,9 +1,13 @@
-import { Form, Link } from 'react-router-dom'
+import { Form, Link, useLoaderData } from 'react-router-dom'
+import { ProductsResponseWithParams } from '@/utils'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 
 function Filters() {
+  const { meta, params } = useLoaderData() as ProductsResponseWithParams
+  const { search } = params
+
   return (
     <Form className='border rounded-md px-8 py-4 grid gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center'>
       <div className='mb-2'>
@@ -12,7 +16,7 @@ function Filters() {
           id='search' 
           name='search' 
           type='text' 
-          defaultValue='' 
+          defaultValue={search}
         />
       </div>
 

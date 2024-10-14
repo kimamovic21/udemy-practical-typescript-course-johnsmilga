@@ -1,12 +1,12 @@
 import { type LoaderFunction } from 'react-router-dom'
-import { customFetch, type ProductsResponse } from '../utils'
+import { customFetch, type ProductsResponseWithParams, type ProductsResponse } from '../utils'
 import { Filters, ProductsContainer, PaginationContainer } from '@/components'
 
 const url = '/products'
 
 export const loader: LoaderFunction = async ({ 
   request 
-}): Promise<ProductsResponse> => {
+}): Promise<ProductsResponseWithParams> => {
 
   const params = Object.fromEntries([
     ...new URL(request.url).searchParams.entries()
@@ -18,7 +18,7 @@ export const loader: LoaderFunction = async ({
   })
   console.log(response)
 
-  return { ...response.data }
+  return { ...response.data, params }
 }
 
 function Products() {
