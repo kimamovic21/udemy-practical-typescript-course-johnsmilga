@@ -1414,3 +1414,27 @@ Section 05: Store App
 -iz varijable paramas destruktuiramo varijable const { search, company, category, shipping, order, price }
 -u jsx-u dodajemo komponentu FormInput sa prop type, label, name i defaultValue
 -u prop defaultValue proslijedujemo vrijednost varijable search
+
+169. Form Select
+-otvorimo link: https://ui.shadcn.com/docs/components/select
+-u folderu components kreiramo komponentu FormSelect.tsx
+-u terminalu instaliramo Shadcn komponentu Select sa komandom npx shadcn@latest add select
+-u komponenti FormSelect.tsx kreiramo tip SelectInputProps
+-importujemo komponentu Label iz komponente ui/labale.tsx
+-importujemo komponente Select, SelectContent, SelectItem, SelectTrigger, SelectValue iz komponente ui/select.tsx
+-funkciji FormSelect() dodajemo parametre destruktuirane prop label, name, options i defaultValue
+-destruktuiranim parametrima prop dodajemo tip SelectInputProps
+-u jsx-u kreiramo roditelj div element
+-u div elementu kreiramo komponentu Label sa otvorenim i zatvorenim tagom
+-komponenti Label dodajemo prop htmlFor i className
+-kreiramo komponentu Select sa otvorenim i zatvorenim tagom
+-komponenti Select dodajemo prop default i name
+-u komponenti Select kreiramo komponentu SelectTrigger sa otvorenim i zatvorenim tagom
+-komponenti SelectTrigger dodajemo prop id
+-u komponentu SelectTrigger kreiramo komponentu SelectValue 
+-u komponenti Select kreiramo komponentu SelectContent sa otvorenim i zatvorenim tagom
+-u komponentu SelectContent dodajemo metodu options.map()
+-u funkciji map() kreiramo komponentu SelectItem
+-komponenti SelectItem dodajemo prop key i value
+-u komponentu Filters.tsx importujemo komponentu FormSelect.tsx
+-u jsx-u kreiramo tri komponente FormSelect za kategorije, kompanije i narudzbe
