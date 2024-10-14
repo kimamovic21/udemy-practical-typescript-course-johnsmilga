@@ -3,6 +3,7 @@ import { ProductsResponseWithParams } from '@/utils'
 import { Button } from '@/components/ui/button'
 import FormInput from './FormInput'
 import FormSelect from './FormSelect'
+import FormRange from './FormRange'
 
 function Filters() {
   const { meta, params } = useLoaderData() as ProductsResponseWithParams
@@ -41,6 +42,13 @@ function Filters() {
         name='order'
         options={['a-z', 'z-a', 'high', 'low']}
         defaultValue={order}
+      />
+
+      {/* PRICE */}
+      <FormRange 
+        label='price' 
+        name='price' 
+        defaultValue={price} 
       />
 
       <Button 

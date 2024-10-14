@@ -1438,3 +1438,29 @@ Section 05: Store App
 -komponenti SelectItem dodajemo prop key i value
 -u komponentu Filters.tsx importujemo komponentu FormSelect.tsx
 -u jsx-u kreiramo tri komponente FormSelect za kategorije, kompanije i narudzbe
+
+170. Form Range
+-otvorimo link: https://ui.shadcn.com/docs/components/slider
+-u terminalu instaliramo Shadcn komponentu Slider sa komandom npx shadcn@latest add slider
+-u folderu components kreiramo komponentu FormRange.tsx
+-u index.ts fajlu eksportujemo komponentu FormRange.tsx kao default
+-u komponentu Filters.tsx importujemo komponentu FormRange.tsx
+-u jsx-u, komponenti FormRange dodajemo prop label, name i defaultValue
+-u prop defaultValue proslijedujemo vrijednost varijable price
+-u komponentu FormRange.tsx importujemo funkciju useState
+-importujemo funkciju formatAsDollars iz foldera utils
+-importujemo komponente Label i Slider iz foldera ui
+-kreiramo tip FormRangeProps
+-funkciji FormRange() dodajemo parametre destruktuirane prop name, label i defaultValue
+-destruktuiranim parametrima dodajemo tip FormRangeProps
+-kreiramo varijable const const step, const maxPrice i const defaultPrice
+-kreiramo state varijablu const selectedPrice i set funkciju setSelectedPrice
+-u jsx-u kreiramo roditelj div element
+-u roditelj div elementu kreiramo komponentu Label sa otvorenim i zatvorenim tagom
+-komponenti Label dodajemo prop htmlFor i className
+-kreiramo HTML span element
+-u span element dodajemo funkciju formatAsDollars(selectedPrice)
+-u div elementu kreiramo komponentu Slider sa samozatvarajucim tagom
+-komponenti Slider dodajemo prop id, name, step, max, value, onValueChange i className
+-u prop onValueChange proslijedujemo anonimnu funkciju sa parametrom value
+-u anonimnu funkciju sa parametrom value proslijedujemo funkciju setSelectedPrice()
