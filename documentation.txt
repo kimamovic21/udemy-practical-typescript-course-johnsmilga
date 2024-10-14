@@ -1400,3 +1400,17 @@ Section 05: Store App
 -importujemo tip ProductsResponseWithParams
 -vrijednost funkcije useLoaderData() pohranjujemo u destruktuirane varijable const { meta, params }
 -iz varijable params destruktuiramo varijablu const { search }
+
+168. Form Input
+-u folderu components kreiramo komponente Label i Input iz foldera ui
+-kreiramo tip FormInputProps
+-funkciji FormInput() dodajemo parametre destruktuirane prop label, name, type i defaultValue
+-parametrima prop dodajemo tip FormInputProps
+-u jsx-u kreiramo komponente Label i Input 
+-komponenti Label dodajemo prop htmlFor i className
+-komponenti Input dodajemo prop id, name, type i defaultValue
+-u index.ts fajlu eksportujemo komponentu FormInput.tsx kao default
+-u komponentu Filters.tsx importujemo komponentu FormInput.tsx
+-iz varijable paramas destruktuiramo varijable const { search, company, category, shipping, order, price }
+-u jsx-u dodajemo komponentu FormInput sa prop type, label, name i defaultValue
+-u prop defaultValue proslijedujemo vrijednost varijable search
