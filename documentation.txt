@@ -1387,3 +1387,6 @@ Section 05: Store App
 -komponenti Input dodajemo prop id, name, type i defaultValue
 -kreiramo dvije komponente Button
 -komponentama Button dodajemo vise prop
+
+166. Query Params
+-u Products.tsx fajlu kreiramo varijablu const params
