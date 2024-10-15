@@ -1489,3 +1489,20 @@ Section 05: Store App
 -otvorimo web stranicu: https://ui.shadcn.com/docs/components/pagination
 -u terminalu instaliramo Shadcn komponentu Pagination sa komandom npx shadcn@latest add pagination
 -u pagination.tsx fajl importujemo komponentu Link
+
+173. Construct URL - Setup
+-u folderu utils kreiramo pagination.ts fajl
+-u index.ts fajlu dodajemo eksport * za fajl pagination.ts
+-u pagination.ts fajlu kreiramo tip ConstructUrlParams
+-kreiramo i eksportujemo funkciju constructUrl()
+-funkciji constructUrl() dodajemo parametre destruktuirane prop pageNumber, search i pathname
+-destruktuiranim parametrima dodajemo tip ConstructUrlParams
+-funkciji constructUrl() dodajemo tip string
+-u return izjavu dodajemo string '/products'
+-kreiramo tip ConstructPrevOrNextParams
+-kreiramo i eksportujemo funkciju constructPrevOrNextUrl()
+-funkciji constructPrevOrNextUrl() dodajemo paramere destruktuirane prop currentPage, pageCount, search i pathname
+-destruktuiranim parametrima dodajemo tip ConstructPrevOrNextParams
+-funkciji constructPrevOrNextUrl() dodajemo objekt tip
+-u funkciji constructPrevOrNextUrl() kreiramo varijable const prevUrl i nextUrl
+-dodajemo return izjavu u koju dodajemo varijable prevUrl i nextUrl
