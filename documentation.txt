@@ -1536,3 +1536,19 @@ Section 05: Store App
 -komponenti PaginationNext dodajemo prop to 
 -u prop to proslijedujemo vrijednost varijable nextUrl
 -izmedu dvije komponente PaginationItem dodajemo varijablu {renderPagination}
+
+175. Construct URL - Complete
+-u pagination.ts fajlu, u funkciji constructUrl()
+-u funkciji constructUrl() kreiramo varijablu const searchParams
+-varijabli searchParams() dodajemo funkciju set()
+-dodajemo u return izjavu string
+-u funkciji constructPrevOrNextUrl() kreiramo varijablu let prevPage
+-dodajemo uslov if (prevPage < 1)
+-u uslov if (prevPage < 1) dodajemo prevPage = pageCount
+-nakon uslova if dodajemo funkciju constructUrl()
+-vrijednost funkcije constructUrl() pohranjujemo u varijablu const prevUrl
+-kreiramo varijablu let nextPage
+-dodajemo uslov if (prevPage < 1)
+-u uslov if (nextPage > 1) dodajemo nextPage = 1
+-nakon uslova if dodajemo funkciju constructUrl()
+-vrijednost funkcije constructUrl() pohranjujemo u varijablu const nextUrl
