@@ -1552,3 +1552,5 @@ Section 05: Store App
 -u uslov if (nextPage > 1) dodajemo nextPage = 1
 -nakon uslova if dodajemo funkciju constructUrl()
 -vrijednost funkcije constructUrl() pohranjujemo u varijablu const nextUrl
+
+176. React Router - URL Params
