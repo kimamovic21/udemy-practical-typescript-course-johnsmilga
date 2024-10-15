@@ -1506,3 +1506,33 @@ Section 05: Store App
 -funkciji constructPrevOrNextUrl() dodajemo objekt tip
 -u funkciji constructPrevOrNextUrl() kreiramo varijable const prevUrl i nextUrl
 -dodajemo return izjavu u koju dodajemo varijable prevUrl i nextUrl
+
+174. Pagination Container
+-u komponentu PaginationContainer.tsx import komponente iz komponente ui/pagination.tsx
+-importujemo tip ProductsResponseWithParams, funkcije constructUrl i constructPrevOrNextUrl iz foldera utils
+-importujemo funkcije useLoaderData, useLocation iz paketa React Router Dom
+-kreiramo funkcije useLoaderData() i useLocation()
+-vrijednost funkcije useLoaderData() as ProductsResponseWithParams pohranjujemo u destruktuiranu varijablu const { meta }
+-iz varijable meta destruktuiramo varijable const { pageCount, page }
+-vrijednost funkcije useLocation() pohranjujemo u destruktuirane varijable const { search, pathname }
+-dodajemo metodu Array.from()
+-vrijednost metode Array.from() pohranjujemo u varijablu const pages
+-dodajemo uslov if (pageCount < 2)
+-dodajemo metodu pages.map()
+-vrijednost metode pages.map() pohranjujemo u varijablu const renderPagination
+-u funkciji map() kreiramo varijable const isActive i const url
+-u return izjavi kreiramo komponentu PaginationItem sa otvorenim i zatvorenim tagom
+-komponenti PaginationItem dodajemo prop key
+-u komponenti PaginationItem kreiramo komponentu PaginationLink sa otvorenim i zatvorenim tagom
+-komponenti PaginationLink dodajemo prop to i isActive
+-vrijednost funkcije constructPrevOrNextUrl() pohranjujemo u destruktuirane varijable const { prevUrl, nextUrl }
+-u jsx-u kreiramo roditelj komponentu Pagination sa otvorenim i zatvorenim tagom
+-u komponenti Pagination kreiramo komponentu PaginationContent sa otvorenim i zatvorenim tagom
+-u komponenti PaginationContent kreiramo dvije komponente PaginationItem sa otvorenim i zatvorenim tagom
+-u prvoj komponenti PaginationItem kreiramo komponentu PaginationPrevious sa samozatvarajucim tagom
+-komponenti PaginationPrevious dodajemo prop to 
+-u prop to proslijedujemo vrijednost varijable prevUrl
+-u drugoj komponenti PaginationItem kreiramo komponentu PaginationNext sa samozatvarajucim tagom
+-komponenti PaginationNext dodajemo prop to 
+-u prop to proslijedujemo vrijednost varijable nextUrl
+-izmedu dvije komponente PaginationItem dodajemo varijablu {renderPagination}
