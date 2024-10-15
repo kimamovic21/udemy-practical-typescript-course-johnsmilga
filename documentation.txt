@@ -1484,3 +1484,8 @@ Section 05: Store App
 -kreiramo komponentu Checkbox sa samozatvarajucim tagom
 -komponenti Checkbox dodajemo prop id, name i defaultChecked
 -u prop defaultChecked proslijedujemo vrijednost varijable defaultChecked
+
+172. Pagination Container - Setup
+-otvorimo web stranicu: https://ui.shadcn.com/docs/components/pagination
+-u terminalu instaliramo Shadcn komponentu Pagination sa komandom npx shadcn@latest add pagination
+-u pagination.tsx fajl importujemo komponentu Link
