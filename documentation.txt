@@ -1554,3 +1554,12 @@ Section 05: Store App
 -vrijednost funkcije constructUrl() pohranjujemo u varijablu const nextUrl
 
 176. React Router - URL Params
+
+177. Single Product Page - Setup
+-u folderu components kreiramo komponente SelectProductColor.tsx i SelectProductAmount.tsx
+-u index.ts fajlu eksportujemo kreirane komponente kao default
+-u komponentu SingleProduct.tsx kreiramo i eksportujemo asinhronu loader() funkciju sa destruktuiranim parametrom params
+-importujemo tip LoaderFunction iz paketa React Router Dom
+-funkciji loader() dodajemo tip LoaderFunction
+-u komponentu App.tsx importujemo funkciju loader kao singleProductLoader
+-u objekt rutu za komponentu SingleProduct dodajemo key - value par loader i funkciju singleProductLoader
