@@ -1579,3 +1579,23 @@ Section 05: Store App
 -kreiramo state varijablu const amount i set funkciju set funkciju setAmount
 -kreiramo funkciju addToCart()
 -u eslint.config.js fajlu, u konfiguracioni objekt dodana opcija allowExportNames: ['loader']
+
+179. Single Product Page - Render Image and Info
+-u jsx-u kreiramo section element kao roditelj element
+-u section elementu kreiramo div element sa Tailwind CSS klasama
+-importujemo komponentu Link iz paketa React Router Dom
+-importujemo komponente Button i Separator iz foldera components/ui
+-u div elementu kreiramo komponentu Button sa otvorenim i zatvorenim tagom
+-komponenti Button dodajemo prop asChild, variant i size
+-u komponentu Button dodajemo komponentu Link
+-kreiramo komponentu Separator
+-kreiramo jos jedan Button element
+-kreiramo div element za proizvod
+-u div elementu za proizvod kreiramo img element
+-kreiramo div element za informacije o proizvodu
+-kreiramo element h2, h4 i p
+-importujemo komponente SelectProductAmount.tsx i SelectProductColor.tsx
+-u jsx-u dodajemo importovane komponente
+-kreiramo komponentu Button za dodavanje proizvoda u korpu
+-komponenti Button dodajemo prop size, className i onClick
+-u dogadaj onClick proslijedujemo funkciju addToCart
