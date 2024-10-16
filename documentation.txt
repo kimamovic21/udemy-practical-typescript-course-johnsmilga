@@ -1563,3 +1563,19 @@ Section 05: Store App
 -funkciji loader() dodajemo tip LoaderFunction
 -u komponentu App.tsx importujemo funkciju loader kao singleProductLoader
 -u objekt rutu za komponentu SingleProduct dodajemo key - value par loader i funkciju singleProductLoader
+
+178. Fetch Single Product
+-u komponentu SingleProduct.tsx importujemo i kreiramo funkciju useLoaderData()
+-importujemo funkciju useState
+-u anonimnu asinhronu funkciju dodajemo tip Promise<SingleProductResponse>
+-importujemo funkcije customFetch, formatAsDollars i tip SingleProductResponse iz foldera utils
+-u funkciju loader() dodajemo funkciju await customFetch<SingleProductResponse>()
+-vrijednost funkcije customFetch() pohranjujemo u varijablu const response
+-u return izjavu dodajemo { ...response.data }
+-vrijednost funkcije useLoaderData() pohranjujemo u destruktuirane varijable { data: product }
+-vrijednost varijable product.attributes pohranjujemo u destruktuirane varijable
+-vrijednost funkcije formatAsDollars(price) pohranjujemo u varijablu const dollarsAmount
+-kreiramo state varijablu const productColor i set funkciju setProductColors()
+-kreiramo state varijablu const amount i set funkciju set funkciju setAmount
+-kreiramo funkciju addToCart()
+-u eslint.config.js fajlu, u konfiguracioni objekt dodana opcija allowExportNames: ['loader']
