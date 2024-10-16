@@ -1599,3 +1599,16 @@ Section 05: Store App
 -kreiramo komponentu Button za dodavanje proizvoda u korpu
 -komponenti Button dodajemo prop size, className i onClick
 -u dogadaj onClick proslijedujemo funkciju addToCart
+
+180. Select Product Colors Component
+-u komponenti SingleProduct.tsx, komponenti SelectProductColor dodajemo prop colors, productColor i setProductColor
+-u komponenti SelectProductColor.tsx kreiramo tip SelectProductColorProps
+-funkciji SelectProductColor() dodajemo parametre destruktuirane prop colors, productColor i setProductColor
+-destruktuiranim parametrima dodajemo tip SelectProductColorProps
+-u jsx-u kreiramo HTML elemente kojima dodajemo Tailwind CSS klase
+-u div element sa klasom mt-2 dodajemo metodu colors.map()
+-u funkciji map(), u return izjavi kreiramo button element
+-button elementu dodajemo prop type, key, className, style i onClick
+-u prop className dodajemo dinamicku klasu
+-u dogadaj onClick proslijedujemo anonimnu funkciju
+-u anonimnu funkciju proslijedujemo funkciju setProductColor(color)

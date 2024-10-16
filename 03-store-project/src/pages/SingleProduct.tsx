@@ -61,7 +61,11 @@ function SingleProduct() {
           </p>
           
           {/* COLORS */}
-          <SelectProductColor />
+          <SelectProductColor
+            colors={colors}
+            productColor={productColor}
+            setProductColor={setProductColor}
+          />
 
           {/* AMOUNT */}
           <SelectProductAmount />
