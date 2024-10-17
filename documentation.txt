@@ -1642,3 +1642,15 @@ Section 05: Store App
 -u folderu ui generisane komponente toast.tsx i toaster.tsx
 -generisan folder hooks i use-toast.ts fajl
 -u komponentu main.tsx importujemo komponentu Toaster iz komponente ui/Toaster.tsx
+
+183. Cart Slice - Setup
+-u cartSlice.ts fajl importujemo tip PayloadAction iz Reduxjs Toolkit paketa
+-importujemo tipove CartItem i CartSlice iz foldera utils
+-importujemo funkciju toast() iz ui/use-toast.ts fajla
+-kreiramo varijablu const defaultState sa tipom CartState-
+-kreiramo funkciju getCartFromLocalStorage() sa tipom CartState
+-u funkcije getCartFromLocalStorage() kreiramo varijablu const cart
+-u return izjavu dodajemo ternarni operator za varijablu cart
+-u funkciji createSlice(), u objekt dodajemo key - value par initialState: getCartFromLocalStorage()
+-u objektu reducers kreiramo funkcije: addItem(), clearCart(), removeItem(), editItem() i calculateTotals()
+-eksportujemo funkcije kao cartSlice.actions
