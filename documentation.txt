@@ -1667,3 +1667,7 @@ Section 05: Store App
 -dodajemo metodu cartSlice.caseReducers
 -dodajemo funkciju toast()
 -u funkciju calculateTotals() dodajemo metode state.tax, state.orderTotal i localStorage.setItem()
+
+185. Clear Cart - Reducer
+-u cartSlice.ts fajlu, u funkciju clearCart() dodajemo localStorage.setItem()
+-dodajemo return defaultState
