@@ -1671,3 +1671,14 @@ Section 05: Store App
 185. Clear Cart - Reducer
 -u cartSlice.ts fajlu, u funkciju clearCart() dodajemo localStorage.setItem()
 -dodajemo return defaultState
+
+186. Delete Item - Reducer
+-u cartSlice.ts fajlu, funkciji removeItem() dodajemo parametre state i action
+-parametru action dodajemo tip PayloadAction<string>
+-kreiramo varijablu const cartID
+-dodajemo metodu state.cartItems.find()
+-vrijednost metode state.cartItems.find() pohranjujemo u varijablu const cartItem
+-dodajemo uslov if (!cartItem) return
+-dodajemo metode state.cartItems, state.numItemsInCart i state.cartTotal 
+-dodajemo metodu cartSlice.caseReducers.calculateTotals(state)
+-dodajemo funkciju toast() 
