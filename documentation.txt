@@ -1694,3 +1694,12 @@ Section 05: Store App
 -dodajemo metodu cartItem.amount = amount
 -dodajemo metodu cartSlice.caseReducers.calculateTotals(state)
 -dodajemo funkciju toast()
+
+188. AddToCart Functionality
+-u komponentu CartButton.tsx importujemo i kreiramo funkciju useAppSelector() iz foldera hooks
+-vrijednost funkcije useAppSelector() pohranjujemo u varijablu const numItemsInCart
+-u komponentu SingleProduct.tsx importujemo i kreiramo funkciju useAppDispatch() -importujemo funkciju addItem iz cartSlice.ts fajla
+-importujemo tip CartItem iz foldera utils
+-kreiramo varijablu const cartProduct sa tipom CartItem
+-vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
+-u funkciju addToCart() dodajemo funkciju dispatch(addItem(cartProduct))
