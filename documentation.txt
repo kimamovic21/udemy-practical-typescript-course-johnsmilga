@@ -1703,3 +1703,23 @@ Section 05: Store App
 -kreiramo varijablu const cartProduct sa tipom CartItem
 -vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
 -u funkciju addToCart() dodajemo funkciju dispatch(addItem(cartProduct))
+
+189. Cart Page - Setup
+-u folderu components kreiramo tri komponente CartItemColumns.tsx, CartItemsList i cartTotals.tsx
+-u index.ts fajlu eksportujemo kreirane komponente
+-u komponenti Cart.tsx kreiramo varijablu const user
+-importujemo i kreiramo funkciju useAppSelector() iz foldera hooks
+-vrijednost funkcije useAppSelector() pohranjujemo u varijablu const numItemsInCart
+-importujemo komponentu SectionTitle.tsx
+-dodajemo uslov if (numItemsInCart === 0)
+-u uslov if dodajemo komponentu SectionTitle.tsx sa prop 'Empty Cart'
+-u jsx-u kreiramo roditelj element <> </> 
+-kreiramo komponentu SectionTitle sa prop text 'Shopping Cart'
+-komponenti SectionTitle dodajemo prop text
+-kreiramo div element sa klasom lg:grid-cols-12 sa Tailwind CSS klasama
+-u div elementu lg:grid-cols-12 kreiramo div element sa klasom lg:col-span-8
+-importujemo komponente CartItemsList.tsx i cartTotals.tsx
+-u div elementu dodajemo komponentu CartItemsList
+-kreiramo div element sa klasom lg:col-span-4
+-u div element sa klasom lg:col-span-4 dodajemo komponentu CartTotals
+-dodajemo uslov ternarni operator za varijablu user
