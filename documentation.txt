@@ -1635,3 +1635,10 @@ Section 05: Store App
 -u return izjavi kreiramo komponentu SelectItem sa otvorenim i zatvorenim tagom
 -komponenti SelectValue dodajemo prop key i value
 -u komponentu SelectItem dodajemo varijablu {selectValue}
+
+182. Toast Component
+-otvorimo link: https://ui.shadcn.com/docs/components/toast
+-u terminalu instaliramo Shadcn komponentu Toast sa komandom npx shadcn@latest add toast
+-u folderu ui generisane komponente toast.tsx i toaster.tsx
+-generisan folder hooks i use-toast.ts fajl
+-u komponentu main.tsx importujemo komponentu Toaster iz komponente ui/Toaster.tsx
