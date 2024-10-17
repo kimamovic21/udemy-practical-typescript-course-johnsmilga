@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { type CartItem, type CartState } from '@/utils';
-import { toast } from '@/components/ui/use-toast';
+import { toast } from '@/hooks/use-toast';
 
 const defaultState: CartState = {
   cartItems: [],
@@ -20,11 +20,30 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState: getCartFromLocalStorage(),
   reducers: {
-    addItem: () => {},
+    addItem: (state, action: PayloadAction<CartItem>) => {
+      const newCartItem = action.payload;
+      const item = state.cartItems.find((i) => i.cartID === newCartItem.cartID);
+      if (item) {
+        item.amount += newCartItem.amount;
+      } else {
+        state.cartItems.push(newCartItem);
+      }
+      state.numItemsInCart += newCartItem.amount;
+      state.cartTotal += Number(newCartItem.price) * newCartItem.amount;
+      // state.tax = 0.1 * state.cartTotal;
+      // state.orderTotal = state.cartTotal + state.shipping + state.tax;
+      // localStorage.setItem('cart', JSON.stringify(state));
+      cartSlice.caseReducers.calculateTotals(state);
+      toast({ description: 'Item added to cart' });
+    },
     clearCart: () => {},
     removeItem: () => {},
     editItem: () => {},
-    calculateTotals: () => {},
+    calculateTotals: (state) => {
+      state.tax = 0.1 * state.cartTotal;
+      state.orderTotal = state.cartTotal + state.shipping + state.tax;
+      localStorage.setItem('cart', JSON.stringify(state));
+    },
   },
 });
 

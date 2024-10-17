@@ -1654,3 +1654,16 @@ Section 05: Store App
 -u funkciji createSlice(), u objekt dodajemo key - value par initialState: getCartFromLocalStorage()
 -u objektu reducers kreiramo funkcije: addItem(), clearCart(), removeItem(), editItem() i calculateTotals()
 -eksportujemo funkcije kao cartSlice.actions
+
+184. Add Item - Reducer
+-u cartSlice.ts fajlu funkciji addItem() dodajemo parametre state i action
+-parametru action dodajemo tip PayloadAction<CartItem>
+-u funkciji addItem() kreiramo varijablu const newCartItem
+-dodajemo metodu state.cartItems.find()
+-vrijednost metode state.cartItems.find() pohranjujemo u varijablu const item
+-dodajemo uslov if (item) - else
+-u uslov if (item) dodajemo item.amount
+-u uslov else dodajemo metodu state.cartItems.push(newCartItem)
+-dodajemo metodu cartSlice.caseReducers
+-dodajemo funkciju toast()
+-u funkciju calculateTotals() dodajemo metode state.tax, state.orderTotal i localStorage.setItem()
