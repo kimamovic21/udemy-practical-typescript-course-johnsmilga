@@ -1612,3 +1612,26 @@ Section 05: Store App
 -u prop className dodajemo dinamicku klasu
 -u dogadaj onClick proslijedujemo anonimnu funkciju
 -u anonimnu funkciju proslijedujemo funkciju setProductColor(color)
+
+181. Select Product Amount Component
+-u komponentu SelectProductAmount.tsx importujemo komponente iz komponente ui/select.tsx
+-kreiramo i eksportujemo enum Mode
+-u komponentu SingleProduct.tsx importujemo enum Mode
+-u jsx-u, komponenti SelectProductAmount dodajemo prop mode, amount i setAmount
+-u komponenti SelectProductAmount.tsx kreiramo dva tipa SelectProductAmountProps i SelectCartItemAmountProps
+-funkciji SelectProductAmount() dodajemo parametre destruktuirane prop mode, amount i setAmount
+-destruktuiranim parametrima dodajemo tipove SelectProductAmountProps | SelectCartItemAmountProps
+-kreiramo varijablu const cartItem
+-u jsx-u kreiramo h4 element sa Tailwind CSS klasama
+-kreiramo komponentu Select sa otvorenim i zatvorenim tagom
+-komponenti Select dodajemo prop defaultValue i onValueChange
+-u komponenti Select kreiramo komponentu SelectTrigger sa otvorenim i zatvorenim tagom
+-komponenti SelectTrigger dodajemo dinamicku klasu
+-u komponenti SelectTrigger kreiramo komponentu SelectValue sa samozatvarajucim tagom
+-kreiramo komponentu SelectContent sa otvorenim i zatvorenim tagom
+-u komponentu SelectContent dodajemo metodu Array.from()
+-u funkciju from() dodajemo dva argumenta: objekt i anonimnu funkciju
+-u anonimnoj funkciji kreiramo varijablu const selectValue
+-u return izjavi kreiramo komponentu SelectItem sa otvorenim i zatvorenim tagom
+-komponenti SelectValue dodajemo prop key i value
+-u komponentu SelectItem dodajemo varijablu {selectValue}

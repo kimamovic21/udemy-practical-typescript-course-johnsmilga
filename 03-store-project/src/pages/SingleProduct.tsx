@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLoaderData, type LoaderFunction } from 'react-router-dom'
 import { customFetch, formatAsDollars, type SingleProductResponse } from '@/utils'
 import { SelectProductAmount, SelectProductColor } from '@/components'
+import { Mode } from '@/components/SelectProductAmount'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 
@@ -68,7 +69,11 @@ function SingleProduct() {
           />
 
           {/* AMOUNT */}
-          <SelectProductAmount />
+          <SelectProductAmount
+            mode={Mode.SingleProduct}
+            amount={amount}
+            setAmount={setAmount}
+          />
 
           {/* CART BUTTON */}
           <Button size='lg' className='mt-10' onClick={addToCart}>
