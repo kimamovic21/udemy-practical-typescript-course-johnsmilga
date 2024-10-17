@@ -1745,3 +1745,17 @@ Section 05: Store App
 -zadnjoj komponenti CartTotalRow dodajemo prop lastRow
 -logiku iz komponente CartTotals.tsx za funkciju CartTotalRow() premjestamo u komponentu CartTotalRow.tsx
 -u komponentu CartTotals.tsx importujemo komponentu CartTotalRow.tsx
+
+191. Cart Items List
+-u komponentu CartItemsList.tsx importujemo i kreiramo funkciju useAppSelector() iz foldera hooks
+-vrijednost funkcije useAppSelector() pohranjujemo u varijablu const cartItems
+-importujemo komponentu Card iz komponentu ui/card.tsx
+-u roditelj div element dodajemo metodu cartItems.map()
+-u funkciji map() destruktuiramo varijable const { cartID, title, price, image, amount, company, productColor } 
+-dodajemo komponentu Card kao roditelj komponentu
+-komponenti Card dodajemo prop key i className
+-komponenti Card dodajemo Tailwind CSS klase
+-u komponenti CartItemColumns.tsx kreiramo i eksportujemo cetiri funkcije FirstColumn, SecondColumn, ThirdColumn i FourthColumn
+-u komponentu CartItemsList.tsx importujemo komponente iz komponente CartItemColumns.tsx
+-u jsx-u dodajemo cetiri komponente 
+-svakoj komponenti dodajemo nekoliko prop osim zadnjoj
