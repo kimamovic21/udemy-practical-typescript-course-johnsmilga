@@ -1723,3 +1723,25 @@ Section 05: Store App
 -kreiramo div element sa klasom lg:col-span-4
 -u div element sa klasom lg:col-span-4 dodajemo komponentu CartTotals
 -dodajemo uslov ternarni operator za varijablu user
+
+190. Cart Totals Component
+-u CartTotals.tsx komponenti kreiramo funkciju CartTotalRow()
+-funkciji CartTotalRow() dodajemo parametre destruktuirane prop label, amount, lastRow
+-destruktuiranim parametrima dodajemo tipove
+-u jsx-u kreiramo HTML elemente p i span
+-importujemo funkciju formatAsDollars iz foldera utils
+-importujemo komponentu Separator iz komponente ui/separator.tsx
+-u span element dodajemo funkciju formatAsDollars(amount)
+-dodajemo ternarni uslov za varijablu lastRow
+-importujemo i kreiramo funkciju useAppSelector() iz foldera hooks
+-vrijednost funkcije useAppSelector() pohranjujemo u destruktuirane varijable const { cartTotal, shipping, tax, orderTotal }
+-importujemo komponente Card i CardTitle iz komponente ui/card.tsx
+-u jsx-u kreiramo komponentu Card sa otvorenim i zatvorenim tagom
+-komponenti Card dodajemo Tailwind CSS klase
+-u komponenti Card kreiramo tri komponente CartTotalRow sa samozatvarajucim tagom
+-kreiramo komponentu CardTitle sa otvorenim i zatvorenim tagom
+-u komponenti CardTitle kreiramo komponentu CartTotalRow sa samozatvarajucim tagom
+-komponentama CartTotalRow dodajemo prop label i amount
+-zadnjoj komponenti CartTotalRow dodajemo prop lastRow
+-logiku iz komponente CartTotals.tsx za funkciju CartTotalRow() premjestamo u komponentu CartTotalRow.tsx
+-u komponentu CartTotals.tsx importujemo komponentu CartTotalRow.tsx
