@@ -1681,4 +1681,16 @@ Section 05: Store App
 -dodajemo uslov if (!cartItem) return
 -dodajemo metode state.cartItems, state.numItemsInCart i state.cartTotal 
 -dodajemo metodu cartSlice.caseReducers.calculateTotals(state)
--dodajemo funkciju toast() 
+-dodajemo funkciju toast()
+
+187. Edit Item - Reducer
+-u cartSlice.ts fajlu, funkciji editItem() dodajemo parametre state i action
+-parametru action dodajemo tip PayloadAction<>
+-destruktuiramo varijable const { cartID, amount }
+-dodajemo metodu state.cartItems.find()
+-vrijednost metode state.cartItems.find() pohranjujemo u varijablu const cartItem
+-dodajemo uslov if (!cartItem) return
+-dodajemo metodu state.numItemsInCart i state.cartTotal
+-dodajemo metodu cartItem.amount = amount
+-dodajemo metodu cartSlice.caseReducers.calculateTotals(state)
+-dodajemo funkciju toast()
