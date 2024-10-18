@@ -1815,3 +1815,5 @@ Section 05: Store App
 -u uslov if dodajemo funkciju toast() za prikazivanje poruke za demo korisnika
 -nakon uslova if dodajemo jos jednu funkciju toast() za uspjesnu prijavu
 -u funkciju logoutUser() dodajemo funkciju toast() za uspjesnu odjavu
+
+196. Register and Login Request API Info
