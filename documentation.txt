@@ -1764,3 +1764,8 @@ Section 05: Store App
 -u komponenti CartItemColumns.tsx, funkciji FirstColumn() dodajemo parametre destruktuirane prop title i image
 -destruktuiranim parametrima dodajemo tipove 
 -u return izjavi kreiramo img element sa Tailwind CSS klasama
+
+193. Second Column
+-u komponenti CartItemColumns.tsx, funkciji SecondColumn() dodajemo parametre destruktuirane prop title, company i productColor
+-destruktuiranim parametrima dodajemo tipove 
+u return izjavi kreiramo HTML elemente sa Tailwind CSS klasama
