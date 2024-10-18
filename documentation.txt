@@ -1791,3 +1791,27 @@ Section 05: Store App
 -komponenti SelectProductAmount dodajemo prop amount, setAmount i mode
 -komponenti Button dodajemo dogadaj onClick
 -u dogadaj onClick proslijedujemo funkciju removeItemFromTheCart 
+
+195. User Slice
+-u userSlice.ts fajlu kreiramo i eksportujemo tipove User i UserState
+-varijabli const initialState dodajemo tip UserState
+-kreiramo funkciju getUserFromLocalStorage() sa tipovima User | null
+-u funkciji getUserFromLocalStorage() kreiramo varijablu const user
+-dodajemo uslov if(!user)
+-dodajemo return izjavu JSON.parse(user)
+-u varijablu objekt const initialState dodajemo kery - value par user: getCartFromLocalStorage()
+-u objektu reducers kreiramo funkcije loginUser() i logoutUser()
+-importujemo tip PayloadAction 
+-funkciji logoutUser() dodajemo parametar state
+-u funkciju logoutUser() dodajemo state.user = null
+-dodajemo localStorage.removeItem('user')
+-funkciji loginUser() dodajemo parametre state i action
+-parametru action dodajemo tip ayloadAction<User>
+-u funkciji loginUser() kreiramo varijablu const user
+-dodajemo state.user = user
+-dodajemo localStorage.setItem()
+-dodajemo uslov if da provjerimo da li je korisnik demo user
+-importujemo funkciju toast() iz use-toast.ts fajla
+-u uslov if dodajemo funkciju toast() za prikazivanje poruke za demo korisnika
+-nakon uslova if dodajemo jos jednu funkciju toast() za uspjesnu prijavu
+-u funkciju logoutUser() dodajemo funkciju toast() za uspjesnu odjavu
