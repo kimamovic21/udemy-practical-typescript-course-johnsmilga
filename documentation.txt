@@ -1759,3 +1759,8 @@ Section 05: Store App
 -u komponentu CartItemsList.tsx importujemo komponente iz komponente CartItemColumns.tsx
 -u jsx-u dodajemo cetiri komponente 
 -svakoj komponenti dodajemo nekoliko prop osim zadnjoj
+
+192. First Column
+-u komponenti CartItemColumns.tsx, funkciji FirstColumn() dodajemo parametre destruktuirane prop title i image
+-destruktuiranim parametrima dodajemo tipove 
+-u return izjavi kreiramo img element sa Tailwind CSS klasama
