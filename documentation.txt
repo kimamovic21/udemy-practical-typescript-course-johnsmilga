@@ -1817,3 +1817,24 @@ Section 05: Store App
 -u funkciju logoutUser() dodajemo funkciju toast() za uspjesnu odjavu
 
 196. Register and Login Request API Info
+
+197. Register Page Setup
+-u folderu components kreiramo komponentu SubmitBtn.tsx
+-u index.ts fajlu eksportujemo komponentu SubmitBtn.tsx kao default
+-u komponentu Register.tsx importujemo komponentu iz komponente ui/card.tsx
+-importujemo komponente Form i Link
+-importujemo komponentu FormInput.tsx
+-u jsx-u kreiramo section element sa Tailwind CSS klasama
+-u section element dodajemo komponentu Card sa otvorenim i zatvorenim tagom
+-komponenti Card dodajemo Tailwind CSS klase
+-u komponentu Card dodajemo komponentu CardHeader sa otvorenim i zatvorenim tagom
+-u komponentu CardHeader dodajemo komponentu CardTitle sa otvorenim i zatvorenim tagom
+-u komponentu Card dodajemo komponentu CardContent sa otvorenim i zatvorenim tagom
+-u komponentu CardContent dodajemo komponentu Form sa otvorenim i zatvorenim tagom
+-u komponentu Form dodajemo tri komponentu FormInput sa samozatvarajucim tagom
+-dodajemo komponentu Button za submit
+-komponenti Button dodajemo prop type, variant i className
+-kreiramo p element sa Tailwind CSS klasama
+-u p element dodajemo komponentu Button za login
+-komponenti Button dodajemo prop type, asChild i variant
+-u komponentu Button dodajemo komponentu Link
