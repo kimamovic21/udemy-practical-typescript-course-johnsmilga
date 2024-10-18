@@ -900,7 +900,7 @@ kreiramo i eksportujemo funkciju ThemeProvider() sa destruktuiranim parametrom c
 -u prop store proslijedujemo varijablu store
 
 115. RTK - Complete
--u index.tsx fajl importujemo i kreiramofunkcije useAppSelector i useAppDispatch
+-u index.tsx fajl importujemo i kreiramo funkcije useAppSelector i useAppDispatch
 -importujemo funkcije iz counterSlice.ts fajla
 -vrijednost funkcije useAppSelector() pohranjujemo u destruktuirane varijable const { count, status }
 -vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
@@ -1768,4 +1768,26 @@ Section 05: Store App
 193. Second Column
 -u komponenti CartItemColumns.tsx, funkciji SecondColumn() dodajemo parametre destruktuirane prop title, company i productColor
 -destruktuiranim parametrima dodajemo tipove 
-u return izjavi kreiramo HTML elemente sa Tailwind CSS klasama
+-u return izjavi kreiramo HTML elemente sa Tailwind CSS klasama
+
+194. Third and Fourth Column
+-u komponentu CartItemColumns.tsx importujemo funkciju formatAsDollars
+-funkciji FourthColumn() dodajemo parametar destruktuirani prop price i tip
+-u jsx-u kreiramo p element sa Tailwind CSS klasama
+-u p element dodajemo funkciju formatAsDollars(price)
+-funkciji ThirdColumn() dodajemo parametre destruktuirane prop amount i cartID
+-destruktuiranim parametrima dodajemo tipove
+-importujemo komponentu Button
+-u roditelj div element dodajemo komponentu Button sa otvorenim i zatvorenim tagom
+-komponenti Button dodajemo prop variant i className
+-importujemo i kreiramo funkciju useAppDispatch()
+-vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
+-kreiramo funkciju removeItemFromCart()
+-importujemo funkcije removeItem i editItem iz cartSlice.ts fajla
+-u funkciju removeItemFromCart() dodajemo funkciju dispatch(removeItem())
+-kreiramo funkciju setAmount() sa parametrom value
+-u funkciju setAmount() dodajemo funkciju dispatch(editItem())
+-u jsx-u, u roditelj div element dodajemo komponentu SelectProductAmount sa samozatvarajucim tagom
+-komponenti SelectProductAmount dodajemo prop amount, setAmount i mode
+-komponenti Button dodajemo dogadaj onClick
+-u dogadaj onClick proslijedujemo funkciju removeItemFromTheCart 

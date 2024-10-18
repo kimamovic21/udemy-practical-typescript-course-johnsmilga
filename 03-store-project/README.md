@@ -2798,6 +2798,7 @@ import { Button } from './ui/button';
 import { editItem, removeItem } from '@/features/cart/cartSlice';
 import SelectProductAmount from './SelectProductAmount';
 import { Mode } from './SelectProductAmount';
+
 export const ThirdColumn = ({
   amount,
   cartID,
