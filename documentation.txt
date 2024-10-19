@@ -1848,3 +1848,18 @@ Section 05: Store App
 -varijabli action dodajemo tip ActionFunction
 -u komponentu App.tsx importujemo funkciju action kao registerUser
 -u objekt rutu za komponentu Register dodajemo key - value par action i funkciju registerUser
+
+199. Register User Request
+-u komponentu Register.tsx importujemo funkciju redirect iz paketa React Router Dom
+-importujemo funkciju customFetch iz foldera utils
+-importujemo tip AxiosError iz paketa Axios
+-importujemo funkciju toast iz use-toast.ts fajla
+-u funkciji action() kreiramo blokove koda try - catch
+-u blok koda try dodajemo funkciju await customFetch.post()
+-vrijednost funkcije await customFetch.post() pohranjujemo u varijablu const result
+-dodajemo funkciju toast()
+-u return izjavu dodajemo funkciju redirect()
+-u bloku koda catch kreiramo varijablu const errorMsg
+-dodajemo funkciju toast()
+-dodajemo return null
+-registrujemo se sa podacima: korisnik: kerim1, email: kerim1@email.com, sifra: ******
