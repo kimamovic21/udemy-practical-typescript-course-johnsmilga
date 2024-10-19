@@ -1880,3 +1880,19 @@ Section 05: Store App
 -u komponentu Button dodajemo ternarni uslov za varijablu isSubmitting
 -u komponentu Register.tsx importujemo komponentu SubmitBtn.tsx
 -u jsx-u komponenti SubmitBtn dodajemo prop text i className
+
+201. Login Page Setup
+-u komponenti Login.tsx, u jsx-u kreiramo section roditelj element sa Tailwind CSS klasama
+-u komponentu Login.tsx importujemo komponente Form i Link iz paketa React Router Dom
+-importujemo komponente FormInput, SubmitBtn iz foldera components
+-importujemo komponente iz komponente ui/card.tsx
+-importujemo komponentu Button iz komponente ui/button.tsx
+-kreiramo funkciju loginAsGuestUser()
+-u jsx dodajemo komponente iz komponente ui/card.tsx
+-komponenti Button za Guest User dodajemo dogadaj onClick
+-u dogadaj onClick proslijedujemo funkciju loginAsGuestUser
+-komponenti Form dodajemo prop method
+-komponenti Card dodajemo Tailwind CSS klase
+-komponenti CardTitle dodajemo prop className
+-komponentama FormInput dodajemo prop type, label i name
+-komponenti SubmitBtn dodajemo prop text i className
