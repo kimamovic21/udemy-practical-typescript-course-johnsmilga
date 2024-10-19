@@ -2,7 +2,7 @@ import { Form, Link, ActionFunction, redirect } from 'react-router-dom'
 import { AxiosError } from 'axios'
 import { customFetch } from '@/utils'
 import { toast } from '@/hooks/use-toast'
-import { FormInput } from '@/components'
+import { FormInput, SubmitBtn } from '@/components'
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
@@ -11,8 +11,8 @@ export const action: ActionFunction = async ({ request }): Promise<Response | nu
   const data = Object.fromEntries(formData)
 
   try {
-    const result = await customFetch.post('/auth/local/register', data)
-    console.log(result)
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+    await customFetch.post('/auth/local/register', data)
 
     toast({ description: 'Registered' })
     return redirect('/login')
@@ -38,9 +38,7 @@ function Register() {
             <FormInput type='email' name='email' />
             <FormInput type='password' name='password' />
 
-            <Button type='submit' variant='default' className='w-full mt-4'>
-              Submit
-            </Button>
+            <SubmitBtn text='Register' className='w-full mt-4' />
 
             <p className='text-center mt-4'>
               Already a member?

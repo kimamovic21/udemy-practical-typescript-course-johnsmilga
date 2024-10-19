@@ -1863,3 +1863,20 @@ Section 05: Store App
 -dodajemo funkciju toast()
 -dodajemo return null
 -registrujemo se sa podacima: korisnik: kerim1, email: kerim1@email.com, sifra: ******
+
+200. Submit Button Component
+-u terminalu instaliramo paket React Icons sa komandom npm i @radix-ui/react-icons
+-u komponentu SubmitBtn.tsx importujemo i kreiramo funkciju funkciju useNavigation()
+-importujemo komponentu Button iz komponente ui/button.tsx
+-importujemo ikonicu ReloadIcon iz paketa Radix UI
+-funkciji SubmitBtn() dodajemo parametre destruktuirane prop text i className
+-parametrima dodajemo tipove
+-vrijednost funkcije useNavigation() pohranjujemo u varijablu const navigation
+-kreiramo varijablu const isSubmitting
+-u jsx dodajemo komponentu Button sa otvorenim i zatvorenim tagom
+-komponenti Button dodajemo prop type, className i disabled
+-u prop className proslijedujemo vrijednost parametra className
+-u prop disabled proslijedujemo vrijednost parametra isSubmitting
+-u komponentu Button dodajemo ternarni uslov za varijablu isSubmitting
+-u komponentu Register.tsx importujemo komponentu SubmitBtn.tsx
+-u jsx-u komponenti SubmitBtn dodajemo prop text i className
