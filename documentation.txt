@@ -1838,3 +1838,13 @@ Section 05: Store App
 -u p element dodajemo komponentu Button za login
 -komponenti Button dodajemo prop type, asChild i variant
 -u komponentu Button dodajemo komponentu Link
+
+198. Register User Action
+-u komponentu Register.tsx importujemo tip ActionFunction iz paketa React Router Dom
+-u jsx-u komponenti Form dodajemo prop method i action
+-kreiramo asinhronu funkciju sa destruktuiranim parametrom request
+-destruktuiranom parametru request dodajemo tip Promise<null>
+-vrijednost asinhrone funkcije pohranjujemo u varijablu const action
+-varijabli action dodajemo tip ActionFunction
+-u komponentu App.tsx importujemo funkciju action kao registerUser
+-u objekt rutu za komponentu Register dodajemo key - value par action i funkciju registerUser
