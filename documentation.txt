@@ -1896,3 +1896,15 @@ Section 05: Store App
 -komponenti CardTitle dodajemo prop className
 -komponentama FormInput dodajemo prop type, label i name
 -komponenti SubmitBtn dodajemo prop text i className
+
+202. Login Guest User Request
+-u komponenti Login.tsx kreiramo varijable const dispatch i const navigate
+-u fukciji loginAsGuestUser() kreiramo blokove koda try - catch
+-funkciji loginAsGuestUser() dodajemo tip Promise<void>
+-u bloku koda try kreiramo varijablu const response
+-importujemo tip AxiosResponse iz paketa Axios
+-varijabli response dodajemo tip AxiosResponse
+-kreiramo varijable const username i const jwt
+-dodajemo funkciju dispatch(loginUser())
+-dodajemo funkciju toast()
+-dodajemo funkciju navigate()

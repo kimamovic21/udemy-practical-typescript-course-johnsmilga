@@ -1,11 +1,34 @@
-import { Form, Link } from 'react-router-dom'
+import { Form, Link, useNavigate } from 'react-router-dom'
+import { AxiosResponse } from 'axios'
+import { toast } from '@/hooks/use-toast'
+import { customFetch } from '@/utils'
+import { useAppDispatch } from '@/hooks'
+import { loginUser } from '@/features/user/userSlice'
 import { FormInput, SubmitBtn } from '@/components'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 function Login() {
-  const loginAsGuestUser = () => {
-    console.log('guest user')
+  const dispatch = useAppDispatch()
+  const navigate = useNavigate()
+  
+  const loginAsGuestUser = async (): Promise<void> => {
+    try {
+      const response: AxiosResponse = await customFetch.post('/auth/local', {
+        identifier: 'test@test.com',
+        password: 'secret',
+      })
+
+      const username = response.data.user.username
+      const jwt = response.data.jwt
+
+      dispatch(loginUser({ username, jwt }))
+      toast({ description: 'Welcome Guest User' })
+      navigate('/')
+    } catch (error) {
+      console.error(error)
+      toast({ description: 'Login Failed' })
+    }
   }
 
   return (
