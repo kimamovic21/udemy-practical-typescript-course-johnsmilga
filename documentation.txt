@@ -532,7 +532,7 @@ Section 03: Typescript Fundamentals
 -u funkciji fetchData() preimenujemo varijablu const data u rawData
 -kreiramo varijablu const result
 -dodajemo uslov if (!result.success)
--dodajemo izjevu return result.data
+-dodajemo izjavu return result.data
 
 73. Declaration Files
 -kreiramo types.ts fajl 
@@ -1972,3 +1972,12 @@ Section 05: Store App
 -u funkciji loader asinhronoj funkciji dodajemo tip Promise<null>
 -u komponentu App.tsx importujemo funkciju loader kao checkoutLoader
 -u objekt rutu za komponentu Checkout dodajemo key - value par loader i funkciju checkoutLoader(store)
+
+207. Checkout Page Loader
+-u komponentu Checkout.tsx importujemo funkciju redirect iz paketa React Router Dom
+-u funkciju loader() dodajemo metodu store.getState()
+-vrijednost metode store.getState() pohranjujemo u varijablu const user
+-dodajemo uslov if (!user)
+-importujemo funkciju toast iz use-toast.ts fajla
+-u uslov if dodajemo funkciju toast()
+-dodajemo izjavu return redirect() da se korisnik prebaci na rutu login ako nije prijavljen

@@ -1,10 +1,15 @@
-import { LoaderFunction } from 'react-router-dom'
+import { LoaderFunction, redirect } from 'react-router-dom'
 import { type ReduxStore } from '@/store'
 import { useAppSelector } from '@/hooks'
+import { toast } from '@/hooks/use-toast'
 import { CheckoutForm, SectionTitle, CartTotals } from '@/components'
 
 export const loader = (store: ReduxStore): LoaderFunction => async (): Promise<Response | null> => {
-  console.log(store)
+  const user = store.getState().userState.user
+  if (!user) {
+    toast({ description: 'Please login to continue' })
+    return redirect('/login')
+  }
 
   return null
 }
