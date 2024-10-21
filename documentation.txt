@@ -1931,3 +1931,14 @@ Section 05: Store App
 -u blok koda try dodajemo metodu store.dispatch()
 -u return izjavu dodajemo funkciju redirect()
 -u blok koda catch dodajemo funkciju toast()
+
+204. Access User in Header Component
+-u komponenti Header.tsx importujemo i kreiramo funkciju useAppDispatch()
+-vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const dispatch
+-importujemo i kreiramo funkciju useToast()
+-vrijednost funkcije useToast() pohranjujemo u destruktuiranu varijablu const { toast }
+-importujemo i kreiramo funkciju useAppSelector()
+-vrijednost funkcije useAppSelector() pohranjujemo u varijablu const user
+-importujemo funkcije clearCart i logoutUser iz foldera features
+-u funkciju handleLogout() dodajemo funkcije dispatch(clearCart()) i dispatch(logoutUser())
+-dodajemo funkcije toast() i navigate()
