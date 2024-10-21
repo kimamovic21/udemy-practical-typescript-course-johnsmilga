@@ -1952,3 +1952,23 @@ Section 05: Store App
 -ponovimo isti postukap u komponenti LinksDropdown.tsx
 -u komponenti Cart.tsx vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const user
 -u komponentu Button dodajemo ternarni uslov za varijablu user
+
+206. Checkout Page Setup
+-u folderu components kreiramo komponentu CheckoutForm.tsx
+-u index.ts fajlu eksportujemo komponentu CheckoutForm.tsx kao default
+-u komponentu Checkout.tsx importujemo i kreiramo funkciju useAppSelector()
+-vrijednost funkcije useAppSelector() pohranjujemo u varijablu const cartTotal
+-dodajemo uslov if (cartTotal === 0)
+-importujemo komponente CheckoutForm.tsx, SectionTitle.tsx i CartTotals iz foldera components
+-u uslov if dodajemo funkciju SectionTitle sa prop text Empty Cart
+-u jsx dodajemo komponentu SectionTitle sa prop Place your order
+-kreiramo div element sa Tailwind CSS klasama
+-u div element dodajemo komponente CheckoutForm i CartTotals
+-kreiramo funkciju loader koja vraca funkciju
+-importujemo tip LoaderFunction iz paketa React Router Dom
+-importujemo tip ReduxStore iz foldera store
+-funkciji loader() dodajemo parametar store sa tipom ReduxStore
+-funkciji dodajemo tip LoaderFunction
+-u funkciji loader asinhronoj funkciji dodajemo tip Promise<null>
+-u komponentu App.tsx importujemo funkciju loader kao checkoutLoader
+-u objekt rutu za komponentu Checkout dodajemo key - value par loader i funkciju checkoutLoader(store)
