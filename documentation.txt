@@ -1908,3 +1908,26 @@ Section 05: Store App
 -dodajemo funkciju dispatch(loginUser())
 -dodajemo funkciju toast()
 -dodajemo funkciju navigate()
+
+203. Login User Action and Request
+-u komponentu Login.tsx importujemo tip ActionFunction i funkciju redirect iz paketa React Router Dom
+-kreiramo asinhronu funkciju sa tipom Promise<Response | null>
+-vrijednost asinhrone funkcije pohranjujemo u varijablu const action
+-varijabli action dodajemo tip ActionFunction
+-eksportujemo varijablu action
+-u funkciji action() kreiramo varijable const formData i const data
+-kreiramo blokove koda try - catch
+-u bloku koda try kreiramo varijablu const response
+-varijabli response dodajemo tip AxiosResponse
+-kreiramo varijable const username i const jwt
+-u komponentu App.tsx importujemo funkciju action kao loginUser
+-importujemo varijablu state
+-u objekt rutu za komponentu Login dodajemo key - value par action: loginUser(state)
+-u komponentu Login.tsx dodajemo funkciju koja vraca funkciju
+-importujemo tip ReduxStore iz store.ts fajla
+-dodajemo funkciju sa parametrom store
+-parametru store dodajemo tip ReduxStore
+-funkciji dodajemo parametar ActionFunction
+-u blok koda try dodajemo metodu store.dispatch()
+-u return izjavu dodajemo funkciju redirect()
+-u blok koda catch dodajemo funkciju toast()

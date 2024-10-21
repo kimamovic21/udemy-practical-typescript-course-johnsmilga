@@ -1,12 +1,32 @@
-import { Form, Link, useNavigate } from 'react-router-dom'
+import { ActionFunction, Form, Link, redirect, useNavigate } from 'react-router-dom'
 import { AxiosResponse } from 'axios'
 import { toast } from '@/hooks/use-toast'
 import { customFetch } from '@/utils'
 import { useAppDispatch } from '@/hooks'
+import { ReduxStore } from '@/store'
 import { loginUser } from '@/features/user/userSlice'
 import { FormInput, SubmitBtn } from '@/components'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+
+export const action = (store: ReduxStore): ActionFunction => async ({ request }): Promise<Response | null> => {
+  const formData = await request.formData()
+  const data = Object.fromEntries(formData)
+
+  try {
+    const response: AxiosResponse = await customFetch.post('/auth/local', data)
+    
+    const username = response.data.user.username
+    const jwt = response.data.jwt
+    
+    store.dispatch(loginUser({ username, jwt }))
+    return redirect('/')
+  } catch (error) {
+    console.error(error)
+    toast({ description: 'Login Failed' })
+    return null
+  }
+}
 
 function Login() {
   const dispatch = useAppDispatch()
@@ -23,7 +43,6 @@ function Login() {
       const jwt = response.data.jwt
 
       dispatch(loginUser({ username, jwt }))
-      toast({ description: 'Welcome Guest User' })
       navigate('/')
     } catch (error) {
       console.error(error)

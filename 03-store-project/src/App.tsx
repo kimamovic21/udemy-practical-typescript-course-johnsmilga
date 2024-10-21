@@ -19,6 +19,8 @@ import { loader as productsLoader } from './pages/Products'
 import { loader as singleProductLoader } from './pages/SingleProduct'
 
 import { action as registerUser } from './pages/Register'
+import { action as loginUser } from './pages/Login'
+import { store } from './store'
 
 function App() {
   const router = createBrowserRouter([
@@ -70,7 +72,8 @@ function App() {
     {
       path: '/login',
       element: <Login />,
-      errorElement: <Error />
+      errorElement: <Error />,
+      action: loginUser(store)
     },
     {
       path: '/register',
