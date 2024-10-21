@@ -8,8 +8,11 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Button } from './ui/button'
+import { useAppSelector } from '@/hooks'
 
 function LinksDropdown() {
+  const user = useAppSelector((state) => state.userState.user)
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className='lg:hidden'>
@@ -18,12 +21,20 @@ function LinksDropdown() {
           <span className='sr-only'>Toggle links</span>
         </Button>
       </DropdownMenuTrigger>
-
+          
       <DropdownMenuContent className='w-52 lg:hidden' align='start' sideOffset={25}>
         {links.map((link) => {
+          const restrictedRoutes = link.href === 'checkout' || link.href === 'orders'
+          if (restrictedRoutes && !user) return null
+
           return (
             <DropdownMenuItem key={link.label}>
-              <NavLink to={link.href} className={({ isActive }) => { return `capitalize w-full ${isActive ? 'text-primary' : ''}` }}>
+              <NavLink
+                to={link.href}
+                className={({ isActive }) => {
+                  return `capitalize w-full ${isActive ? 'text-primary' : ''}`
+                }}
+              >
                 {link.label}
               </NavLink>
             </DropdownMenuItem>

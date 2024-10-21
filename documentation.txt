@@ -1942,3 +1942,13 @@ Section 05: Store App
 -importujemo funkcije clearCart i logoutUser iz foldera features
 -u funkciju handleLogout() dodajemo funkcije dispatch(clearCart()) i dispatch(logoutUser())
 -dodajemo funkcije toast() i navigate()
+
+205. Access User in NavLinks, LinksDropdown and CartButton Components
+-u komponenti NavLinks.tsx importujemo i kreiramo funkciju useAppSelector()
+-vrijednost funkcije useAppSelector() pohranjujemo u varijablu const user
+-u funkciji map() kreiramo varijablu const restrictedRoutes
+-dodajemo uslov if (restrictedRoutes && !user)
+-u uslov if dodajemo izjeva return null
+-ponovimo isti postukap u komponenti LinksDropdown.tsx
+-u komponenti Cart.tsx vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const user
+-u komponentu Button dodajemo ternarni uslov za varijablu user
