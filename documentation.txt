@@ -1948,7 +1948,7 @@ Section 05: Store App
 -vrijednost funkcije useAppSelector() pohranjujemo u varijablu const user
 -u funkciji map() kreiramo varijablu const restrictedRoutes
 -dodajemo uslov if (restrictedRoutes && !user)
--u uslov if dodajemo izjeva return null
+-u uslov if dodajemo izjavu return null
 -ponovimo isti postukap u komponenti LinksDropdown.tsx
 -u komponenti Cart.tsx vrijednost funkcije useAppDispatch() pohranjujemo u varijablu const user
 -u komponentu Button dodajemo ternarni uslov za varijablu user
@@ -2042,3 +2042,23 @@ Section 05: Store App
 -u izjavu return dodajemo { ...response.data }
 -u blok koda catch dodajemo funkciju toast()
 -u funkciji Orders() destruktuiramo varijable const { meta, data } iz funkcije useLoaderData()
+
+212. Orders List Component
+-u komponentu Orders.tsx, u funkciju Orders() dodajemo uslov if (meta.pagination.total < 1)
+-otvorimo link: https://ui.shadcn.com/docs/components/table
+-u terminalu instaliramo komponentu Shadcn Table
+-u terminalu ukucamo komandu npx shadcn@latest add table
+-u komponentu OrdersList.tsx importujemo i kreiramo funkciju useLoaderData() iz paketa React Router Dom
+-vrijednost funkcije useLoaderData() pohranjujemo u destruktuirane varijable const { data: orders, meta }
+-importujemo komponente iz komponente ui/table.tsx
+-u jsx-u, u roditelj div element dodajemo komponentu Table sa otvorenim i zatvorenim tagom
+-u komponentu Table dodajemo komponentu TableCaption 
+-u komponentu Table dodajemo komponentu TableHeader sa otvorenim i zatvorenim tagom
+-u komponentu TableHeader dodajemo komponentu TableRow sa otvorenim i zatvorenim tagom
+-u komponentu TableRow dodajemo pet komponenti TableHead
+-u komponentu Table dodajemo komponentu TableBody sa otvorenim i zatvorenim tagom
+-u komponentu TableBody dodajemo metodu orders.map()
+-u funkciji map() destruktuiramo varijable const { name, attributes, numItemsInCart, orderTotal, createdAt } iz varijable order.attributes
+-u izjavu return dodajemo komponentu TableRow sa otvorenim i zatvorenim tagom
+-u komponentu TableRow dodajemo pet komponenti TableCell
+-u komponente TableCell dodajemo vrijednost destruktuiranih varijabli

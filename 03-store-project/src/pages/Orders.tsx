@@ -34,9 +34,11 @@ export const loader = (store: ReduxStore): LoaderFunction => async ({ request })
 }
 
 const Orders = () => {
-  const { meta, data } = useLoaderData() as OrdersResponse
-  console.log(meta)
-  console.log(data)
+  const { meta } = useLoaderData() as OrdersResponse
+
+  if (meta.pagination.total < 1) {
+    return <SectionTitle text='Please make an order'  />
+  }
 
   return (
     <>
