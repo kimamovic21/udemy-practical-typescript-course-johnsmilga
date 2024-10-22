@@ -2022,3 +2022,6 @@ Section 05: Store App
 -dodajemo izjavu return redirect('/orders')
 -u blok koda catch dodajemo funkciju toast()
 -dodajemo izjavu return null
+
+210. Orders Response Type
+-u types.ts fajlu kreiramo i eksportujemo tri tipa Order, OrdersMeta i OrdersResponse
