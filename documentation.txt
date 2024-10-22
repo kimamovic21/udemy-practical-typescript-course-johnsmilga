@@ -2025,3 +2025,20 @@ Section 05: Store App
 
 210. Orders Response Type
 -u types.ts fajlu kreiramo i eksportujemo tri tipa Order, OrdersMeta i OrdersResponse
+
+211. Orders Page Loader
+-u komponenti Orders.tsx kreiramo i eksportujemo funkciju loader() koja vraca asinhronu funkciju
+-parametru store dodajemo tip ReduxStore
+-funkciji loader dodajemo tip LoaderFunction
+-asinhronoj funkciji dodajemo parameter objekt request
+-asinhronoj funkciji dodajemo tip Promise<>
+-u komponentu App.tsx importujemo funkciju loader kao ordersLoader
+-u objekt rutu za komponentu Orders dodajemo key - value par loader i funkciju ordersLoader(state)
+-u komponenti Orders.tsx, u funkciji loader() kreiramo varijablu const user
+-dodajemo uslvo if (!user)
+-kreiramo varijablu const params
+-kreiramo blokove koda try - catch
+-u bloku koda try kreiramo varijablu const response
+-u izjavu return dodajemo { ...response.data }
+-u blok koda catch dodajemo funkciju toast()
+-u funkciji Orders() destruktuiramo varijable const { meta, data } iz funkcije useLoaderData()
