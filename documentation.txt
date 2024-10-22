@@ -1998,3 +1998,27 @@ Section 05: Store App
 -asinhronoj funkciji dodajemo tip Promise<null>
 -u komponentu App.tsx importujemo funkciju action kao checkoutAction
 -u objekt rutu za komponentu Checkout dodajemo key - value par action i funkciju checkoutAction(store)
+
+209. Checkout Form Action
+-u komponenti CheckoutForm.tsx, u funkciji action() kreiramo varijable const formData, const name i const address
+-dodajemo uslov if (!name || !address)
+-importujemo funkciju toast iz use-toast.ts fajla
+-u uslov if dodajemo funkciju toast()
+-dodajemo izjavu return null
+-kreiramo varijablu const user
+-dodajemo uslov if (!user)
+-u uslov if dodajemo funkciju toast()
+-importujemo funkciju redirect iz paketa React Router Dom
+-dodajemo izjavu return redirect() 
+-nakon uslova if kreiramo destruktuirane varijable const { cartItems, orderTotal, numItemsInCart }
+-kreiramo objekt varijablu const info sa tipom Checkout
+-u objekt info dodajemo varijable name, address, chargeTotal, orderTotal, cartItems, numItemsInCart
+-importujemo funkcije formatAsDollars, customFetch i tip Checkout iz foldera utils
+-importujemo funkciju clearCart iz cartSlice.ts fajla
+-kreiramo blokove koda try - catch
+-u blok koda try dodajemo metodu await customFetch.post()
+-dodajemo funkciju store.dispatch(clearCart())
+-dodajemo funkciju toast()
+-dodajemo izjavu return redirect('/orders')
+-u blok koda catch dodajemo funkciju toast()
+-dodajemo izjavu return null
