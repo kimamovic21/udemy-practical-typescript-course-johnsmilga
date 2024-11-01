@@ -2086,3 +2086,10 @@ Section 05: Store App
 -u komponentu PaginationItem dodajemo komponentu PaginationEllipsis sa samozatvarajucim tagom
 -u komponentu renderPagination() dodajemo uslov if (page > 2)
 -dodajemo uslov if (page < pageCount - 1)
+
+214. Deploy Application
+-u folder public dodajemo sliku comfy-logo.png
+-kreiramo _redirects fajl
+-u _redirects fajl dodajemo /* /index.html 200
+-u terminalu ukucamo komandu npm run build
+-otvorimo web stranicu https://www.netlify.com/
