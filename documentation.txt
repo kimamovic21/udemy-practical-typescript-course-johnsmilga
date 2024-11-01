@@ -2062,3 +2062,27 @@ Section 05: Store App
 -u izjavu return dodajemo komponentu TableRow sa otvorenim i zatvorenim tagom
 -u komponentu TableRow dodajemo pet komponenti TableCell
 -u komponente TableCell dodajemo vrijednost destruktuiranih varijabli
+
+213. Complex Pagination Component
+-u komponenti ComplexPaginationContainer.tsx kreiramo funkciju renderPagination()
+-u funkciji renderPagination() kreiramo varijablu const pages
+-importujemo funkcije useLoaderData i useLocation iz paketa React Router Dom
+-importujemo komponente iz komponente ui/pagination.tsx
+-importujemo tip OrdersResponse funkcije constructUrl, constructPrevOrNextUrl iz foldera utils
+-kreiramo funkciju constructButton() sa parametrima destruktuiranim prop pageNumber, isActive sa tipovima 
+-u funkciji constructButton() kreiramo varijablu const url
+-u return izjavu dodajemo komponentu PaginationItem sa otvorenim i zatvorenim tagom
+-komponenti PaginationItem dodajemo prop key
+-u komponentu PaginationItem dodajemo komponentu PaginationLink sa otvorenim i zatvorenim tagom
+-komponenti PaginationLink dodajemo prop to i isActive
+-u funkciji renderPagination() varijabli pages dodajemo metodu push()
+-dodajemo return izjavu pages
+-dodajemo metodu pages.push() za zadnju stranicu i pages.push() za aktivnu stranicu
+-dodajemo uslov if (page !== 1 && page !== pageCount)
+-kreiramo funkciju constructEllipsis() sa parametrom key 
+-parametru key dodajemo tip string
+-funkciji constructEllipsis() dodajemo tip React.ReactNode
+-u return izjavu dodajemo komponentu PaginationItem sa otvorenim i zatvorenim tagom
+-u komponentu PaginationItem dodajemo komponentu PaginationEllipsis sa samozatvarajucim tagom
+-u komponentu renderPagination() dodajemo uslov if (page > 2)
+-dodajemo uslov if (page < pageCount - 1)
