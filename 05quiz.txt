@@ -1,0 +1,44 @@
+Quiz 5: TypeScript Functions: Optional Parameters, Rest Parameters, and Void Return Typ
+
+
+Question 01:
+What will be the output of the following code?
+
+function calculatePrice(price: number, discount?: number) {
+  return price - (discount || 0);
+};
+
+console.log(calculatePrice(200));
+
+-200
+
+
+Question 02:
+What will the following sum function return?
+
+function sum(message: string, ...numbers: number[]): string {
+  const doubled = numbers.map((num) => num * 2);
+  console.log(doubled);
+ 
+  let total = numbers.reduce((previous, current) => {
+    return previous + current;
+  }, 0);
+  return `${message} ${total}`;
+};
+ 
+console.log(sum('The total is:', 5, 10, 15));
+
+-The total is: 30
+
+
+Question 03:
+What happens when the following logMessage function is called?
+
+function logMessage(message: string): void {
+  console.log(message);
+  return 'This value is ignored';
+};
+ 
+logMessage('TypeScript is great!');
+
+-The message "TypeScript is great" as logged, and the return value is ignored
