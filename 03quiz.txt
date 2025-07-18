@@ -1,0 +1,19 @@
+Quiz 3: TypeScript Fundamentals: Arrays and Objects
+
+
+Question 01:
+What will happen if you try to add a string to the temperatures array of type number[]?
+
+-The TypeScript compiler will throw an error
+
+
+Question 02:
+What does the readonly modifier in an object property do?
+
+-Prevents the property from being modified after initialization
+
+
+Question 03:
+What will happen if you assign an object with a missing year property to laptop of type { brand: string; year: number }?
+
+-The TypeScript compiler will throw an error
