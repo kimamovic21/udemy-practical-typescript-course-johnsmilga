@@ -1,0 +1,55 @@
+Quiz 6: TypeScript Functions: Union Types, Objects, and Excess Property Checks
+
+
+Question 01:
+What will the following code output?
+
+function processInput(input: string | number) {
+  if (typeof input === 'number') {
+    console.log(input * 2);
+  } else {
+    console.log(input.toUpperCase());
+  };
+};
+processInput('TypeScript');
+
+-TYPESCRIPT
+
+
+Question 02:
+What will the following processData function return?
+
+function processData(
+  input: string | number,
+  config: { reverse: boolean } = { reverse: false }
+): string | number {
+  if (typeof input === 'number') {
+    return input * input;
+  } else {
+    return config.reverse
+      ? input.toUpperCase().split('').reverse().join('')
+      : input.toUpperCase();
+  };
+};
+ 
+console.log(processData('Hello', { reverse: true }));
+
+-OLLEH
+
+
+Question 03:
+Why does TypeScript allow the following code to execute without an error?
+
+function createStudent(student: { id: number; name: string }) {
+  console.log(`Welcome to the course ${student.name.toUpperCase()}!!!`);
+};
+ 
+const newStudent = {
+  id: 5,
+  name: 'anna',
+  email: 'anna@gmail.com',
+};
+ 
+createStudent(newStudent);
+
+-TypeScript does not perform excess property checks on variables like newStudent
