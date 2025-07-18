@@ -1,0 +1,55 @@
+Quiz 8: Mastering TypeScript Interfaces: Properties, Methods, and Best Practices
+
+
+Question 01:
+What is the primary purpose of an interface in TypeScript?
+
+-To define the structure or shape of an object
+
+
+Question 02:
+What does the readonly keyword do when used in an interface property?
+
+interface Computer {
+  readonly id: number;
+  brand: string;
+  ram: number;
+};
+
+-It prevents the property from being modified after the object is created
+
+
+Question 03: 
+Why is it considered good practice to match an interface's method structure in an implementing object?
+
+interface Book {
+  printTitle(message: string): string;
+};
+ 
+const deepWork: Book = {
+  printTitle(message) {
+    return `Deep Work ${message}`;
+  },
+};
+
+-It ensures consistency and makes the code easier to maintain
+
+
+Question 04:
+What is the significance of using optional properties in an interface?
+
+interface Computer {
+  storage?: number;
+};
+
+-Optional properties indicate that a property might not exist in every object of the interface type
+
+
+Question 05:
+What is the advantage of defining methods in an interface?
+
+interface Computer {
+  upgradeRam(increase: number): number;
+};
+
+-It ensures that all objects adhering to the interface provide the defined functionality
