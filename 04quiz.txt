@@ -1,0 +1,40 @@
+Quiz 4: TypeScript Functions: Parameters, Return Types, and Challenges
+
+
+Question 01:
+What happens when you call the following function with a number instead of a string?
+
+function sayHi(name: string) {
+  console.log(`Hello there ${name.toUpperCase()}!!!`);
+};
+sayHi(3);
+
+-The TypeScript compiler throws an error due to a type mismatch
+
+
+Question 02:
+What will happen if the calculateDiscount function tries to return a string instead of a number?
+
+function calculateDiscount(price: number): number {
+  const hasDiscount = true;
+  if (hasDiscount) {
+    return "Discount Applied";
+  };
+  return price * 0.9;
+};
+
+-The TypeScript compiler will throw an error because the return type is explicitly defined as number 
+
+
+Question 03:
+What is the potential issue in the following code when using the any type?
+
+function addThree(number: any) {
+  let anotherNumber: number = 3;
+  return number + anotherNumber;
+};
+const result = addThree(2);
+const someValue = result;
+someValue.myMethod();
+
+-The function can cause a runtime error because any bypasses type safety
