@@ -1,0 +1,19 @@
+Quiz 1: TypeScript Fundamentals: Annotations, Inference and Type Safety
+
+
+Question 01:
+What is the purpose of TypeScript type annotations ?
+
+-To specify the types of variables, function parameters and return types
+
+
+Question 02:
+Which of the following best describes TypeScript's type inference?
+
+-The compiler automatically assigns a type based on the assigned literal value
+
+
+Question 03: 
+What happens when a variable is assigned a value of a different type in TypeScript?
+
+-The TypeScript compiler throws and error
