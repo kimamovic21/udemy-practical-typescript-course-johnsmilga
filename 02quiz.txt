@@ -1,0 +1,31 @@
+Quiz 2: TypeScript Essentials: Union Types, "any," and Practical Typing
+
+
+Question 01:
+What is a Union Type in TypeScript?
+
+-A type that allows a variable to hold a value of multiple, distinct types
+
+
+Question 02:
+What is the "any" type in TypeScript used for?
+
+-To bypass type-checking and allow a variable to hold any type of value
+
+
+Question 03:
+Why is it important to explicitly type variables like foundBook as string | undefined in TypeScript?
+
+-To indicate that variable might be undefined at runtime, preventing potential bugs
+
+
+Question 04:
+What will happen if you assign the value 'cancelled' to orderStatus in the challenge example?
+
+-A TypeScript error will occur
+
+
+Question 05:
+What will happen if you assign the value true to discount in the challenge example?
+
+-A TypeScript error will occur
