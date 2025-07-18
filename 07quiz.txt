@@ -1,0 +1,53 @@
+Quiz 7: Mastering TypeScript: Type Aliases, Unions, and Intersections
+
+
+Question 01:
+What is a key benefit of using type aliases in TypeScript?
+
+-They simplify complex types by creating reusable names for them
+
+
+Question 02:
+What is the purpose of intersection types in TypeScript?
+
+type A = { id: number; name: string };
+type B = { price: number };
+type AB = A & B;
+ 
+const example: AB = { id: 1, name: 'Book', price: 20 };
+
+-To combine multiple types into one, requiring objects to have all properties from all types
+
+
+Question 03:
+What will happen if you pass an object literal with extra properties to a function that expects a specific type?
+
+type User = { id: number; name: string };
+ 
+function printUser(user: User) {
+  console.log(`ID: ${user.id}, Name: ${user.name}`);
+};
+ 
+printUser({ id: 1, name: 'Alice', email: 'alice@example.com' });
+
+-The TypeScript compiler throws an error due to excess property checks
+
+
+Question 04:
+How do union types differ from intersection types in TypeScript?
+
+-Union types allow a variable to hold a value that matches one of several types, while intersection types require a value to satisfy all combined types
+
+
+Question 05:
+What is the purpose of computed properties in TypeScript?
+
+const propName = 'age';
+ 
+type Animal = {
+  [propName]: number;
+};
+ 
+let tiger: Animal = { [propName]: 5 };
+
+-To dynamically define property keys for objects using expressions
