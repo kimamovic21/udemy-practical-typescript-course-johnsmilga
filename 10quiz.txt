@@ -1,0 +1,48 @@
+Quiz 10: TypeScript Tuples and Enums: Understanding Structure and Use Cases
+
+
+Question 01:
+What is a key characteristic of a tuple in TypeScript?
+
+-It is an array with a fixed length and specific types for each element
+
+
+Question 02:
+What does the readonly keyword do in a tuple?
+
+let person: readonly [string, number] = ['John', 25];
+
+-It prevents any modification to the tuple's elements
+
+
+Question 03:
+Why is reverse mapping not supported for string enums in TypeScript?
+
+enum StringEnum {
+  Success = 'Success',
+  Error = 'Error',
+};
+ 
+console.log(StringEnum['Success']); // Error
+
+-Reverse mapping requires unique numeric values, which string enums do not have
+
+
+Question 04:
+What is the output of the following code?
+
+enum UserRole {
+  Admin,
+  Manager,
+  Employee,
+};
+ 
+console.log(UserRole[0]);
+
+-Admin
+
+
+Question 05:
+Which of the following is true about the use of enums in TypeScript?
+
+-Enums allow you to define a set of named constants that can represent both numeric and string values
