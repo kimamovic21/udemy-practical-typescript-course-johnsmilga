@@ -1,0 +1,19 @@
+Quiz 11: Mastering TypeScript: Type Assertions, Unknown, and Never Types
+
+
+Question 01:
+What is the primary purpose of type assertions in TypeScript?
+
+-To explicitly tell TypeScript the type of a variable when the compiler cannot infer it
+
+
+Question 02:
+How is the unknown type safer than the any type in TypeScript?
+
+-It requires developers to perform type-checking before using the value, ensuring type safety
+
+
+Question 03:
+What is the primary role of the never type in TypeScript?
+
+-To represent code paths or values that should never occur
