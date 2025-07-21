@@ -1,0 +1,53 @@
+Quiz 9: Understanding TypeScript Interfaces: Merging, Extensions, and Type Guards
+
+
+Question 01:
+What is the key difference between interfaces and type aliases in TypeScript?
+
+-Interfaces can be merged using declaration merging, while type aliases cannot
+
+
+Question 02:
+What does the following code demonstrate?
+
+interface Person {
+  name: string;
+};
+ 
+interface Person {
+  age: number;
+};
+ 
+const john: Person = { name: 'John', age: 30 };
+
+-Declaration merging, where two interfaces with the same name are combined
+
+
+Question 03:
+Why is the isManager function useful in the following code?
+
+function isManager(obj: Person | DogOwner | Manager): obj is Manager {
+  return 'managePeople' in obj;
+};
+ 
+if (isManager(employee)) {
+  employee.delegateTasks();
+};
+
+-It serves as a type guard to narrow the type of employee to Manager
+
+
+Question 04:
+What is the primary purpose of extending an interface in TypeScript?
+
+interface Employee extends Person {
+  employeeId: number;
+};
+
+-To inherit properties and methods from another interface
+
+
+Question 05:
+Why can't type aliases be merged, unlike interfaces?
+
+-Type aliases are single, complete definitions and do not support multiple declarations
