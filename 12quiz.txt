@@ -1,0 +1,19 @@
+Quiz 12: TypeScript Modules: Understanding Scope, Imports, and Configurations
+
+
+Question 01:
+What is a potential issue with TypeScript files that are not treated as modules?
+
+-They operate in the global scope, which can lead to variable conflicts across files
+
+
+Question 02:
+How does TypeScript handle type imports in modules?
+
+-Type imports are stripped during compilation, as they are only used for type-checking at compile time
+
+
+Question 03:
+What does the allowJs option in tsconfig.json enable?
+
+-It allows TypeScript to process JavaScript files and infer types based on their structure
