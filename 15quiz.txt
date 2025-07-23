@@ -1,0 +1,35 @@
+Quiz 15: Understanding TypeScript Fetching Patterns and Data Validation
+
+
+Question 01:
+What is the purpose of defining a type for the fetched data in TypeScript?
+
+-To ensure that the data conforms to the expected structure and type safety is maintained throughout the application
+
+
+Question 02:
+What is the advantage of using z.infer when validating fetched data with Zod?
+
+type Tour = z.infer<typeof tourSchema>;
+
+-It automatically infers the TypeScript type from the schema, reducing duplication and potential errors
+
+
+Question 03:
+Why is it important to handle errors when fetching data asynchronously?
+
+-To provide meaningful feedback to users and ensure application stability in case of failures
+
+
+Question 04:
+What does the safeParse method in Zod do?
+
+const result = tourSchema.array().safeParse(rawData);
+
+-It validates the data against the schema and returns a success or error result
+
+
+Question 05:
+Why might you use Zod for data validation when fetching data?
+
+-To ensure that the fetched data matches the expected structure and to handle invalid data gracefully
