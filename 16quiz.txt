@@ -1,0 +1,19 @@
+Quiz 16: Mastering TypeScript Declaration Files and Configuration
+
+
+Question 01:
+What is the main use of TypeScript declaration files (.d.ts)?
+
+-To provide type definitions for JavaScript libraries, enabling type checking and autocompletion in TypeScript projects
+
+
+Question 02:
+What does setting noEmit to true in tsconfig.json do?
+
+-It disables output file generation while still performing type checking
+
+
+Question 03:
+Why would you enable skipLibCheck in tsconfig.json?
+
+-To improve compilation performance by skipping type checks for declaration files (*.d.ts)
