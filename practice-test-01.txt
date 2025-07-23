@@ -1,0 +1,65 @@
+Practice Test 1: TypeScript Fundamentals
+
+
+Question 01:
+What is the purpose of a TypeScript type guard?
+
+-To narrow the type of a variable at runtime
+
+
+Question 02:
+Which of the following is true about TypeScript enums?
+
+-Numeric enums support reverse mapping
+
+
+Question 03:
+Please fill the blank field(s) in the statement by writing the appropriate word.
+
+-Union type in TypeScript allows a variable to hold values of multiple specified types.
+
+
+Question 04:
+Which of the following are true about the unknown type in TypeScript? (Select all that apply)
+
+-It is a safer version of any
+-Requires type-checking before use
+
+
+Question 05:
+Which of the following is true about union and literal types in TypeScript?
+
+-Union types allow a variable to have multiple specific types
+
+
+Question 06:
+What is a key feature of TypeScript’s as keyword?
+
+-Asserts the value is of a specific type
+
+
+Question 07:
+What is a key benefit of using generics in TypeScript?
+
+-They allow code to work with any data type while maintaining type safety
+
+
+Question 08:
+Which of the following are valid TypeScript-specific ways to work with arrays or tuples? (Select all that apply)
+
+-Using as const to create a readonly array or tuple
+-Using map() to ensure type safety during transformations
+-Using type annotations to enforce the type of elements in an array
+-Using find() to query elements with type narrowing
+
+
+Question 09:
+What is the role of a type guard in TypeScript?
+
+-To enforce compile-time type safety
+
+
+Question 10:
+Please fill the blank field(s) in the statement by writing the appropriate word.
+
+-In TypeScript, the readonly modifier is used to prevent modification of a property after its initialization
