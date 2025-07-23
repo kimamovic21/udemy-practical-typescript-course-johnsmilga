@@ -1,0 +1,31 @@
+Quiz 17: Understanding TypeScript Classes and Their Features
+
+
+Question 01:
+What is the purpose of a constructor in a TypeScript class?
+
+-To set up the initial state of an object when it is instantiated
+
+
+Question 02:
+What is the role of the readonly modifier in a TypeScript class?
+
+-It allows properties to be modified only within the constructor of tle class
+
+
+Question 03:
+How do access modifiers like private and public affect class properties and methods in TypeScript?
+
+-They control the visibility and accessibility of class members within and outside the class
+
+
+Question 04:
+Why might you use shorthand syntax in a TypeScript class?
+
+-To declare and initialize properties directly in the constructor parameters, reducing boilerplate code
+
+
+Question 05:
+What happens when a class implements an interface in TypeScript?
+
+-The class must define all properties and methods declared in the interface
