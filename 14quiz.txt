@@ -1,0 +1,49 @@
+Quiz 14: Mastering TypeScript Generics: Concepts and Applications
+
+
+Question 01:
+What is the primary purpose of generics in TypeScript?
+
+-To allow functions, classes, and interfaces to work with multiple types while maintaining type safety
+
+
+Question 02:
+How do type constraints enhance the functionality of generics?
+
+function processValue<T extends { name: string }>(value: T): void {
+  console.log(value.name);
+};
+
+-They limit the types that can be passed to a generic function or class, ensuring the type meets specific requirements
+
+
+Question 03:
+What does the default value in a generic interface or class provide?
+
+interface StoreData<T = any> {
+  data: T[];
+};
+
+-It specifies a fallback type if not type is provided explicitly
+
+
+Question 04:
+How does TypeScript infer types for generics when no explicit type is provided?
+
+function pair<T, U>(param1: T, param2: U): [T, U] {
+  return [param1, param2];
+};
+ 
+const result = pair(123, 'hello');
+
+-It uses the types of the arguments passed to the generic function to infer the generic types
+
+
+Question 05:
+Why might you use an interface with a default generic type?
+
+interface StoreData<T = string> {
+  data: T[];
+};
+
+-To reduce the need for specifying a type argument explicitly in every usage
